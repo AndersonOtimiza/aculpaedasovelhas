@@ -1,0 +1,68 @@
+Você deve configurar todo o workspace com GPU completa.
+Antes de iniciar, deve exibir notificação ao usuário.
+Deve solicitar confirmação clara.
+Somente iniciar após confirmação explícita.
+
+OBJETIVO:
+CUDA + TensorRT + PyTorch GPU + Ollama GPU + benchmarking automático.
+Com confirmação de início.
+
+PROTOCOLO DE CONFIRMAÇÃO:
+
+1. Exibir notificação ao usuário:
+   "Configuração avançada de GPU encontrada. Deseja iniciar o processo?
+    Este processo ativará CUDA, TensorRT, PyTorch GPU, Ollama GPU,
+    criará arquivos, rodará benchmarks e ajustará o VSCode para aceleração total."
+
+2. Perguntar:
+   "Confirmar início da configuração?"
+   Opções obrigatórias:
+   - SIM
+   - NÃO
+
+3. Se o usuário responder NÃO:
+   - cancelar todo o processo
+   - exibir mensagem: "Processo abortado."
+
+4. Se o usuário responder SIM:
+   - iniciar toda a configuração automaticamente
+
+───────────────────────────────────────
+TAREFAS APÓS CONFIRMAÇÃO:
+───────────────────────────────────────
+
+1. Ativar aceleração GPU no VSCode:
+   Criar ou atualizar:
+   - .vscode/settings.json
+   - .vscode/argv.json
+   - .vscode/gpu-flags.json
+
+2. Validar CUDA:
+   - verificar nvcc
+   - verificar drivers
+   - verificar toolkit
+   - gerar cuda/check_cuda.json
+
+3. Configurar TensorRT:
+   - criar pasta tensorrt-tests
+   - criar engine_test.py
+   - validar engine
+   - medir latência
+
+4. Configurar PyTorch GPU:
+   - criar pytorch_gpu_test.py
+   - criar bench_pytorch.py
+   - medir TFLOPS e latência
+
+5. Configurar Ollama GPU:
+   - criar ollama/config.json
+   - criar script ollama/gpu_test
+   - validar GPU do modelo
+
+6. Criar task de benchmark integrado:
+   - .vscode/tasks.json
+   - task "gpu-benchmark"
+   - rodar benchmarks completos após confirmação
+
+7. Gerar relatório final:
+   - GPU detectada

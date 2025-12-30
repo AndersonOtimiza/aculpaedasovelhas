@@ -1,0 +1,24 @@
+###Memória Persistente em AI LLMns
+
+#Definição de Memória Persistente
+É a capacidade de treinamento e/ou restrição de conhecimento para a operação da IA/LLM em apenas um determinado conjunto de dados determinados pelo User.
+
+#Exemplo de Sistemas que possuem Memória Persistente
+GPTo do ChatGPT, Google Gem, Agent Copilot, Claude...
+
+#Command "Memo" para Memorização de dado
+Force de geração de Memória Persistente em uma LLM através do Chat. 
+
+#Exemplo de Command "Memo" para Memorização de dado:
+USer Diz: Meu nome é Belem, Anderson Costa=(quebra de linha) 
+MEMO
+
+LLM(Claude/Chat GPT/Copilot) Diz e Realmente Executa: Salvo na Memória!
+
+==
+Note: A partir deste User Command / User Task Order que são=
+User Token In=
+LLM Agent passa a possuir de forma persistente tal informação vinculada a conta do USer
+
+===
+

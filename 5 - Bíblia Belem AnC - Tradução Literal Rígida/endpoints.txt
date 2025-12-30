@@ -1,0 +1,84 @@
+=== ENDPOINTS DA API - BIBLIA CODICES AI ===
+
+Base URL: http://localhost:3000
+
+=== HEALTH CHECK ===
+GET /health
+Descrição: Verifica status do servidor
+Resposta: { status: "ok", timestamp: "...", service: "biblia-codices-ai" }
+
+=== BOOKS (Livros) ===
+GET /api/books
+Descrição: Lista todos os livros bíblicos
+Resposta: Array de livros com código, nome original, nome em PT, testamento
+
+GET /api/books/:code
+Descrição: Busca livro específico por código
+Parâmetros: code (ex: GEN, MAT, ROM)
+Exemplo: GET /api/books/GEN
+Resposta: Objeto do livro
+
+=== VERSES (Versículos) ===
+GET /api/verses/:bookCode/:chapter
+Descrição: Lista todos os versículos de um capítulo
+Parâmetros: bookCode (ex: GEN), chapter (número)
+Exemplo: GET /api/verses/GEN/1
+Resposta: Array de versículos
+
+GET /api/verses/:bookCode/:chapter/:verse
+Descrição: Busca versículo específico
+Parâmetros: bookCode, chapter, verse
+Exemplo: GET /api/verses/GEN/1/1
+Resposta: Objeto do versículo
+
+=== TOKENS (Palavras/Tokens) ===
+GET /api/tokens/verse/:verseId
+Descrição: Lista todos os tokens de um versículo
+Parâmetros: verseId (ID do versículo)
+Exemplo: GET /api/tokens/verse/1
+Resposta: Array de tokens com posição, texto, script, normalização
+
+GET /api/tokens/search/lemma?lemma=palavra
+Descrição: Busca tokens por lemma (forma lexical)
+Query Params: lemma (texto a buscar)
+Exemplo: GET /api/tokens/search/lemma?lemma=אֱלֹהִים
+Resposta: Array de tokens com contexto (livro, capítulo, versículo)
+
+GET /api/tokens/search/morphology?morphology=codigo
+Descrição: Busca tokens por código morfológico
+Query Params: morphology (código a buscar)
+Exemplo: GET /api/tokens/search/morphology?morphology=V
+Resposta: Array de tokens com análise morfológica
+
+=== MANUSCRIPTS (Manuscritos) ===
+GET /api/manuscripts
+Descrição: Lista todos os manuscritos
+Resposta: Array de manuscritos com código, nome, provedor, descrição
+
+GET /api/manuscripts/:code
+Descrição: Busca manuscrito específico por código
+Parâmetros: code (ex: Leningrad, Sinaiticus)
+Exemplo: GET /api/manuscripts/Leningrad
+Resposta: Objeto do manuscrito
+
+GET /api/manuscripts/variants/:verseId
+Descrição: Lista variantes textuais de um versículo
+Parâmetros: verseId (ID do versículo)
+Exemplo: GET /api/manuscripts/variants/1
+Resposta: Array de variantes com manuscrito, leitura, testemunhas
+
+=== CÓDIGOS DE STATUS ===
+200 - OK
+404 - Not Found (recurso não encontrado)
+500 - Internal Server Error
+
+=== ESTRUTURA DE RESPOSTA PADRÃO ===
+Sucesso: { dados do recurso }
+Erro: { error: "mensagem de erro" }
+
+=== NOTAS ===
+- Todas as rotas suportam CORS
+- Content-Type: application/json
+- Versículos, tokens e variantes são referenciados por ID interno
+- Códigos de livros seguem padrão de 3 letras (GEN, EXO, MAT, etc.)
+- Busca por lemma e morfologia usa ILIKE (case-insensitive)

@@ -1,0 +1,99 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true
+  },
+  "files.watcherExclude": {
+    "**/.venv/**": true,
+    "**/node_modules/**": true,
+    "**/models/**": true,
+    "**/indexes/**": true
+  },
+  "accessibility.signalOptions.volume": 100,
+  "accessibility.signals.taskCompleted": {
+    "sound": "on"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatRequestSent": {
+    "sound": "on"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "on"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "on"
+  },
+  "accessibility.signals.terminalCommandSucceeded": {
+    "sound": "on"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "on"
+  },
+  "accessibility.signals.save": {
+    "sound": "on"
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "on"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "on"
+  },
+  "accessibility.signals.diffLineInserted": {
+    "sound": "on"
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "on"
+  },
+  "accessibility.signals.diffLineModified": {
+    "sound": "on"
+  }
+}

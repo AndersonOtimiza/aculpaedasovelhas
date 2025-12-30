@@ -1,0 +1,735 @@
+{
+  "book": "Psalms",
+  "book_pt": "Salmos",
+  "testament": "OT",
+  "author": "Anderson Belem Costa (Belem, AnC)",
+  "method": "Belém AnC-Ipísis Iliteris Fidelity Method",
+  "rigidity_level": "TEA",
+  "source": "Westminster Leningrad Codex (WLC)",
+  "chapter": 32,
+  "verses": [
+    {
+      "chapter": 32,
+      "verse": 1,
+      "hebrew_text": "לְדָוִ֗ד מַ֫שְׂכִּ֥יל אַשְׁרֵ֥י נְֽשׂוּי־פֶּ֗שַׁע כְּס֣וּי חֲטָאָֽה",
+      "literal_translation": "[לְדָוִ֗ד] [מַ֫שְׂכִּ֥יל] [אַשְׁרֵ֥י] [נְֽשׂוּי־פֶּ֗שַׁע] [כְּס֣וּי] [חֲטָאָֽה]",
+      "readable_translation": "[לְדָוִ֗ד] [מַ֫שְׂכִּ֥יל] [אַשְׁרֵ֥י] [נְֽשׂוּי־פֶּ֗שַׁע] [כְּס֣וּי] [חֲטָאָֽה]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "לְדָוִ֗ד",
+          "hebrew_clean": "לְדָוִד",
+          "translation": "[לְדָוִ֗ד]"
+        },
+        {
+          "position": 2,
+          "hebrew": "מַ֫שְׂכִּ֥יל",
+          "hebrew_clean": "מַשְכִּיל",
+          "translation": "[מַ֫שְׂכִּ֥יל]"
+        },
+        {
+          "position": 3,
+          "hebrew": "אַשְׁרֵ֥י",
+          "hebrew_clean": "אַשְרֵי",
+          "translation": "[אַשְׁרֵ֥י]"
+        },
+        {
+          "position": 4,
+          "hebrew": "נְֽשׂוּי־פֶּ֗שַׁע",
+          "hebrew_clean": "נְשוּיפֶּשַע",
+          "translation": "[נְֽשׂוּי־פֶּ֗שַׁע]"
+        },
+        {
+          "position": 5,
+          "hebrew": "כְּס֣וּי",
+          "hebrew_clean": "כְּסוּי",
+          "translation": "[כְּס֣וּי]"
+        },
+        {
+          "position": 6,
+          "hebrew": "חֲטָאָֽה",
+          "hebrew_clean": "חֲטָאָה",
+          "translation": "[חֲטָאָֽה]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 2,
+      "hebrew_text": "אַ֥שְֽׁרֵי אָדָ֗ם לֹ֤א יַחְשֹׁ֬ב יְהוָ֣ה ל֣וֹ עָוֺ֑ן וְאֵ֖ין בְּרוּח֣וֹ רְמִיָּה",
+      "literal_translation": "[אַ֥שְֽׁרֵי] homem não [יַחְשֹׁ֬ב] YHWH a-ele [עָוֺ֑ן] [וְאֵ֖ין] [בְּרוּח֣וֹ] [רְמִיָּה]",
+      "readable_translation": "[אַ֥שְֽׁרֵי] homem não [יַחְשֹׁ֬ב] YHWH a-ele [עָוֺ֑ן] [וְאֵ֖ין] [בְּרוּח֣וֹ] [רְמִיָּה]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "אַ֥שְֽׁרֵי",
+          "hebrew_clean": "אַשְרֵי",
+          "translation": "[אַ֥שְֽׁרֵי]"
+        },
+        {
+          "position": 2,
+          "hebrew": "אָדָ֗ם",
+          "hebrew_clean": "אָדָם",
+          "translation": "homem"
+        },
+        {
+          "position": 3,
+          "hebrew": "לֹ֤א",
+          "hebrew_clean": "לֹא",
+          "translation": "não"
+        },
+        {
+          "position": 4,
+          "hebrew": "יַחְשֹׁ֬ב",
+          "hebrew_clean": "יַחְשֹב",
+          "translation": "[יַחְשֹׁ֬ב]"
+        },
+        {
+          "position": 5,
+          "hebrew": "יְהוָ֣ה",
+          "hebrew_clean": "יְהוָה",
+          "translation": "YHWH"
+        },
+        {
+          "position": 6,
+          "hebrew": "ל֣וֹ",
+          "hebrew_clean": "לוֹ",
+          "translation": "a-ele"
+        },
+        {
+          "position": 7,
+          "hebrew": "עָוֺ֑ן",
+          "hebrew_clean": "עָוֺן",
+          "translation": "[עָוֺ֑ן]"
+        },
+        {
+          "position": 8,
+          "hebrew": "וְאֵ֖ין",
+          "hebrew_clean": "וְאֵין",
+          "translation": "[וְאֵ֖ין]"
+        },
+        {
+          "position": 9,
+          "hebrew": "בְּרוּח֣וֹ",
+          "hebrew_clean": "בְּרוּחוֹ",
+          "translation": "[בְּרוּח֣וֹ]"
+        },
+        {
+          "position": 10,
+          "hebrew": "רְמִיָּה",
+          "hebrew_clean": "רְמִיָּה",
+          "translation": "[רְמִיָּה]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 3,
+      "hebrew_text": "כִּֽי־הֶ֭חֱרַשְׁתִּי בָּ֣לוּ עֲצָמָ֑י בְּ֝שַׁאֲגָתִ֗י כָּל־הַיּֽוֹם",
+      "literal_translation": "[כִּֽי־הֶ֭חֱרַשְׁתִּי] [בָּ֣לוּ] [עֲצָמָ֑י] [בְּ֝שַׁאֲגָתִ֗י] [כָּל־הַיּֽוֹם]",
+      "readable_translation": "[כִּֽי־הֶ֭חֱרַשְׁתִּי] [בָּ֣לוּ] [עֲצָמָ֑י] [בְּ֝שַׁאֲגָתִ֗י] [כָּל־הַיּֽוֹם]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "כִּֽי־הֶ֭חֱרַשְׁתִּי",
+          "hebrew_clean": "כִּיהֶחֱרַשְתִּי",
+          "translation": "[כִּֽי־הֶ֭חֱרַשְׁתִּי]"
+        },
+        {
+          "position": 2,
+          "hebrew": "בָּ֣לוּ",
+          "hebrew_clean": "בָּלוּ",
+          "translation": "[בָּ֣לוּ]"
+        },
+        {
+          "position": 3,
+          "hebrew": "עֲצָמָ֑י",
+          "hebrew_clean": "עֲצָמָי",
+          "translation": "[עֲצָמָ֑י]"
+        },
+        {
+          "position": 4,
+          "hebrew": "בְּ֝שַׁאֲגָתִ֗י",
+          "hebrew_clean": "בְּשַאֲגָתִי",
+          "translation": "[בְּ֝שַׁאֲגָתִ֗י]"
+        },
+        {
+          "position": 5,
+          "hebrew": "כָּל־הַיּֽוֹם",
+          "hebrew_clean": "כָּלהַיּוֹם",
+          "translation": "[כָּל־הַיּֽוֹם]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 4,
+      "hebrew_text": "כִּ֤י ׀ יוֹמָ֣ם וָלַיְלָה֮ תִּכְבַּ֥ד עָלַ֗י יָ֫דֶ֥ךָ נֶהְפַּ֥ךְ לְשַׁדִּ֑י בְּחַרְבֹ֖נֵי קַ֣יִץ סֶֽלָה",
+      "literal_translation": "que [׀] [יוֹמָ֣ם] [וָלַיְלָה֮] [תִּכְבַּ֥ד] [עָלַ֗י] [יָ֫דֶ֥ךָ] [נֶהְפַּ֥ךְ] [לְשַׁדִּ֑י] [בְּחַרְבֹ֖נֵי] [קַ֣יִץ] [סֶֽלָה]",
+      "readable_translation": "que [׀] [יוֹמָ֣ם] [וָלַיְלָה֮] [תִּכְבַּ֥ד] [עָלַ֗י] [יָ֫דֶ֥ךָ] [נֶהְפַּ֥ךְ] [לְשַׁדִּ֑י] [בְּחַרְבֹ֖נֵי] [קַ֣יִץ] [סֶֽלָה]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "כִּ֤י",
+          "hebrew_clean": "כִּי",
+          "translation": "que"
+        },
+        {
+          "position": 2,
+          "hebrew": "׀",
+          "hebrew_clean": "",
+          "translation": "[׀]"
+        },
+        {
+          "position": 3,
+          "hebrew": "יוֹמָ֣ם",
+          "hebrew_clean": "יוֹמָם",
+          "translation": "[יוֹמָ֣ם]"
+        },
+        {
+          "position": 4,
+          "hebrew": "וָלַיְלָה֮",
+          "hebrew_clean": "וָלַיְלָה",
+          "translation": "[וָלַיְלָה֮]"
+        },
+        {
+          "position": 5,
+          "hebrew": "תִּכְבַּ֥ד",
+          "hebrew_clean": "תִּכְבַּד",
+          "translation": "[תִּכְבַּ֥ד]"
+        },
+        {
+          "position": 6,
+          "hebrew": "עָלַ֗י",
+          "hebrew_clean": "עָלַי",
+          "translation": "[עָלַ֗י]"
+        },
+        {
+          "position": 7,
+          "hebrew": "יָ֫דֶ֥ךָ",
+          "hebrew_clean": "יָדֶךָ",
+          "translation": "[יָ֫דֶ֥ךָ]"
+        },
+        {
+          "position": 8,
+          "hebrew": "נֶהְפַּ֥ךְ",
+          "hebrew_clean": "נֶהְפַּךְ",
+          "translation": "[נֶהְפַּ֥ךְ]"
+        },
+        {
+          "position": 9,
+          "hebrew": "לְשַׁדִּ֑י",
+          "hebrew_clean": "לְשַדִּי",
+          "translation": "[לְשַׁדִּ֑י]"
+        },
+        {
+          "position": 10,
+          "hebrew": "בְּחַרְבֹ֖נֵי",
+          "hebrew_clean": "בְּחַרְבֹנֵי",
+          "translation": "[בְּחַרְבֹ֖נֵי]"
+        },
+        {
+          "position": 11,
+          "hebrew": "קַ֣יִץ",
+          "hebrew_clean": "קַיִץ",
+          "translation": "[קַ֣יִץ]"
+        },
+        {
+          "position": 12,
+          "hebrew": "סֶֽלָה",
+          "hebrew_clean": "סֶלָה",
+          "translation": "[סֶֽלָה]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 5,
+      "hebrew_text": "חַטָּאתִ֨י אוֹדִ֪יעֲךָ֡ וַעֲוֺ֘נִ֤י לֹֽא־כִסִּ֗יתִי אָמַ֗רְתִּי אוֹדֶ֤ה עֲלֵ֣י פְ֭שָׁעַי לַיהוָ֑ה וְאַתָּ֨ה נָ֘שָׂ֤אתָ עֲוֺ֖ן חַטָּאתִ֣י סֶֽלָה",
+      "literal_translation": "[חַטָּאתִ֨י] [אוֹדִ֪יעֲךָ֡] [וַעֲוֺ֘נִ֤י] [לֹֽא־כִסִּ֗יתִי] [אָמַ֗רְתִּי] [אוֹדֶ֤ה] [עֲלֵ֣י] [פְ֭שָׁעַי] [לַיהוָ֑ה] [וְאַתָּ֨ה] [נָ֘שָׂ֤אתָ] [עֲוֺ֖ן] [חַטָּאתִ֣י] [סֶֽלָה]",
+      "readable_translation": "[חַטָּאתִ֨י] [אוֹדִ֪יעֲךָ֡] [וַעֲוֺ֘נִ֤י] [לֹֽא־כִסִּ֗יתִי] [אָמַ֗רְתִּי] [אוֹדֶ֤ה] [עֲלֵ֣י] [פְ֭שָׁעַי] [לַיהוָ֑ה] [וְאַתָּ֨ה] [נָ֘שָׂ֤אתָ] [עֲוֺ֖ן] [חַטָּאתִ֣י] [סֶֽלָה]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "חַטָּאתִ֨י",
+          "hebrew_clean": "חַטָּאתִי",
+          "translation": "[חַטָּאתִ֨י]"
+        },
+        {
+          "position": 2,
+          "hebrew": "אוֹדִ֪יעֲךָ֡",
+          "hebrew_clean": "אוֹדִיעֲךָ",
+          "translation": "[אוֹדִ֪יעֲךָ֡]"
+        },
+        {
+          "position": 3,
+          "hebrew": "וַעֲוֺ֘נִ֤י",
+          "hebrew_clean": "וַעֲוֺנִי",
+          "translation": "[וַעֲוֺ֘נִ֤י]"
+        },
+        {
+          "position": 4,
+          "hebrew": "לֹֽא־כִסִּ֗יתִי",
+          "hebrew_clean": "לֹאכִסִּיתִי",
+          "translation": "[לֹֽא־כִסִּ֗יתִי]"
+        },
+        {
+          "position": 5,
+          "hebrew": "אָמַ֗רְתִּי",
+          "hebrew_clean": "אָמַרְתִּי",
+          "translation": "[אָמַ֗רְתִּי]"
+        },
+        {
+          "position": 6,
+          "hebrew": "אוֹדֶ֤ה",
+          "hebrew_clean": "אוֹדֶה",
+          "translation": "[אוֹדֶ֤ה]"
+        },
+        {
+          "position": 7,
+          "hebrew": "עֲלֵ֣י",
+          "hebrew_clean": "עֲלֵי",
+          "translation": "[עֲלֵ֣י]"
+        },
+        {
+          "position": 8,
+          "hebrew": "פְ֭שָׁעַי",
+          "hebrew_clean": "פְשָעַי",
+          "translation": "[פְ֭שָׁעַי]"
+        },
+        {
+          "position": 9,
+          "hebrew": "לַיהוָ֑ה",
+          "hebrew_clean": "לַיהוָה",
+          "translation": "[לַיהוָ֑ה]"
+        },
+        {
+          "position": 10,
+          "hebrew": "וְאַתָּ֨ה",
+          "hebrew_clean": "וְאַתָּה",
+          "translation": "[וְאַתָּ֨ה]"
+        },
+        {
+          "position": 11,
+          "hebrew": "נָ֘שָׂ֤אתָ",
+          "hebrew_clean": "נָשָאתָ",
+          "translation": "[נָ֘שָׂ֤אתָ]"
+        },
+        {
+          "position": 12,
+          "hebrew": "עֲוֺ֖ן",
+          "hebrew_clean": "עֲוֺן",
+          "translation": "[עֲוֺ֖ן]"
+        },
+        {
+          "position": 13,
+          "hebrew": "חַטָּאתִ֣י",
+          "hebrew_clean": "חַטָּאתִי",
+          "translation": "[חַטָּאתִ֣י]"
+        },
+        {
+          "position": 14,
+          "hebrew": "סֶֽלָה",
+          "hebrew_clean": "סֶלָה",
+          "translation": "[סֶֽלָה]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 6,
+      "hebrew_text": "עַל־זֹ֡את יִתְפַּלֵּ֬ל כָּל־חָסִ֨יד ׀ אֵלֶיךָ֮ לְעֵ֢ת מְ֫צֹ֥א רַ֗ק לְ֭שֵׁטֶף מַ֣יִם רַבִּ֑ים אֵ֝לָ֗יו לֹ֣א יַגִּֽיעוּ",
+      "literal_translation": "[עַל־זֹ֡את] [יִתְפַּלֵּ֬ל] [כָּל־חָסִ֨יד] [׀] [אֵלֶיךָ֮] [לְעֵ֢ת] [מְ֫צֹ֥א] [רַ֗ק] [לְ֭שֵׁטֶף] águas [רַבִּ֑ים] a-ele não [יַגִּֽיעוּ]",
+      "readable_translation": "[עַל־זֹ֡את] [יִתְפַּלֵּ֬ל] [כָּל־חָסִ֨יד] [׀] [אֵלֶיךָ֮] [לְעֵ֢ת] [מְ֫צֹ֥א] [רַ֗ק] [לְ֭שֵׁטֶף] águas [רַבִּ֑ים] a-ele não [יַגִּֽיעוּ]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "עַל־זֹ֡את",
+          "hebrew_clean": "עַלזֹאת",
+          "translation": "[עַל־זֹ֡את]"
+        },
+        {
+          "position": 2,
+          "hebrew": "יִתְפַּלֵּ֬ל",
+          "hebrew_clean": "יִתְפַּלֵּל",
+          "translation": "[יִתְפַּלֵּ֬ל]"
+        },
+        {
+          "position": 3,
+          "hebrew": "כָּל־חָסִ֨יד",
+          "hebrew_clean": "כָּלחָסִיד",
+          "translation": "[כָּל־חָסִ֨יד]"
+        },
+        {
+          "position": 4,
+          "hebrew": "׀",
+          "hebrew_clean": "",
+          "translation": "[׀]"
+        },
+        {
+          "position": 5,
+          "hebrew": "אֵלֶיךָ֮",
+          "hebrew_clean": "אֵלֶיךָ",
+          "translation": "[אֵלֶיךָ֮]"
+        },
+        {
+          "position": 6,
+          "hebrew": "לְעֵ֢ת",
+          "hebrew_clean": "לְעֵת",
+          "translation": "[לְעֵ֢ת]"
+        },
+        {
+          "position": 7,
+          "hebrew": "מְ֫צֹ֥א",
+          "hebrew_clean": "מְצֹא",
+          "translation": "[מְ֫צֹ֥א]"
+        },
+        {
+          "position": 8,
+          "hebrew": "רַ֗ק",
+          "hebrew_clean": "רַק",
+          "translation": "[רַ֗ק]"
+        },
+        {
+          "position": 9,
+          "hebrew": "לְ֭שֵׁטֶף",
+          "hebrew_clean": "לְשֵטֶף",
+          "translation": "[לְ֭שֵׁטֶף]"
+        },
+        {
+          "position": 10,
+          "hebrew": "מַ֣יִם",
+          "hebrew_clean": "מַיִם",
+          "translation": "águas"
+        },
+        {
+          "position": 11,
+          "hebrew": "רַבִּ֑ים",
+          "hebrew_clean": "רַבִּים",
+          "translation": "[רַבִּ֑ים]"
+        },
+        {
+          "position": 12,
+          "hebrew": "אֵ֝לָ֗יו",
+          "hebrew_clean": "אֵלָיו",
+          "translation": "a-ele"
+        },
+        {
+          "position": 13,
+          "hebrew": "לֹ֣א",
+          "hebrew_clean": "לֹא",
+          "translation": "não"
+        },
+        {
+          "position": 14,
+          "hebrew": "יַגִּֽיעוּ",
+          "hebrew_clean": "יַגִּיעוּ",
+          "translation": "[יַגִּֽיעוּ]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 7,
+      "hebrew_text": "אַתָּ֤ה ׀ סֵ֥תֶר לִי֮ מִצַּ֢ר תִּצְּ֫[t]רֵ֥נִי רָנֵּ֥י פַלֵּ֑ט תְּס֖וֹבְבֵ֣נִי סֶֽלָה",
+      "literal_translation": "tu [׀] [סֵ֥תֶר] [לִי֮] [מִצַּ֢ר] [תִּצְּ֫[t]רֵ֥נִי] [רָנֵּ֥י] [פַלֵּ֑ט] [תְּס֖וֹבְבֵ֣נִי] [סֶֽלָה]",
+      "readable_translation": "tu [׀] [סֵ֥תֶר] [לִי֮] [מִצַּ֢ר] [תִּצְּ֫[t]רֵ֥נִי] [רָנֵּ֥י] [פַלֵּ֑ט] [תְּס֖וֹבְבֵ֣נִי] [סֶֽלָה]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "אַתָּ֤ה",
+          "hebrew_clean": "אַתָּה",
+          "translation": "tu"
+        },
+        {
+          "position": 2,
+          "hebrew": "׀",
+          "hebrew_clean": "",
+          "translation": "[׀]"
+        },
+        {
+          "position": 3,
+          "hebrew": "סֵ֥תֶר",
+          "hebrew_clean": "סֵתֶר",
+          "translation": "[סֵ֥תֶר]"
+        },
+        {
+          "position": 4,
+          "hebrew": "לִי֮",
+          "hebrew_clean": "לִי",
+          "translation": "[לִי֮]"
+        },
+        {
+          "position": 5,
+          "hebrew": "מִצַּ֢ר",
+          "hebrew_clean": "מִצַּר",
+          "translation": "[מִצַּ֢ר]"
+        },
+        {
+          "position": 6,
+          "hebrew": "תִּצְּ֫[t]רֵ֥נִי",
+          "hebrew_clean": "תִּצְּ[t]רֵנִי",
+          "translation": "[תִּצְּ֫[t]רֵ֥נִי]"
+        },
+        {
+          "position": 7,
+          "hebrew": "רָנֵּ֥י",
+          "hebrew_clean": "רָנֵּי",
+          "translation": "[רָנֵּ֥י]"
+        },
+        {
+          "position": 8,
+          "hebrew": "פַלֵּ֑ט",
+          "hebrew_clean": "פַלֵּט",
+          "translation": "[פַלֵּ֑ט]"
+        },
+        {
+          "position": 9,
+          "hebrew": "תְּס֖וֹבְבֵ֣נִי",
+          "hebrew_clean": "תְּסוֹבְבֵנִי",
+          "translation": "[תְּס֖וֹבְבֵ֣נִי]"
+        },
+        {
+          "position": 10,
+          "hebrew": "סֶֽלָה",
+          "hebrew_clean": "סֶלָה",
+          "translation": "[סֶֽלָה]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 8,
+      "hebrew_text": "אַשְׂכִּֽילְךָ֨ ׀ וְֽאוֹרְךָ֗ בְּדֶֽרֶךְ־ז֥וּ תֵלֵ֑ךְ אִֽיעֲצָ֖ה עָלֶ֣יךָ עֵינִֽי",
+      "literal_translation": "[אַשְׂכִּֽילְךָ֨] [׀] [וְֽאוֹרְךָ֗] [בְּדֶֽרֶךְ־ז֥וּ] andarás [אִֽיעֲצָ֖ה] [עָלֶ֣יךָ] [עֵינִֽי]",
+      "readable_translation": "[אַשְׂכִּֽילְךָ֨] [׀] [וְֽאוֹרְךָ֗] [בְּדֶֽרֶךְ־ז֥וּ] andarás [אִֽיעֲצָ֖ה] [עָלֶ֣יךָ] [עֵינִֽי]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "אַשְׂכִּֽילְךָ֨",
+          "hebrew_clean": "אַשְכִּילְךָ",
+          "translation": "[אַשְׂכִּֽילְךָ֨]"
+        },
+        {
+          "position": 2,
+          "hebrew": "׀",
+          "hebrew_clean": "",
+          "translation": "[׀]"
+        },
+        {
+          "position": 3,
+          "hebrew": "וְֽאוֹרְךָ֗",
+          "hebrew_clean": "וְאוֹרְךָ",
+          "translation": "[וְֽאוֹרְךָ֗]"
+        },
+        {
+          "position": 4,
+          "hebrew": "בְּדֶֽרֶךְ־ז֥וּ",
+          "hebrew_clean": "בְּדֶרֶךְזוּ",
+          "translation": "[בְּדֶֽרֶךְ־ז֥וּ]"
+        },
+        {
+          "position": 5,
+          "hebrew": "תֵלֵ֑ךְ",
+          "hebrew_clean": "תֵלֵךְ",
+          "translation": "andarás"
+        },
+        {
+          "position": 6,
+          "hebrew": "אִֽיעֲצָ֖ה",
+          "hebrew_clean": "אִיעֲצָה",
+          "translation": "[אִֽיעֲצָ֖ה]"
+        },
+        {
+          "position": 7,
+          "hebrew": "עָלֶ֣יךָ",
+          "hebrew_clean": "עָלֶיךָ",
+          "translation": "[עָלֶ֣יךָ]"
+        },
+        {
+          "position": 8,
+          "hebrew": "עֵינִֽי",
+          "hebrew_clean": "עֵינִי",
+          "translation": "[עֵינִֽי]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 9,
+      "hebrew_text": "אַל־תִּֽהְי֤וּ ׀ כְּס֥וּס כְּפֶרֶד֮ אֵ֤ין הָ֫בִ֥ין בְּמֶֽתֶג־וָרֶ֣סֶן עֶדְי֣וֹ לִבְל֑וֹם בַּ֝֗ל קְרֹ֣ב אֵלֶֽיךָ",
+      "literal_translation": "[אַל־תִּֽהְי֤וּ] [׀] [כְּס֥וּס] [כְּפֶרֶד֮] [אֵ֤ין] [הָ֫בִ֥ין] [בְּמֶֽתֶג־וָרֶ֣סֶן] [עֶדְי֣וֹ] [לִבְל֑וֹם] [בַּ֝֗ל] [קְרֹ֣ב] [אֵלֶֽיךָ]",
+      "readable_translation": "[אַל־תִּֽהְי֤וּ] [׀] [כְּס֥וּס] [כְּפֶרֶד֮] [אֵ֤ין] [הָ֫בִ֥ין] [בְּמֶֽתֶג־וָרֶ֣סֶן] [עֶדְי֣וֹ] [לִבְל֑וֹם] [בַּ֝֗ל] [קְרֹ֣ב] [אֵלֶֽיךָ]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "אַל־תִּֽהְי֤וּ",
+          "hebrew_clean": "אַלתִּהְיוּ",
+          "translation": "[אַל־תִּֽהְי֤וּ]"
+        },
+        {
+          "position": 2,
+          "hebrew": "׀",
+          "hebrew_clean": "",
+          "translation": "[׀]"
+        },
+        {
+          "position": 3,
+          "hebrew": "כְּס֥וּס",
+          "hebrew_clean": "כְּסוּס",
+          "translation": "[כְּס֥וּס]"
+        },
+        {
+          "position": 4,
+          "hebrew": "כְּפֶרֶד֮",
+          "hebrew_clean": "כְּפֶרֶד",
+          "translation": "[כְּפֶרֶד֮]"
+        },
+        {
+          "position": 5,
+          "hebrew": "אֵ֤ין",
+          "hebrew_clean": "אֵין",
+          "translation": "[אֵ֤ין]"
+        },
+        {
+          "position": 6,
+          "hebrew": "הָ֫בִ֥ין",
+          "hebrew_clean": "הָבִין",
+          "translation": "[הָ֫בִ֥ין]"
+        },
+        {
+          "position": 7,
+          "hebrew": "בְּמֶֽתֶג־וָרֶ֣סֶן",
+          "hebrew_clean": "בְּמֶתֶגוָרֶסֶן",
+          "translation": "[בְּמֶֽתֶג־וָרֶ֣סֶן]"
+        },
+        {
+          "position": 8,
+          "hebrew": "עֶדְי֣וֹ",
+          "hebrew_clean": "עֶדְיוֹ",
+          "translation": "[עֶדְי֣וֹ]"
+        },
+        {
+          "position": 9,
+          "hebrew": "לִבְל֑וֹם",
+          "hebrew_clean": "לִבְלוֹם",
+          "translation": "[לִבְל֑וֹם]"
+        },
+        {
+          "position": 10,
+          "hebrew": "בַּ֝֗ל",
+          "hebrew_clean": "בַּל",
+          "translation": "[בַּ֝֗ל]"
+        },
+        {
+          "position": 11,
+          "hebrew": "קְרֹ֣ב",
+          "hebrew_clean": "קְרֹב",
+          "translation": "[קְרֹ֣ב]"
+        },
+        {
+          "position": 12,
+          "hebrew": "אֵלֶֽיךָ",
+          "hebrew_clean": "אֵלֶיךָ",
+          "translation": "[אֵלֶֽיךָ]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 10,
+      "hebrew_text": "רַבִּ֥ים מַכְאוֹבִ֗ים לָרָ֫שָׁ֥ע וְהַבּוֹטֵ֥חַ בַּיהוָ֑ה חֶ֝֗סֶד יְסוֹבְבֶֽנּוּ",
+      "literal_translation": "[רַבִּ֥ים] [מַכְאוֹבִ֗ים] [לָרָ֫שָׁ֥ע] [וְהַבּוֹטֵ֥חַ] [בַּיהוָ֑ה] [חֶ֝֗סֶד] [יְסוֹבְבֶֽנּוּ]",
+      "readable_translation": "[רַבִּ֥ים] [מַכְאוֹבִ֗ים] [לָרָ֫שָׁ֥ע] [וְהַבּוֹטֵ֥חַ] [בַּיהוָ֑ה] [חֶ֝֗סֶד] [יְסוֹבְבֶֽנּוּ]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "רַבִּ֥ים",
+          "hebrew_clean": "רַבִּים",
+          "translation": "[רַבִּ֥ים]"
+        },
+        {
+          "position": 2,
+          "hebrew": "מַכְאוֹבִ֗ים",
+          "hebrew_clean": "מַכְאוֹבִים",
+          "translation": "[מַכְאוֹבִ֗ים]"
+        },
+        {
+          "position": 3,
+          "hebrew": "לָרָ֫שָׁ֥ע",
+          "hebrew_clean": "לָרָשָע",
+          "translation": "[לָרָ֫שָׁ֥ע]"
+        },
+        {
+          "position": 4,
+          "hebrew": "וְהַבּוֹטֵ֥חַ",
+          "hebrew_clean": "וְהַבּוֹטֵחַ",
+          "translation": "[וְהַבּוֹטֵ֥חַ]"
+        },
+        {
+          "position": 5,
+          "hebrew": "בַּיהוָ֑ה",
+          "hebrew_clean": "בַּיהוָה",
+          "translation": "[בַּיהוָ֑ה]"
+        },
+        {
+          "position": 6,
+          "hebrew": "חֶ֝֗סֶד",
+          "hebrew_clean": "חֶסֶד",
+          "translation": "[חֶ֝֗סֶד]"
+        },
+        {
+          "position": 7,
+          "hebrew": "יְסוֹבְבֶֽנּוּ",
+          "hebrew_clean": "יְסוֹבְבֶנּוּ",
+          "translation": "[יְסוֹבְבֶֽנּוּ]"
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse": 11,
+      "hebrew_text": "שִׂמְח֬וּ בַֽיהוָ֣ה וְ֭גִילוּ צַדִּיקִ֑ים וְ֝הַרְנִ֗ינוּ כָּל־יִשְׁרֵי־לֵֽב",
+      "literal_translation": "[שִׂמְח֬וּ] [בַֽיהוָ֣ה] [וְ֭גִילוּ] [צַדִּיקִ֑ים] [וְ֝הַרְנִ֗ינוּ] [כָּל־יִשְׁרֵי־לֵֽב]",
+      "readable_translation": "[שִׂמְח֬וּ] [בַֽיהוָ֣ה] [וְ֭גִילוּ] [צַדִּיקִ֑ים] [וְ֝הַרְנִ֗ינוּ] [כָּל־יִשְׁרֵי־לֵֽב]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "שִׂמְח֬וּ",
+          "hebrew_clean": "שִמְחוּ",
+          "translation": "[שִׂמְח֬וּ]"
+        },
+        {
+          "position": 2,
+          "hebrew": "בַֽיהוָ֣ה",
+          "hebrew_clean": "בַיהוָה",
+          "translation": "[בַֽיהוָ֣ה]"
+        },
+        {
+          "position": 3,
+          "hebrew": "וְ֭גִילוּ",
+          "hebrew_clean": "וְגִילוּ",
+          "translation": "[וְ֭גִילוּ]"
+        },
+        {
+          "position": 4,
+          "hebrew": "צַדִּיקִ֑ים",
+          "hebrew_clean": "צַדִּיקִים",
+          "translation": "[צַדִּיקִ֑ים]"
+        },
+        {
+          "position": 5,
+          "hebrew": "וְ֝הַרְנִ֗ינוּ",
+          "hebrew_clean": "וְהַרְנִינוּ",
+          "translation": "[וְ֝הַרְנִ֗ינוּ]"
+        },
+        {
+          "position": 6,
+          "hebrew": "כָּל־יִשְׁרֵי־לֵֽב",
+          "hebrew_clean": "כָּליִשְרֵילֵב",
+          "translation": "[כָּל־יִשְׁרֵי־לֵֽב]"
+        }
+      ]
+    }
+  ]
+}
