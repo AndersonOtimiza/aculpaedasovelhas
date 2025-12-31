@@ -11,7 +11,9 @@
       "Bash(gh repo rename:*)",
       "Bash(dir:*)",
       "Bash(ls:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(python -c \"from docx import Document; doc = Document\\(''Roteiro Ecossistema .docx''\\); print\\(''\\\\n''.join\\([p.text for p in doc.paragraphs]\\)\\)\")",
+      "Bash(unzip:*)"
     ]
   }
 }

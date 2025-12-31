@@ -1,4 +1,14 @@
-# biblia-codices-ai
+# Bíblia Belém An.C 2025 — Tradução Literal Rígida
+
+> Tradução fiel, literal e rígida, direto do hebraico, aramaico e grego. Sem normalizações. Sem interpretação no texto.
+
+**Posição no Ecossistema:** `Site → Blog → Podcast → Livrinho → **Bíblia** → Comunidade → exeg.ai`
+
+**Você lê. E a interpretação é sua.**
+
+---
+
+## Sobre
 
 Plataforma base para um sistema de IA especializado em estudos bíblicos a partir dos textos originais e códices.
 
@@ -118,7 +128,7 @@ GET http://localhost:3000/health
 
 ## Estrutura do Projeto
 
-```
+```text
 biblia-codices-ai/
 ├── README.md
 ├── .env.example
@@ -154,3 +164,25 @@ biblia-codices-ai/
                 ├── manuscripts.routes.ts
                 └── manuscripts.service.ts
 ```
+
+---
+
+## Fontes Textuais
+
+- **BHSA** - Biblia Hebraica Stuttgartensia Amstelodamensis (AT)
+- **WLC** - Westminster Leningrad Codex (AT)
+- **SBLGNT** - SBL Greek New Testament (NT)
+- **TR1550** - Textus Receptus 1550 (NT)
+- **Nestle 1904** - Nestle Greek New Testament (NT)
+
+---
+
+## Integração com o Ecossistema
+
+- **Consumidor principal:** [exeg.ai](../7%20-%20exeg.ai/) (busca semântica e análise)
+- **Frontend de leitura:** [Site aculpaedasovelhas.org](../1%20-%20Site%20aculpaedasovelhas.org/)
+- **Referenciado por:** [O Livrinho](../4%20-%20Livro/)
+
+---
+
+[Voltar ao Ecossistema](../README.md)
