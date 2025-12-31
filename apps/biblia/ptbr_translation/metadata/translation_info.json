@@ -1,0 +1,77 @@
+{
+  "translation": {
+    "name": "Belem Bible AnC",
+    "full_name": "Belem Bible AnC - Tradução Literal Rígida",
+    "level": "TEA",
+    "level_description": "Tradução Extremamente Rígida",
+    "method": "Belém AnC-Ipísis Iliteris Fidelity Method",
+    "author": "Anderson Belem Costa",
+    "author_alias": "Belem, AnC",
+    "language": "pt-BR",
+    "started": "2025-12-06",
+    "status": "in_progress",
+    "version": "0.1.0-alpha"
+  },
+  "sources": {
+    "old_testament": {
+      "primary": "WLC",
+      "description": "Westminster Leningrad Codex",
+      "path": "../sources/hebrew_wlc/"
+    },
+    "new_testament": {
+      "primary": "Westcott-Hort 1881",
+      "secondary": ["Textus Receptus 1550", "Nestle 1904"],
+      "path": "../sources/nt_wh1881/"
+    }
+  },
+  "principles": {
+    "morphological_fidelity": {
+      "priority": 1,
+      "description": "Preservação das estruturas gramaticais originais"
+    },
+    "syntactic_fidelity": {
+      "priority": 2,
+      "description": "Manutenção da ordem das palavras quando possível em português"
+    },
+    "lexical_fidelity": {
+      "priority": 3,
+      "description": "Tradução consistente de termos-chave"
+    },
+    "textual_transparency": {
+      "priority": 4,
+      "description": "Indicação de variantes textuais e decisões tradutórias"
+    },
+    "academic_rigor": {
+      "priority": 5,
+      "description": "Baseada em edições críticas de domínio público"
+    }
+  },
+  "format": {
+    "structured": "JSON",
+    "readable": "Markdown",
+    "database": "SQL",
+    "interchange": "XML/TEI"
+  },
+  "progress": {
+    "old_testament": {
+      "total_books": 39,
+      "completed": 0,
+      "percentage": 0
+    },
+    "new_testament": {
+      "total_books": 27,
+      "completed": 0,
+      "percentage": 0
+    },
+    "total": {
+      "books": 66,
+      "completed": 0,
+      "percentage": 0
+    }
+  },
+  "copyright": {
+    "translation": "© 2025 Anderson Belem Costa - Todos os direitos reservados",
+    "sources": "Public Domain",
+    "license": "Proprietary"
+  }
+}

@@ -1,0 +1,211 @@
+## Preparo de dados (TSV) — padrão do `mtc_app.py` (arquivo único)
+
+### Formato obrigatório por linha
+O app espera um TSV com estas colunas, nesta ordem (por padrão):
+
+1. `book` (código do livro)
+2. `chapter` (inteiro)
+3. `verse` (inteiro)
+4. `text_raw` (texto original bruto: hebraico / aramaico / grego)
+
+Delimitador padrão: **TAB**.
+
+Modelo:
+```text
+# book<TAB>chapter<TAB>verse<TAB>text_raw
+GEN<TAB>1<TAB>1<TAB>בְּרֵאשִׁית בָּרָא אֱלֹהִים ...
+GEN<TAB>1<TAB>2<TAB>וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ ...
+````
+
+### Códigos de livro (recomendação)
+
+Use códigos curtos e consistentes (ex.: `GEN`, `EXO`, `LEV`, ...).
+O app não valida nomes. Só guarda e reutiliza.
+
+### Ajuste de colunas (se seu TSV for diferente)
+
+Se seu TSV tiver outra ordem (ou colunas extras), use:
+
+* `--bookcol`
+* `--chapcol`
+* `--versecol`
+* `--textcol`
+
+Exemplo (se `text_raw` estiver na coluna 5):
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus he --tsv data/hebrew.tsv --textcol 5
+```
+
+### Ajuste de separador (se não for TAB)
+
+O padrão é TAB. Se for `;` ou `,`, use `--sep`.
+
+Exemplo (`;`):
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus gr --tsv data/greek.csv --sep ";"
+```
+
+### Normalização (importante)
+
+Por padrão, o app cria `text_norm` removendo marcas/acentos:
+
+* Hebraico/aramaico: tende a remover sinais combinantes (marcas/diacríticos).
+* Grego: tende a remover acentuação e normaliza sigma final (ς→σ).
+
+Se você quiser manter marcas/acentos no normalizado, use:
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus he --tsv data/hebrew.tsv --keep-marks
+python mtc_app.py ingest --db bible.db --corpus gr --tsv data/greek.tsv  --keep-marks
+```
+
+Observação: o `text_raw` sempre fica intacto no banco.
+
+---
+
+## Fluxo mínimo (end-to-end) — arquivo único
+
+### 0) Estrutura de pastas esperada (exemplo)
+
+```text
+project/
+  mtc_app.py
+  data/
+    hebrew.tsv
+    greek.tsv
+    aramaic.tsv
+```
+
+### 1) Criar o banco (schema + FTS5)
+
+```bash
+python mtc_app.py init --db bible.db
+```
+
+Saída esperada:
+
+* `OK: db inicializado`
+* arquivo `bible.db` criado no diretório atual
+
+### 2) Importar os textos (um corpus por vez)
+
+Hebraico:
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus he  --tsv data/hebrew.tsv
+```
+
+Grego:
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus gr  --tsv data/greek.tsv
+```
+
+Aramaico:
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus arc --tsv data/aramaic.tsv
+```
+
+O que acontece no `ingest`:
+
+* insere/atualiza `verses`
+* gera `text_norm` via normalização por corpus
+* reconstrói a tabela FTS (`verses_fts`)
+
+Se seu TSV for grande, você pode testar com `--limit`:
+
+```bash
+python mtc_app.py ingest --db bible.db --corpus he --tsv data/hebrew.tsv --limit 2000
+```
+
+### 3) Gerar hashes e assinaturas de similaridade
+
+```bash
+python mtc_app.py index --db bible.db --k 3 --perms 64
+```
+
+O que é gerado por verso:
+
+* `sha256_norm` (HASH_EXATO)
+* `minhash_sig` (MINHASH, `perms=64`)
+* `simhash64` (SIMHASH 64-bit)
+* `k` e `perms` gravados junto (rastreabilidade)
+
+Notas:
+
+* Aumentar `perms` melhora estabilidade do MinHash (custa tempo).
+* `k=3` é padrão bom para eco/fragmento curto.
+
+### 4) Consultar por alvo e imprimir Matriz Belem, AnC
+
+Exemplo:
+
+```bash
+python mtc_app.py query --db bible.db --alvo "sete cabeças" --top 120 --max-pairs 300 --show 30
+```
+
+Parâmetros:
+
+* `--alvo`: texto/número digitado pelo usuário
+* `--top`: quantos versos candidatos via FTS (mais = mais recall; custa tempo)
+* `--max-pairs`: limita o total de comparações entre candidatos (controle de explosão)
+* `--show`: quantas linhas imprimir (tabela markdown)
+
+Saída:
+
+* tabela Markdown no terminal (copiável)
+* cada linha contém:
+
+  * `A_ref`, `B_ref`
+  * categoria (MT/II/EIC)
+  * 0/1/2
+  * evidência mínima (shared_k, minhash, simhash, score)
+  * `HASH_MTC` (string de assinatura do par)
+
+---
+
+## Diagnóstico rápido (quando “não acha nada”)
+
+### 1) Você não rodou `index`
+
+Sintoma: query retorna pouco/nenhum par.
+Solução:
+
+```bash
+python mtc_app.py index --db bible.db --k 3 --perms 64
+```
+
+### 2) `--top` baixo
+
+Sintoma: poucos candidatos iniciais via FTS.
+Solução:
+
+```bash
+python mtc_app.py query --db bible.db --alvo "sete cabeças" --top 500 --max-pairs 800 --show 30
+```
+
+### 3) Alvo não está no texto normalizado
+
+Sintoma: alvo em PT/EN não existe no original, então FTS não encontra.
+Regra do núcleo: sem dicionário PT→(he/gr/arc), a busca é literal no corpus.
+Solução imediata: buscar por termo no idioma original (he/gr/arc) ou transliteração aplicada ao seu TSV.
+
+---
+
+## Observação sobre “alvo em qualquer idioma”
+
+Este arquivo único NÃO traduz automaticamente PT→he/gr/arc.
+Ele busca literal no texto armazenado.
+
+Para “qualquer idioma → originais” (modo completo real), é necessário adicionar (em evolução):
+
+* dicionário local PT/EN → Strong’s/lemmas
+* base tokenizada com lemma/strongs por palavra
+
+---
+
+```
+```

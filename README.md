@@ -10,26 +10,45 @@
 ## Roteiro do Ecossistema
 
 ```text
-Site → Blog → Podcast → Livrinho → Bíblia → Comunidade → exeg.ai
+Site → Blog → Livrinho → Bíblia → exeg.ai
 ```
 
 ---
 
 ## Estrutura do Projeto
 
-| Módulo | Descrição |
-| ------ | --------- |
-| [1 - Site](1%20-%20Site%20aculpaedasovelhas.org/) | Portal principal - porta de entrada |
-| [2 - Blog](2%20-%20Sistema%20de%20Blog%20para%20Publicação%20de%20Artigos%20Internos/) | Artigos revelando códigos bíblicos |
-| [3 - Podcast](3%20-%20Podcasting/) | Conteúdo em áudio para o dia a dia |
-| [4 - Livro](4%20-%20Livro/) | "O Livrinho — A Culpa é das Ovelhas" |
-| [5 - Bíblia](5%20-%20Bíblia%20Belem%20AnC%20-%20Tradução%20Literal%20Rígida/) | Tradução Literal Rígida Belem AnC 2025 |
-| [6 - Comunidade](6%20-%20Comunidade/) | Espaço de acompanhamento coletivo |
-| [7 - exeg.ai](7%20-%20exeg.ai/) | IA de exegese bíblica avançada |
+```text
+aculpaedasovelhas/
+├── apps/                    # Aplicações principais
+│   ├── site/               # Portal aculpaedasovelhas.org
+│   ├── blog/               # Sistema de artigos
+│   ├── biblia/             # API Tradução Belem AnC (junction)
+│   ├── exeg-ai/            # IA de exegese (junction)
+│   ├── podcast/            # Conteúdo em áudio (futuro)
+│   └── comunidade/         # Espaço coletivo (futuro)
+├── content/
+│   └── livro/              # O Livrinho - A Culpa é das Ovelhas
+├── docs/
+│   ├── vendas/             # Material comercial
+│   └── ecossistema/        # Documentação do ecossistema
+├── infra/
+│   └── capacidades/        # Integrações (Cloudflare, 1Password, etc.)
+└── README.md
+```
+
+| Módulo | Path | Status |
+| ------ | ---- | ------ |
+| Site | [apps/site/](apps/site/) | Ativo |
+| Blog | [apps/blog/](apps/blog/) | Ativo |
+| Bíblia | [apps/biblia/](apps/biblia/) | Ativo |
+| exeg.ai | [apps/exeg-ai/](apps/exeg-ai/) | Ativo |
+| Livro | [content/livro/](content/livro/) | Ativo |
+| Podcast | [apps/podcast/](apps/podcast/) | Futuro |
+| Comunidade | [apps/comunidade/](apps/comunidade/) | Futuro |
 
 ---
 
-## Detalhamento
+## Módulos Ativos
 
 ### 1. Site aculpaedasovelhas.org
 
@@ -37,6 +56,7 @@ A base do projeto e os caminhos de acesso. Tudo começa aqui.
 
 - **Tecnologias:** HTML5, CSS3, JavaScript, Cloudflare Pages
 - **Recursos:** Modo Kindle, tema dark/light, centro legal completo
+- **Integra com:** Blog, Livro, exeg.ai
 
 ### 2. Blog
 
@@ -44,9 +64,7 @@ O autor publica artigos inéditos revelando códigos bíblicos ocultos, com apoi
 
 > Porque existem chaves de revelação no próprio texto.
 
-### 3. Podcast
-
-Acompanhe o conteúdo no dia a dia. No trânsito, em casa, na academia. Onde quiser.
+- **Integra com:** Site (publicação), exeg.ai (análise), Bíblia (referências)
 
 ### 4. O Livrinho — A Culpa é das Ovelhas
 
@@ -57,6 +75,8 @@ O livro que abre olhos e ouvidos para a Revelação de Jesus Cristo. Online grat
 - 666 — The Beast Exposed
 - O anticristo revelado
 
+- **Integra com:** Site (leitura online), Bíblia (textos originais)
+
 ### 5. Bíblia Belém An.C 2025
 
 Tradução fiel, literal e rígida, direto do hebraico, aramaico e grego. Sem normalizações. Sem interpretação no texto.
@@ -64,36 +84,62 @@ Tradução fiel, literal e rígida, direto do hebraico, aramaico e grego. Sem no
 **Você lê. E a interpretação é sua.**
 
 - **Fontes:** BHSA, SBLGNT, TR1550, WLC, Nestle 1904
-- **Tecnologias:** Node.js, TypeScript, PostgreSQL, API REST
-
-### 6. Comunidade
-
-Você não caminha sozinho.
+- **Tecnologias:** Node.js, TypeScript, PostgreSQL, API REST (:3001)
+- **Integra com:** exeg.ai (API), Site (leitura), Blog (referências)
 
 ### 7. exeg.ai
 
 No nível avançado, a máquina de exegese do ecossistema. IA especializada em análise bíblica profunda.
 
 - **Recursos:** Busca semântica, detecção de intertextualidade, integração com LLMs
-- **Tecnologias:** Python, FastAPI, FAISS, SentenceTransformers, Ollama
+- **Tecnologias:** Python, FastAPI, FAISS, SentenceTransformers, Ollama (:8000)
+- **Integra com:** Bíblia (consome API), Blog (gera análises), Site (expõe IA)
 
 ---
 
-## Arquitetura de Microserviços
+## Arquitetura de Integração
 
 ```text
-┌─────────────────────────────────────────────────────────────────┐
-│              ECOSSISTEMA "A CULPA É DAS OVELHAS"                │
-├─────────────────────────────────────────────────────────────────┤
-│  [API Tradução Belem AnC] ──► [AI Agent exeg.ai]                │
-│         :3001                        :8000                      │
-│            │                           │                        │
-│            └───────────┬───────────────┘                        │
-│                        ▼                                        │
-│              [Site / Blog / Reader]                             │
-│                   Cloudflare                                    │
-└─────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│                  ECOSSISTEMA "A CULPA É DAS OVELHAS"                    │
+│                       by Belem, Anderson Costa                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│   ┌─────────────────┐         ┌─────────────────┐                       │
+│   │  5 - BÍBLIA     │ ──API──►│  7 - EXEG.AI    │                       │
+│   │  API Tradução   │         │  AI Agent       │                       │
+│   │  :3001          │         │  :8000          │                       │
+│   └────────┬────────┘         └────────┬────────┘                       │
+│            │                           │                                │
+│            │         ┌─────────────────┘                                │
+│            │         │                                                  │
+│            ▼         ▼                                                  │
+│   ┌─────────────────────────────────────────────┐                       │
+│   │              1 - SITE                       │                       │
+│   │         aculpaedasovelhas.org               │                       │
+│   │            Cloudflare Pages                 │                       │
+│   └──────────┬──────────────────┬───────────────┘                       │
+│              │                  │                                       │
+│              ▼                  ▼                                       │
+│   ┌──────────────────┐  ┌──────────────────┐                            │
+│   │   2 - BLOG       │  │   4 - LIVRO      │                            │
+│   │   Artigos        │  │   O Livrinho     │                            │
+│   └──────────────────┘  └──────────────────┘                            │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## Fluxo de Dados
+
+| De | Para | Tipo | Descrição |
+| -- | ---- | ---- | --------- |
+| Bíblia | exeg.ai | HTTP REST | Textos originais, morfologia, tokens |
+| exeg.ai | Blog | Análise | Easter Eggs, intertextualidade |
+| exeg.ai | Site | API | Busca semântica, explicações |
+| Livro | Site | Conteúdo | Capítulos, manifesto |
+| Bíblia | Site | Leitura | Tradução literal para usuário |
 
 ---
 
