@@ -2,7 +2,7 @@ fastapi
 uvicorn
 python-dotenv
 openai
-requests
+requests>=2.32.4
 anthropic
 cohere
 huggingface-hub
