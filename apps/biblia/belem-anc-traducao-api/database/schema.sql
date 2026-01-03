@@ -96,6 +96,28 @@ CREATE INDEX IF NOT EXISTS idx_tokens_normalized ON tokens(normalized);
 CREATE INDEX IF NOT EXISTS idx_tokens_pt_literal ON tokens(pt_literal);
 
 -- ============================================================================
+-- TABELA: verse_translations
+-- Traduções consolidadas por versículo (camada de leitura)
+-- ============================================================================
+CREATE TABLE IF NOT EXISTS verse_translations (
+    id SERIAL PRIMARY KEY,
+    verse_id INTEGER NOT NULL REFERENCES verses(id) ON DELETE CASCADE,
+    layer VARCHAR(10) NOT NULL DEFAULT 'N0',
+    literal_pt TEXT,
+    readable_pt TEXT,
+    translator VARCHAR(100),
+    method VARCHAR(150),
+    rigidity_level VARCHAR(50),
+    source VARCHAR(100),
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE(verse_id, layer)
+);
+
+CREATE INDEX IF NOT EXISTS idx_verse_translations_verse ON verse_translations(verse_id);
+CREATE INDEX IF NOT EXISTS idx_verse_translations_layer ON verse_translations(layer);
+
+-- ============================================================================
 -- TABELA: morphology
 -- Análise morfológica detalhada de cada token
 -- ============================================================================

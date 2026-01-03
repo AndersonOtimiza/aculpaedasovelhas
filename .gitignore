@@ -1,0 +1,17 @@
+# Modelos de ML (muito grandes para GitHub)
+#exeg.ai/models/
+**/models/sentence-transformers/
+
+# Arquivos de cache Python
+**/__pycache__/
+*.pyc
+
+# Banco de dados local
+*.db
+#exeg.ai/database/*.db
+
+# Claude memory (local)
+.claude/memory/
+
+# Arquivos temporários
+nul

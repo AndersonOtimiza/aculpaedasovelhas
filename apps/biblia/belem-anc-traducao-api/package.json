@@ -9,10 +9,12 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "etl:oshb": "ts-node src/etl/import-oshb.ts",
-    "etl:sblgnt": "ts-node src/etl/import-sblgnt.ts",
+    "etl:wlc": "ts-node src/etl/import-wlc.ts",
+    "etl:nestle": "ts-node src/etl/import-nestle.ts",
     "etl:aramaic": "ts-node src/etl/import-bhsa-arm.ts",
-    "etl:all": "npm run etl:oshb && npm run etl:sblgnt && npm run etl:aramaic"
+    "etl:nt": "npm run etl:nestle",
+    "etl:at": "npm run etl:wlc",
+    "etl:all": "npm run etl:wlc && npm run etl:nestle && npm run etl:aramaic"
   },
   "dependencies": {
     "cors": "^2.8.5",

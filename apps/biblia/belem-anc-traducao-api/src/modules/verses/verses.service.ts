@@ -14,6 +14,7 @@ export interface Verse {
 
 export interface VerseWithTokens extends Verse {
   tokens: VerseToken[];
+  translations?: VerseTranslation[];
 }
 
 export interface VerseToken {
@@ -25,6 +26,18 @@ export interface VerseToken {
   lemma?: string | null;
   strong_number?: string | null;
   morph_code?: string | null;
+}
+
+export interface VerseTranslation {
+  layer: string;
+  literal_pt: string | null;
+  readable_pt: string | null;
+  translator?: string | null;
+  method?: string | null;
+  rigidity_level?: string | null;
+  source?: string | null;
+  created_at?: Date;
+  updated_at?: Date;
 }
 
 export async function listVersesByChapter(
@@ -93,9 +106,23 @@ export async function getVerseWithTokens(
 
   const tokenResult = await query(tokenSql, [verseData.id]);
 
+  // Buscar traduções consolidadas por versículo (se existirem)
+  const translationsResult = await query(
+    `
+    SELECT
+      layer, literal_pt, readable_pt, translator, method, rigidity_level, source,
+      created_at, updated_at
+    FROM verse_translations
+    WHERE verse_id = $1
+    ORDER BY layer
+    `,
+    [verseData.id]
+  );
+
   return {
     ...verseData,
     tokens: tokenResult.rows as VerseToken[],
+    translations: translationsResult.rows as VerseTranslation[],
   };
 }
 

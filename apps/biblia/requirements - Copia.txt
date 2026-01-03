@@ -14,6 +14,8 @@ torch
 numpy
 pandas
 
+# Para GPU, use o arquivo requirements.gpu.txt (mantém a versão CPU aqui).
+
 # Testes
 pytest
 

@@ -1,0 +1,27 @@
+2026-01-02 18:07:31,048 [WARNING] Unable to read secrets from 1Password
+Traceback (most recent call last):
+  File "C:\#Projetos\Projeto - O Livrinho\infra\capacidades\Cloudflare\cloudflare.txt", line 246, in _load_from_1password
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+  File "C:\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['op', 'item', 'get', 'Cloudflare_API', '--format', 'json', '--vault', 'OtimizaPro']' returned non-zero exit status 1.
+2026-01-02 18:07:31,049 [ERROR] Authentication details missing; use --token or --api-key/--email, or configure 1Password.
+2026-01-03 08:54:32,931 [WARNING] Unable to read secrets from 1Password
+Traceback (most recent call last):
+  File "C:\#Projetos\Projeto - O Livrinho\infra\capacidades\Cloudflare\cloudflare.txt", line 246, in _load_from_1password
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+  File "C:\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['op', 'item', 'get', 'Cloudflare_API', '--format', 'json', '--vault', 'OtimizaPro']' returned non-zero exit status 1.
+2026-01-03 08:54:32,933 [ERROR] Authentication details missing; use --token or --api-key/--email, or configure 1Password.
+2026-01-03 08:55:12,977 [WARNING] Unable to read secrets from 1Password
+Traceback (most recent call last):
+  File "C:\#Projetos\Projeto - O Livrinho\infra\capacidades\Cloudflare\cloudflare.txt", line 246, in _load_from_1password
+    result = subprocess.run(command, check=True, capture_output=True, text=True)
+  File "C:\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['op', 'item', 'get', 'Cloudflare_API', '--format', 'json', '--vault', 'OtimizaPro']' returned non-zero exit status 1.
+2026-01-03 08:55:12,979 [ERROR] Authentication details missing; use --token or --api-key/--email, or configure 1Password.
