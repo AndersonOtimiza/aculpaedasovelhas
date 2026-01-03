@@ -6,7 +6,7 @@ export const pool = new Pool({
   port: env.db.port,
   user: env.db.user,
   password: env.db.password,
-  database: env.db.database,
+  database: env.db.database
 });
 
 pool.on("error", (err) => {
@@ -14,4 +14,5 @@ pool.on("error", (err) => {
   process.exit(-1);
 });
 
-export const query = (text: string, params?: unknown[]) => pool.query(text, params);
+export const query = (text: string, params?: unknown[]) =>
+  pool.query(text, params);

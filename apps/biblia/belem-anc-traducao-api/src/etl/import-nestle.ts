@@ -17,7 +17,7 @@ const pool = new Pool({
   port: parseInt(process.env.DB_PORT || "5433"), // Porta 5433 para não conflitar
   user: process.env.DB_USER || "postgres",
   password: process.env.DB_PASSWORD || "postgres",
-  database: process.env.DB_NAME || "belem_anc_traducao",
+  database: process.env.DB_NAME || "belem_anc_traducao"
 });
 
 // Mapeamento de nomes de arquivo para códigos do banco
@@ -48,7 +48,7 @@ const FILE_TO_BOOK_CODE: Record<string, string> = {
   "24-2john": "2JN",
   "25-3john": "3JN",
   "26-jude": "JUD",
-  "27-revelation": "REV",
+  "27-revelation": "REV"
 };
 
 interface ParsedVerse {
@@ -75,14 +75,15 @@ function parseNestleXML(xmlContent: string): ParsedVerse[] {
 
   for (const line of lines) {
     // Verifica se há um milestone de versículo
-    const milestoneMatch = /<milestone unit="verse" id="[^.]+\.(\d+)\.(\d+)"/.exec(line);
+    const milestoneMatch =
+      /<milestone unit="verse" id="[^.]+\.(\d+)\.(\d+)"/.exec(line);
     if (milestoneMatch) {
       // Salva versículo anterior se existir
       if (currentVerse > 0 && currentTokens.length > 0) {
         verses.push({
           chapter: currentChapter,
           verse: currentVerse,
-          tokens: [...currentTokens],
+          tokens: [...currentTokens]
         });
       }
 
@@ -104,7 +105,7 @@ function parseNestleXML(xmlContent: string): ParsedVerse[] {
     verses.push({
       chapter: currentChapter,
       verse: currentVerse,
-      tokens: currentTokens,
+      tokens: currentTokens
     });
   }
 
@@ -114,7 +115,7 @@ function parseNestleXML(xmlContent: string): ParsedVerse[] {
 async function getSourceId(): Promise<number> {
   // Usar SBLGNT como fonte (já existe no schema)
   const result = await pool.query(
-    `SELECT id FROM text_sources WHERE code = 'SBLGNT'`
+    "SELECT id FROM text_sources WHERE code = 'SBLGNT'"
   );
 
   if (result.rows.length === 0) {
@@ -131,7 +132,9 @@ async function getSourceId(): Promise<number> {
 }
 
 async function getBookId(code: string): Promise<number | null> {
-  const result = await pool.query(`SELECT id FROM books WHERE code = $1`, [code]);
+  const result = await pool.query("SELECT id FROM books WHERE code = $1", [
+    code
+  ]);
   return result.rows.length > 0 ? result.rows[0].id : null;
 }
 
@@ -202,7 +205,9 @@ async function main() {
   let totalVerses = 0;
   let totalTokens = 0;
 
-  const files = fs.readdirSync(sourceDir).filter((f) => f.endsWith(".xml") && !f.includes("nestle1904.xml"));
+  const files = fs
+    .readdirSync(sourceDir)
+    .filter((f) => f.endsWith(".xml") && !f.includes("nestle1904.xml"));
 
   for (const file of files) {
     const baseName = path.basename(file, ".xml");

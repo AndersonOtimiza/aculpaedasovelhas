@@ -13,17 +13,20 @@ Este glossário documenta as decisões lexicais para termos-chave do Novo Testam
 ## Termos Cristológicos
 
 ### λόγος (logos)
+
 - **Tradução padrão**: "Verbo" (João 1:1)
 - **Contextos gerais**: "palavra", "mensagem"
 - **Nota**: Distinção teológica vs. uso comum
 
 ### χριστός (christos)
+
 - **Tradução**: "Cristo" (transliterado)
 - **Alternativa**: "Ungido" (com nota explicativa)
 
 ### κύριος (kyrios)
+
 - **Tradução**: "Senhor"
-- **Contextos**: 
+- **Contextos**:
   - Divindade: "Senhor"
   - Respeito humano: "senhor" (minúscula)
 
@@ -32,14 +35,17 @@ Este glossário documenta as decisões lexicais para termos-chave do Novo Testam
 ## Termos Soteriológicos
 
 ### πίστις (pistis)
+
 - **Tradução**: "fé"
 - **Campo semântico**: fidelidade, confiança, crença
 
 ### χάρις (charis)
+
 - **Tradução**: "graça"
 - **Nota**: Não confundir com favor humano
 
 ### ἀγάπη (agape)
+
 - **Tradução**: "amor"
 - **Distinção de**: φιλία (philia), ἔρως (eros)
 
@@ -48,10 +54,12 @@ Este glossário documenta as decisões lexicais para termos-chave do Novo Testam
 ## Termos Eclesiológicos
 
 ### ἐκκλησία (ekklesia)
+
 - **Tradução**: "igreja" / "assembleia"
 - **Contexto**: Ajustar conforme uso local ou universal
 
 ### διάκονος (diakonos)
+
 - **Tradução**: "servo" / "diácono"
 - **Nota**: Contextualizar função ministerial
 
@@ -60,10 +68,12 @@ Este glossário documenta as decisões lexicais para termos-chave do Novo Testam
 ## Termos Escatológicos
 
 ### παρουσία (parousia)
+
 - **Tradução**: "vinda" / "presença"
 - **Contexto**: Segunda vinda de Cristo
 
 ### αἰών (aion)
+
 - **Tradução**: "era" / "eternidade"
 - **Nota**: Temporal vs. qualitativo
 

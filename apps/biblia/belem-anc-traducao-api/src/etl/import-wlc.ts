@@ -17,7 +17,7 @@ const pool = new Pool({
   port: parseInt(process.env.DB_PORT || "5433"), // Porta 5433 para não conflitar
   user: process.env.DB_USER || "postgres",
   password: process.env.DB_PASSWORD || "postgres",
-  database: process.env.DB_NAME || "belem_anc_traducao",
+  database: process.env.DB_NAME || "belem_anc_traducao"
 });
 
 // Mapeamento de nomes de arquivo WLC para códigos do banco
@@ -60,7 +60,7 @@ const FILE_TO_BOOK_CODE: Record<string, string> = {
   Zephaniah: "ZEP",
   Haggai: "HAG",
   Zechariah: "ZEC",
-  Malachi: "MAL",
+  Malachi: "MAL"
 };
 
 interface ParsedVerse {
@@ -123,7 +123,7 @@ function parseWLCXML(xmlContent: string): ParsedVerse[] {
         verses.push({
           chapter: chapterNum,
           verse: verseNum,
-          tokens,
+          tokens
         });
       }
     }
@@ -135,7 +135,7 @@ function parseWLCXML(xmlContent: string): ParsedVerse[] {
 async function getSourceId(): Promise<number> {
   // Usar OSHB como fonte
   const result = await pool.query(
-    `SELECT id FROM text_sources WHERE code = 'OSHB'`
+    "SELECT id FROM text_sources WHERE code = 'OSHB'"
   );
 
   if (result.rows.length === 0) {
@@ -152,7 +152,9 @@ async function getSourceId(): Promise<number> {
 }
 
 async function getBookId(code: string): Promise<number | null> {
-  const result = await pool.query(`SELECT id FROM books WHERE code = $1`, [code]);
+  const result = await pool.query("SELECT id FROM books WHERE code = $1", [
+    code
+  ]);
   return result.rows.length > 0 ? result.rows[0].id : null;
 }
 
@@ -228,7 +230,13 @@ async function main() {
   // Filtrar apenas arquivos XML principais (sem .DH)
   const files = fs
     .readdirSync(sourceDir)
-    .filter((f) => f.endsWith(".xml") && !f.includes(".DH.") && !f.includes("Index") && !f.includes("Header"));
+    .filter(
+      (f) =>
+        f.endsWith(".xml") &&
+        !f.includes(".DH.") &&
+        !f.includes("Index") &&
+        !f.includes("Header")
+    );
 
   for (const file of files) {
     const baseName = path.basename(file, ".xml");

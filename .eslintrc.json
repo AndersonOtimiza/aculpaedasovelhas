@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "Stripe": "readonly",
+    "gtag": "readonly",
+    "fbq": "readonly",
+    "hj": "readonly",
+    "dataLayer": "readonly",
+    "OLivrinhoCheckout": "readonly"
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "no-console": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "indent": ["error", 2],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "@typescript-eslint/no-unused-vars": "warn",
+        "no-unused-vars": "off",
+        "no-console": "off"
+      }
+    }
+  ]
+}

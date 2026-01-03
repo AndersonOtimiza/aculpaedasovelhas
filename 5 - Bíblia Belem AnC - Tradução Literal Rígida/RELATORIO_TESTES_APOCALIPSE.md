@@ -7,13 +7,13 @@
 
 ## 📊 Resumo Executivo
 
-| Componente | Status | Detalhes |
-|------------|--------|----------|
-| **RevelationService (Python)** | ✅ PASS | 405 versículos carregados corretamente |
-| **BibleService (integração)** | ✅ PASS | 3 novos métodos funcionais |
-| **API JavaScript** | ✅ PASS | 9 funções criadas (teste manual necessário) |
-| **Página Web** | ⚠️ PENDENTE | Requer teste em navegador |
-| **Dados JSON** | ✅ PASS | 4.45 MB carregado em ambos os sistemas |
+| Componente                     | Status      | Detalhes                                    |
+| ------------------------------ | ----------- | ------------------------------------------- |
+| **RevelationService (Python)** | ✅ PASS     | 405 versículos carregados corretamente      |
+| **BibleService (integração)**  | ✅ PASS     | 3 novos métodos funcionais                  |
+| **API JavaScript**             | ✅ PASS     | 9 funções criadas (teste manual necessário) |
+| **Página Web**                 | ⚠️ PENDENTE | Requer teste em navegador                   |
+| **Dados JSON**                 | ✅ PASS     | 4.45 MB carregado em ambos os sistemas      |
 
 ---
 
@@ -22,6 +22,7 @@
 ### 1. RevelationService - Teste Unitário
 
 **Comando**:
+
 ```bash
 cd "Plataforma de IA"
 .\.venv\Scripts\Activate.ps1
@@ -29,6 +30,7 @@ python src/services/revelation_service.py
 ```
 
 **Resultado**:
+
 ```
 [OK] Apocalipse carregado: 405 versiculos
 
@@ -61,6 +63,7 @@ python src/services/revelation_service.py
 ### 2. BibleService - Teste de Integração
 
 **Comando**:
+
 ```bash
 python test_bible_service.py
 ```
@@ -68,35 +71,43 @@ python test_bible_service.py
 **Resultado**:
 
 #### 2.1. Consulta Simples (sem grego)
+
 ```
 📖 Apocalipse 1:1
-revelação Jesus Cristo o qual dar ele/ela o/a Deus mostrar 
-o/a servo ele/ela o qual é necessário tornar-se em brevidade 
+revelação Jesus Cristo o qual dar ele/ela o/a Deus mostrar
+o/a servo ele/ela o qual é necessário tornar-se em brevidade
 e sinalizar enviar através o/a anjo ele/ela o/a servo ele/ela João
 ```
+
 ✅ **APROVADO** - Retorna tradução TEA corretamente
 
 #### 2.2. Consulta com Grego
+
 ```
 📖 Apocalipse 1:1
 
-🇬🇷 Grego: Ἀποκάλυψις Ἰησοῦ Χριστοῦ, ἣν ἔδωκεν αὐτῷ ὁ θεὸς 
+🇬🇷 Grego: Ἀποκάλυψις Ἰησοῦ Χριστοῦ, ἣν ἔδωκεν αὐτῷ ὁ θεὸς
 δεῖξαι τοῖς δούλοις αὐτοῦ, ἃ δεῖ γενέσθαι ἐν τάχει...
 
 🇧🇷 Tradução TEA: revelação Jesus Cristo o qual dar...
 ```
+
 ✅ **APROVADO** - Exibe grego original + tradução
 
 #### 2.3. Busca Textual
+
 ```
 ❌ Nenhum resultado encontrado para 'dragao'
 ```
+
 ⚠️ **ATENÇÃO**: Busca por "dragão" não retornou resultados porque:
+
 - A palavra em português é "dragão" (com til)
 - A tradução TEA pode usar termo diferente
 - Necessário testar com outras palavras (ex: "Jesus", "nuvem", "céu")
 
 #### 2.4. Análise Interlinear
+
 ```
 📊 Análise Interlinear — Apocalipse 1:1
 Método TEA (Tradução Extremamente Rígida)
@@ -109,6 +120,7 @@ Método TEA (Tradução Extremamente Rígida)
  6. αὐτῷ            [αὐτῷ        ] RP ----DSM- → ele/ela
  7. ὁ               [ὁ           ] RA ----NSM- → o/a
 ```
+
 ✅ **APROVADO** - Análise morfológica palavra-por-palavra funcional
 
 **Status Geral**: ✅ **3/4 APROVADO** (1 alerta em busca)
@@ -118,9 +130,11 @@ Método TEA (Tradução Extremamente Rígida)
 ## 🔧 Correções Aplicadas Durante Testes
 
 ### Bug #1: KeyError 'translation_method'
+
 **Problema**: JSON usa chave `method`, não `translation_method`
 
 **Correção**:
+
 ```python
 # Antes:
 'translation_method': self.revelation_data['translation_method']
@@ -135,9 +149,11 @@ Método TEA (Tradução Extremamente Rígida)
 ---
 
 ### Bug #2: KeyError 'greek_glossary'
+
 **Problema**: JSON não possui objeto `greek_glossary`, apenas metadado `glossary_terms`
 
 **Correção**:
+
 ```python
 # Antes:
 'glossary_terms': len(self.revelation_data['greek_glossary'])
@@ -147,6 +163,7 @@ Método TEA (Tradução Extremamente Rígida)
 ```
 
 **Arquivos Corrigidos**:
+
 - `revelation_service.py` linha 80 (`get_book_info`)
 - `revelation_service.py` linha 295 (`get_statistics`)
 - `revelation_service.py` linha 244 (`get_glossary_entry`)
@@ -156,9 +173,11 @@ Método TEA (Tradução Extremamente Rígida)
 ---
 
 ### Bug #3: KeyError 'original' em words
+
 **Problema**: Alguns versículos podem ter estrutura `words` inconsistente
 
 **Correção**:
+
 ```python
 # Adicionado verificações de segurança:
 if 'words' not in verse:
@@ -175,9 +194,11 @@ if 'original' not in word or 'lemma' not in word:
 ---
 
 ### Bug #4: UnicodeEncodeError (emojis no terminal Windows)
+
 **Problema**: Terminal Windows cp1252 não suporta ✅ emoji
 
 **Correção**:
+
 ```python
 # Antes:
 print(f"✅ Apocalipse carregado: {total} versículos")
@@ -198,6 +219,7 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 **Status**: ✅ **CÓDIGO VALIDADO**
 
 **Funções Criadas** (9 total):
+
 1. ✅ `loadRevelationData()` - Carrega JSON com cache
 2. ✅ `getBookInfo()` - Retorna metadados
 3. ✅ `getChaptersIndex()` - Retorna índice de navegação
@@ -209,9 +231,11 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 9. ✅ `getInterlinear(ch, v)` - Análise morfológica
 
 **Correção Aplicada**:
+
 - ✅ Path bug corrigido: `'../data/'` → `'data/'`
 
 **Teste Manual Necessário**:
+
 1. Abrir `apocalipse-completo.html` em navegador
 2. Verificar carregamento dos capítulos
 3. Testar busca em tempo real
@@ -248,6 +272,7 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 ```
 
 **Campos Validados**:
+
 - ✅ `method` (não `translation_method`)
 - ✅ `glossary_terms` (metadado, não objeto)
 - ✅ `chapters[].verses[].words[]` (estrutura consistente)
@@ -257,25 +282,27 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 
 ## 📈 Métricas de Performance
 
-| Métrica | Valor | Status |
-|---------|-------|--------|
-| **Tempo carregamento JSON** | ~1-2s | ✅ Aceitável |
-| **Cache em memória** | Sim | ✅ Implementado |
-| **Total palavras** | 9,833 | ✅ Validado |
-| **Palavras únicas (grego)** | 1,178 | ✅ Validado |
-| **Média palavras/versículo** | 24.28 | ✅ Validado |
-| **GPU Detection** | NVIDIA RTX 5060 Ti | ✅ Detectada |
-| **Modelo carregado** | paraphrase-multilingual-mpnet | ✅ OK |
-| **FAISS Index** | 7,927 versos NT | ⚠️ Apocalipse não incluído |
+| Métrica                      | Valor                         | Status                     |
+| ---------------------------- | ----------------------------- | -------------------------- |
+| **Tempo carregamento JSON**  | ~1-2s                         | ✅ Aceitável               |
+| **Cache em memória**         | Sim                           | ✅ Implementado            |
+| **Total palavras**           | 9,833                         | ✅ Validado                |
+| **Palavras únicas (grego)**  | 1,178                         | ✅ Validado                |
+| **Média palavras/versículo** | 24.28                         | ✅ Validado                |
+| **GPU Detection**            | NVIDIA RTX 5060 Ti            | ✅ Detectada               |
+| **Modelo carregado**         | paraphrase-multilingual-mpnet | ✅ OK                      |
+| **FAISS Index**              | 7,927 versos NT               | ⚠️ Apocalipse não incluído |
 
 ---
 
 ## ⚠️ Itens Pendentes
 
 ### 1. FAISS Index Integration
+
 **Status**: ❌ NÃO IMPLEMENTADO
 
 **Ação Necessária**:
+
 - Adicionar 405 versículos do Apocalipse ao índice FAISS
 - Atualizar `corpus_processor.py`
 - Re-executar `setup_corpus.py`
@@ -286,9 +313,11 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 ---
 
 ### 2. Teste Frontend em Navegador
+
 **Status**: ⚠️ PENDENTE
 
 **Ação Necessária**:
+
 - Iniciar servidor HTTP local:
   ```bash
   cd "Site - aculpaedasovelhas.com"
@@ -302,11 +331,13 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 ---
 
 ### 3. Busca Textual - Teste Completo
+
 **Status**: ⚠️ PARCIAL
 
 **Observação**: Busca por "dragao" retornou 0 resultados
 
 **Ação Necessária**:
+
 - Testar com palavras conhecidas:
   - "Jesus" (deve aparecer múltiplas vezes)
   - "anjo" / "ἄγγελος"
@@ -322,6 +353,7 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 ## ✅ Checklist Final
 
 ### Backend
+
 - [x] RevelationService criado e funcional
 - [x] BibleService integrado com 3 novos métodos
 - [x] JSON carregado com auto-detecção de path
@@ -332,6 +364,7 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 - [ ] FAISS index atualizado com Apocalipse
 
 ### Frontend
+
 - [x] `apocalipse-completo.html` criado
 - [x] `api/apocalipse.js` criado (9 funções)
 - [x] Path bug corrigido
@@ -341,6 +374,7 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 - [ ] Responsividade mobile testada
 
 ### Documentação
+
 - [x] `INTEGRACAO_APOCALIPSE_COMPLETA.md` criado
 - [x] `GUIA_RAPIDO_APOCALIPSE.md` criado
 - [x] Exemplos de uso (JavaScript e Python)
@@ -354,12 +388,14 @@ print(f"[OK] Apocalipse carregado: {total} versiculos")
 **Status Geral**: ✅ **APROVADO PARA PRODUÇÃO**
 
 **Componentes Funcionais**:
+
 - ✅ Backend Python (RevelationService + BibleService)
 - ✅ API JavaScript (9 funções)
 - ✅ Dados JSON (405 versículos validados)
 - ✅ Página HTML (código criado, teste manual pendente)
 
 **Observações**:
+
 1. **4 bugs críticos** foram identificados e corrigidos durante os testes
 2. Backend está **100% funcional** e testado
 3. Frontend requer **teste em navegador** para validação completa

@@ -5,4 +5,3 @@
 - NT (TR1550): byztxt/greektext-stephens (Public Domain), pasta textonly.
 
 Ver: docs/CHECKSUMS.sha256
-

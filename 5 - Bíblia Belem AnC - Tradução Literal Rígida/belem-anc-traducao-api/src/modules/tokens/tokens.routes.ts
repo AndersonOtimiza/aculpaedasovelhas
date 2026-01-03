@@ -2,7 +2,7 @@ import { Router } from "express";
 import {
   handleListTokens,
   handleGetInterlinear,
-  handleGetMorphology,
+  handleGetMorphology
 } from "./tokens.controller";
 
 const router = Router();

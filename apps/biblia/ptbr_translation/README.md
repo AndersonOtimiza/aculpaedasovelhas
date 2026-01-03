@@ -26,9 +26,11 @@ Este método proprietário desenvolvido por Anderson Belem Costa prioriza:
 ## Fontes Utilizadas
 
 ### Antigo Testamento
+
 - **WLC** (Westminster Leningrad Codex) - Texto massorético completo
 
 ### Novo Testamento
+
 - **Nestle 1904** - Edição crítica grega (fonte primária para Apocalipse)
 - **Westcott-Hort 1881** - Edição crítica grega (consulta)
 - **Textus Receptus 1550** - Texto recebido (consulta)
@@ -75,6 +77,7 @@ ptbr_translation/
 ## Formato dos Arquivos
 
 ### Formato JSON (estruturado)
+
 ```json
 {
   "book": "Genesis",
@@ -92,6 +95,7 @@ ptbr_translation/
 ```
 
 ### Formato Markdown (leitura)
+
 ```markdown
 # Gênesis 1
 
@@ -104,21 +108,25 @@ ptbr_translation/
 ## Princípios de Tradução TEA
 
 ### 1. Literalidade Extrema
+
 - Prioridade absoluta ao texto original
 - Estruturas hebraicas/gregas mantidas quando viável em português
 - Mínima interpretação ou paráfrase
 
 ### 2. Consistência Lexical
+
 - Mesma palavra original = mesma palavra portuguesa (quando possível)
 - Glossário mantido rigorosamente
 - Exceções documentadas
 
 ### 3. Transparência
+
 - Notas de rodapé para decisões complexas
 - Indicação de variantes textuais significativas
 - Referências cruzadas aos códices originais
 
 ### 4. Preservação Estrutural
+
 - Ordem das palavras respeitada quando natural em português
 - Paralelismos poéticos mantidos
 - Estruturas quiásticas preservadas
@@ -128,6 +136,7 @@ ptbr_translation/
 ## Status da Tradução
 
 ### Antigo Testamento
+
 - [ ] Pentateuco (0/5 livros)
 - [ ] Históricos (0/12 livros)
 - [ ] Poéticos (0/5 livros)
@@ -135,6 +144,7 @@ ptbr_translation/
 - [ ] Profetas Menores (0/12 livros)
 
 ### Novo Testamento
+
 - [ ] Evangelhos (0/4 livros)
 - [ ] Atos (0/1 livro)
 - [ ] Epístolas Paulinas (0/13 livros)
@@ -148,15 +158,18 @@ ptbr_translation/
 ## Ferramentas de Suporte
 
 ### Análise Morfológica
+
 - Parser hebraico: Morfologia WLC integrada
 - Parser grego: Análise morfológica NT
 
 ### Verificação de Consistência
+
 - Scripts Python para verificar consistência lexical
 - Concordância automática
 - Detecção de inconsistências
 
 ### Controle de Qualidade
+
 - Revisão por camadas
 - Validação contra códices originais
 - Testes de legibilidade em português
@@ -174,6 +187,7 @@ ptbr_translation/
 ## Contato
 
 Para questões sobre o método de tradução ou colaboração:
+
 - Site: aculpaedasovelhas.com
 - Projeto: O Livrinho
 
@@ -182,6 +196,7 @@ Para questões sobre o método de tradução ou colaboração:
 ## Changelog
 
 ### 2025-12-06
+
 - Estrutura inicial criada
 - Documentação do método estabelecida
 - Pastas organizadas para receber tradução

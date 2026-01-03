@@ -2,10 +2,13 @@ import { Request, Response } from "express";
 import {
   listTokensByVerse,
   getInterlinear,
-  getTokensWithMorphology,
+  getTokensWithMorphology
 } from "./tokens.service";
 
-export async function handleListTokens(req: Request, res: Response): Promise<void> {
+export async function handleListTokens(
+  req: Request,
+  res: Response
+): Promise<void> {
   try {
     const { verseId } = req.params;
     const verseIdNum = parseInt(verseId, 10);
@@ -13,7 +16,7 @@ export async function handleListTokens(req: Request, res: Response): Promise<voi
     if (isNaN(verseIdNum)) {
       res.status(400).json({
         success: false,
-        error: "Invalid verse ID",
+        error: "Invalid verse ID"
       });
       return;
     }
@@ -24,18 +27,21 @@ export async function handleListTokens(req: Request, res: Response): Promise<voi
       success: true,
       verse_id: verseIdNum,
       count: tokens.length,
-      data: tokens,
+      data: tokens
     });
   } catch (error) {
     console.error("Error listing tokens:", error);
     res.status(500).json({
       success: false,
-      error: "Internal server error",
+      error: "Internal server error"
     });
   }
 }
 
-export async function handleGetInterlinear(req: Request, res: Response): Promise<void> {
+export async function handleGetInterlinear(
+  req: Request,
+  res: Response
+): Promise<void> {
   try {
     const { verseId } = req.params;
     const verseIdNum = parseInt(verseId, 10);
@@ -43,7 +49,7 @@ export async function handleGetInterlinear(req: Request, res: Response): Promise
     if (isNaN(verseIdNum)) {
       res.status(400).json({
         success: false,
-        error: "Invalid verse ID",
+        error: "Invalid verse ID"
       });
       return;
     }
@@ -53,7 +59,7 @@ export async function handleGetInterlinear(req: Request, res: Response): Promise
     if (interlinear.length === 0) {
       res.status(404).json({
         success: false,
-        error: `No tokens found for verse ID ${verseId}`,
+        error: `No tokens found for verse ID ${verseId}`
       });
       return;
     }
@@ -62,18 +68,21 @@ export async function handleGetInterlinear(req: Request, res: Response): Promise
       success: true,
       verse_id: verseIdNum,
       count: interlinear.length,
-      data: interlinear,
+      data: interlinear
     });
   } catch (error) {
     console.error("Error getting interlinear:", error);
     res.status(500).json({
       success: false,
-      error: "Internal server error",
+      error: "Internal server error"
     });
   }
 }
 
-export async function handleGetMorphology(req: Request, res: Response): Promise<void> {
+export async function handleGetMorphology(
+  req: Request,
+  res: Response
+): Promise<void> {
   try {
     const { verseId } = req.params;
     const verseIdNum = parseInt(verseId, 10);
@@ -81,7 +90,7 @@ export async function handleGetMorphology(req: Request, res: Response): Promise<
     if (isNaN(verseIdNum)) {
       res.status(400).json({
         success: false,
-        error: "Invalid verse ID",
+        error: "Invalid verse ID"
       });
       return;
     }
@@ -91,7 +100,7 @@ export async function handleGetMorphology(req: Request, res: Response): Promise<
     if (tokens.length === 0) {
       res.status(404).json({
         success: false,
-        error: `No tokens found for verse ID ${verseId}`,
+        error: `No tokens found for verse ID ${verseId}`
       });
       return;
     }
@@ -100,13 +109,13 @@ export async function handleGetMorphology(req: Request, res: Response): Promise<
       success: true,
       verse_id: verseIdNum,
       count: tokens.length,
-      data: tokens,
+      data: tokens
     });
   } catch (error) {
     console.error("Error getting morphology:", error);
     res.status(500).json({
       success: false,
-      error: "Internal server error",
+      error: "Internal server error"
     });
   }
 }

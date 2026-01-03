@@ -65,10 +65,14 @@ function parseETCBCMorphology(morphCode: string): {
     else if (part === "infa" || part === "infc") result.tense = "Infinitive";
 
     // Voz/Stem (específico do Aramaico)
-    if (part === "peal") result.voice = "Peal"; // Equivalente ao Qal hebraico
-    else if (part === "pael") result.voice = "Pael"; // Equivalente ao Piel
-    else if (part === "haphel") result.voice = "Haphel"; // Equivalente ao Hiphil
-    else if (part === "ithpeel") result.voice = "Ithpeel"; // Passivo reflexivo
+    if (part === "peal")
+      result.voice = "Peal"; // Equivalente ao Qal hebraico
+    else if (part === "pael")
+      result.voice = "Pael"; // Equivalente ao Piel
+    else if (part === "haphel")
+      result.voice = "Haphel"; // Equivalente ao Hiphil
+    else if (part === "ithpeel")
+      result.voice = "Ithpeel"; // Passivo reflexivo
     else if (part === "ithpaal") result.voice = "Ithpaal";
     else if (part === "aphel") result.voice = "Aphel";
   }
@@ -113,10 +117,9 @@ async function getOrCreateVerse(
   verse: number
 ): Promise<number | null> {
   // Buscar o livro
-  const bookResult = await pool.query(
-    `SELECT id FROM books WHERE code = $1`,
-    [bookCode]
-  );
+  const bookResult = await pool.query("SELECT id FROM books WHERE code = $1", [
+    bookCode
+  ]);
 
   if (bookResult.rows.length === 0) {
     console.warn(`Book ${bookCode} not found`);
@@ -207,7 +210,9 @@ export async function importAramaic(data: AramaicVerse[]): Promise<void> {
       );
 
       if (!verseId) {
-        console.warn(`Skipping ${verseData.book} ${verseData.chapter}:${verseData.verse}`);
+        console.warn(
+          `Skipping ${verseData.book} ${verseData.chapter}:${verseData.verse}`
+        );
         continue;
       }
 
@@ -219,15 +224,16 @@ export async function importAramaic(data: AramaicVerse[]): Promise<void> {
       versesProcessed++;
 
       if (versesProcessed % 100 === 0) {
-        console.log(`Processed ${versesProcessed} verses, ${tokensProcessed} tokens...`);
+        console.log(
+          `Processed ${versesProcessed} verses, ${tokensProcessed} tokens...`
+        );
       }
     }
 
     await client.query("COMMIT");
-    console.log(`\nImport complete!`);
+    console.log("\nImport complete!");
     console.log(`Total verses: ${versesProcessed}`);
     console.log(`Total tokens: ${tokensProcessed}`);
-
   } catch (error) {
     await client.query("ROLLBACK");
     console.error("Import failed:", error);
@@ -246,13 +252,48 @@ async function runSampleImport() {
       chapter: 2,
       verse: 4,
       tokens: [
-        { text: "וַיְדַבְּר֧וּ", lemma: "דבר", morph: "vb/impf/pael/p3/m/pl", strong: "H1696" },
-        { text: "הַכַּשְׂדִּ֛ים", lemma: "כשדי", morph: "subs/m/pl/emph", strong: "H3779" },
-        { text: "לְמַלְכָּ֖א", lemma: "מלך", morph: "subs/m/sg/emph", strong: "H4430" },
-        { text: "אֲרָמִ֑ית", lemma: "ארמית", morph: "subs/f/sg/abs", strong: "H762" },
-        { text: "מַלְכָּ֣א", lemma: "מלך", morph: "subs/m/sg/emph", strong: "H4430" },
-        { text: "לְעָלְמִ֣ין", lemma: "עלם", morph: "subs/m/pl/abs", strong: "H5957" },
-        { text: "חֱיִ֔י", lemma: "חיה", morph: "vb/impv/peal/p2/m/sg", strong: "H2418" },
+        {
+          text: "וַיְדַבְּר֧וּ",
+          lemma: "דבר",
+          morph: "vb/impf/pael/p3/m/pl",
+          strong: "H1696"
+        },
+        {
+          text: "הַכַּשְׂדִּ֛ים",
+          lemma: "כשדי",
+          morph: "subs/m/pl/emph",
+          strong: "H3779"
+        },
+        {
+          text: "לְמַלְכָּ֖א",
+          lemma: "מלך",
+          morph: "subs/m/sg/emph",
+          strong: "H4430"
+        },
+        {
+          text: "אֲרָמִ֑ית",
+          lemma: "ארמית",
+          morph: "subs/f/sg/abs",
+          strong: "H762"
+        },
+        {
+          text: "מַלְכָּ֣א",
+          lemma: "מלך",
+          morph: "subs/m/sg/emph",
+          strong: "H4430"
+        },
+        {
+          text: "לְעָלְמִ֣ין",
+          lemma: "עלם",
+          morph: "subs/m/pl/abs",
+          strong: "H5957"
+        },
+        {
+          text: "חֱיִ֔י",
+          lemma: "חיה",
+          morph: "vb/impv/peal/p2/m/sg",
+          strong: "H2418"
+        }
       ]
     }
   ];

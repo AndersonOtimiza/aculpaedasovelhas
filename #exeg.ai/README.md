@@ -26,24 +26,24 @@ O **exeg.ai** é o motor de inteligência artificial do ecossistema "A Culpa é 
 
 ### Planos
 
-| Plano | Preço | Tokens/mês | BYOK | Descrição |
-|-------|-------|------------|------|-----------|
-| **Free** | Grátis | 10.000 | ✅ | Para testar |
-| **Pay-as-you-go** | Grátis | Ilimitado* | ✅ | Pague só o que usar |
-| **Starter** | R$ 29,90 | 100.000 | ✅ | Para uso pessoal |
-| **Pro** | R$ 99,90 | 500.000 | ✅ | Para pesquisadores |
-| **Enterprise** | Sob consulta | Ilimitado | ✅ | Com suporte dedicado |
+| Plano             | Preço        | Tokens/mês  | BYOK | Descrição            |
+| ----------------- | ------------ | ----------- | ---- | -------------------- |
+| **Free**          | Grátis       | 10.000      | ✅   | Para testar          |
+| **Pay-as-you-go** | Grátis       | Ilimitado\* | ✅   | Pague só o que usar  |
+| **Starter**       | R$ 29,90     | 100.000     | ✅   | Para uso pessoal     |
+| **Pro**           | R$ 99,90     | 500.000     | ✅   | Para pesquisadores   |
+| **Enterprise**    | Sob consulta | Ilimitado   | ✅   | Com suporte dedicado |
 
-*Pay-as-you-go: Compre créditos avulsos, sem mensalidade.
+\*Pay-as-you-go: Compre créditos avulsos, sem mensalidade.
 
 ### Pacotes de Créditos (Compra Avulsa)
 
-| Pacote | Preço | Créditos | Bônus | Total |
-|--------|-------|----------|-------|-------|
-| **Pequeno** | R$ 9,90 | 50.000 | - | 50.000 |
-| **Médio** | R$ 29,90 | 200.000 | +10% | 220.000 |
-| **Grande** | R$ 59,90 | 500.000 | +20% | 600.000 |
-| **Mega** | R$ 99,90 | 1.000.000 | +30% | 1.300.000 |
+| Pacote      | Preço    | Créditos  | Bônus | Total     |
+| ----------- | -------- | --------- | ----- | --------- |
+| **Pequeno** | R$ 9,90  | 50.000    | -     | 50.000    |
+| **Médio**   | R$ 29,90 | 200.000   | +10%  | 220.000   |
+| **Grande**  | R$ 59,90 | 500.000   | +20%  | 600.000   |
+| **Mega**    | R$ 99,90 | 1.000.000 | +30%  | 1.300.000 |
 
 **BYOK (Bring Your Own Key)**: Disponível em **todos os planos**! Use suas próprias API keys de OpenAI/Anthropic.
 
@@ -52,21 +52,23 @@ O **exeg.ai** é o motor de inteligência artificial do ecossistema "A Culpa é 
 Além do Stripe, oferecemos pagamento via **PIX** através da **Otimiza Pagamentos**.
 
 **Sobre a Otimiza:**
+
 > A **OtimizaPro** é uma WorkTech brasileira especializada em benefícios e pagamentos corporativos. Pioneira na criação da Gestão Inteligente de Vale-Transporte, economiza até 40% para os clientes. Localizada no Cubo Itaú, Vila Olímpia, São Paulo.
 
 **Fluxo de Pagamento (Modelo Binance):**
+
 1. Gere o QR Code PIX no sistema
 2. Faça o pagamento no seu banco
 3. Envie o comprovante via WhatsApp: **+55 21 99448-7472**
 4. A **ANA** (IA da Otimiza) valida automaticamente
 5. Créditos carregados em até 5 minutos
 
-| Endpoint | Método | Descrição |
-|----------|--------|-----------|
-| `/billing/pix/create` | POST | Gerar QR Code PIX |
-| `/billing/pix/status/{id}` | GET | Status do pagamento |
-| `/billing/pix/history` | GET | Histórico PIX |
-| `/billing/pix/info` | GET | Info da Otimiza |
+| Endpoint                   | Método | Descrição           |
+| -------------------------- | ------ | ------------------- |
+| `/billing/pix/create`      | POST   | Gerar QR Code PIX   |
+| `/billing/pix/status/{id}` | GET    | Status do pagamento |
+| `/billing/pix/history`     | GET    | Histórico PIX       |
+| `/billing/pix/info`        | GET    | Info da Otimiza     |
 
 ---
 
@@ -74,40 +76,41 @@ Além do Stripe, oferecemos pagamento via **PIX** através da **Otimiza Pagament
 
 ### Core
 
-| Endpoint | Método | Descrição |
-|----------|--------|-----------|
-| `/` | GET | Informações do serviço |
-| `/health` | GET | Status de todos os componentes |
-| `/ask` | POST | Query direta ao LLM |
-| `/find-similar` | POST | Busca semântica FAISS |
-| `/explain-links` | POST | Intertextualidade + explicação LLM |
+| Endpoint         | Método | Descrição                          |
+| ---------------- | ------ | ---------------------------------- |
+| `/`              | GET    | Informações do serviço             |
+| `/health`        | GET    | Status de todos os componentes     |
+| `/ask`           | POST   | Query direta ao LLM                |
+| `/find-similar`  | POST   | Busca semântica FAISS              |
+| `/explain-links` | POST   | Intertextualidade + explicação LLM |
 
 ### Autenticação
 
-| Endpoint | Método | Descrição |
-|----------|--------|-----------|
-| `/auth/register` | POST | Registro de usuário |
-| `/auth/login` | POST | Login (retorna JWT) |
-| `/auth/refresh` | POST | Renovar access token |
-| `/auth/me` | GET | Dados do usuário atual |
+| Endpoint         | Método | Descrição              |
+| ---------------- | ------ | ---------------------- |
+| `/auth/register` | POST   | Registro de usuário    |
+| `/auth/login`    | POST   | Login (retorna JWT)    |
+| `/auth/refresh`  | POST   | Renovar access token   |
+| `/auth/me`       | GET    | Dados do usuário atual |
 
 ### Billing
 
-| Endpoint | Método | Descrição |
-|----------|--------|-----------|
-| `/billing/credits` | GET | Saldo de créditos |
-| `/billing/usage` | GET | Histórico de uso |
-| `/billing/plans` | GET | Planos disponíveis |
-| `/billing/packages` | GET | Pacotes de créditos (compra avulsa) |
-| `/billing/subscribe` | POST | Criar assinatura (Stripe) |
-| `/billing/purchase-credits` | POST | Comprar pacote de créditos |
-| `/billing/estimate` | GET | Estimar custo em BRL |
-| `/billing/cancel` | POST | Cancelar assinatura |
-| `/billing/portal` | GET | Portal Stripe |
+| Endpoint                    | Método | Descrição                           |
+| --------------------------- | ------ | ----------------------------------- |
+| `/billing/credits`          | GET    | Saldo de créditos                   |
+| `/billing/usage`            | GET    | Histórico de uso                    |
+| `/billing/plans`            | GET    | Planos disponíveis                  |
+| `/billing/packages`         | GET    | Pacotes de créditos (compra avulsa) |
+| `/billing/subscribe`        | POST   | Criar assinatura (Stripe)           |
+| `/billing/purchase-credits` | POST   | Comprar pacote de créditos          |
+| `/billing/estimate`         | GET    | Estimar custo em BRL                |
+| `/billing/cancel`           | POST   | Cancelar assinatura                 |
+| `/billing/portal`           | GET    | Portal Stripe                       |
 
 ### Exemplos
 
 **Busca Semântica:**
+
 ```bash
 curl -X POST http://localhost:8000/find-similar \
   -H "Content-Type: application/json" \
@@ -115,6 +118,7 @@ curl -X POST http://localhost:8000/find-similar \
 ```
 
 **Query ao LLM:**
+
 ```bash
 curl -X POST http://localhost:8000/ask \
   -H "Content-Type: application/json" \
@@ -122,6 +126,7 @@ curl -X POST http://localhost:8000/ask \
 ```
 
 **Conexões Intertextuais:**
+
 ```bash
 curl -X POST http://localhost:8000/explain-links \
   -H "Content-Type: application/json" \
@@ -142,6 +147,7 @@ curl -X POST http://localhost:8000/explain-links \
 ### Passos
 
 1. **Instalar dependências:**
+
 ```bash
 cd "#exeg.ai"
 
@@ -154,22 +160,26 @@ conda install -c pytorch faiss-gpu
 ```
 
 2. **Configurar ambiente:**
+
 ```bash
 cp .env.example .env
 # Edite .env conforme necessário
 ```
 
 3. **Construir índice FAISS:**
+
 ```bash
 python -m scripts.build_faiss_index
 ```
 
 4. **Iniciar servidor:**
+
 ```bash
 python -m src.main
 ```
 
 5. **Acessar documentação:**
+
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
 
@@ -296,20 +306,20 @@ EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
 
 ## Stack Tecnológico
 
-| Componente | Tecnologia |
-|------------|------------|
-| Framework | FastAPI |
-| Embeddings | SentenceTransformers |
-| Busca Vetorial | FAISS (GPU) |
-| LLM Local | Ollama (qwen3:4b) |
-| LLM Cloud | OpenAI, Anthropic |
-| HTTP Client | httpx (async) |
-| Validação | Pydantic v2 |
-| Autenticação | JWT (python-jose) |
-| Banco de Dados | SQLite / PostgreSQL |
-| ORM | SQLAlchemy 2.0 |
-| Pagamentos | Stripe |
-| Hash Senhas | bcrypt (passlib) |
+| Componente     | Tecnologia           |
+| -------------- | -------------------- |
+| Framework      | FastAPI              |
+| Embeddings     | SentenceTransformers |
+| Busca Vetorial | FAISS (GPU)          |
+| LLM Local      | Ollama (qwen3:4b)    |
+| LLM Cloud      | OpenAI, Anthropic    |
+| HTTP Client    | httpx (async)        |
+| Validação      | Pydantic v2          |
+| Autenticação   | JWT (python-jose)    |
+| Banco de Dados | SQLite / PostgreSQL  |
+| ORM            | SQLAlchemy 2.0       |
+| Pagamentos     | Stripe               |
+| Hash Senhas    | bcrypt (passlib)     |
 
 ---
 
@@ -334,4 +344,4 @@ EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
 
 ---
 
-*Última atualização: 2026-01-03*
+_Última atualização: 2026-01-03_

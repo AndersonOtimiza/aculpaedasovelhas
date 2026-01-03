@@ -20,14 +20,15 @@ app.get("/", (req, res) => {
     service: "API Tradução Bíblica Literal Rígida Belem AnC",
     version: "1.0.0",
     author: "Belem, Anderson Costa",
-    description: "API para acesso aos textos bíblicos originais (Hebraico, Aramaico, Grego) com tradução literal PT-BR",
+    description:
+      "API para acesso aos textos bíblicos originais (Hebraico, Aramaico, Grego) com tradução literal PT-BR",
     endpoints: {
       health: "GET /health",
       books: "GET /api/v1/books",
       verses: "GET /api/v1/verses/:book/:chapter",
       tokens: "GET /api/v1/tokens/:verseId",
       glosses: "GET /api/v1/glosses/verse/:verseId",
-      search: "GET /api/v1/verses/search?q=termo",
+      search: "GET /api/v1/verses/search?q=termo"
     },
     documentation: {
       layers: {
@@ -36,14 +37,14 @@ app.get("/", (req, res) => {
         N2: "Marcações morfológicas",
         N3: "Reordenação de leitura",
         N4: "Expansão de elipses",
-        N5: "Alternativas lexicais",
+        N5: "Alternativas lexicais"
       },
       scripts: {
         HE: "Hebraico",
         ARM: "Aramaico",
-        GRC: "Grego",
-      },
-    },
+        GRC: "Grego"
+      }
+    }
   });
 });
 
@@ -59,7 +60,7 @@ app.use((req, res) => {
   res.status(404).json({
     success: false,
     error: "Endpoint not found",
-    path: req.path,
+    path: req.path
   });
 });
 

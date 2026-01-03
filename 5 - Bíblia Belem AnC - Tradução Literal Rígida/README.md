@@ -39,16 +39,19 @@ Plataforma base para um sistema de IA especializado em estudos bíblicos a parti
 Ollama roda como servico externo; nao e pacote Python.
 
 Instalacao (Windows):
+
 ```bash
 winget install --id Ollama.Ollama -e
 ```
 
 Iniciar servico (se nao estiver rodando):
+
 ```bash
 ollama serve
 ```
 
 Se o modelo nao estiver baixado, baixe e teste (padrao recomendado):
+
 ```bash
 ollama pull qwen3:4b
 ollama run qwen3:4b "teste rapido"
@@ -100,28 +103,35 @@ GET http://localhost:3000/health
 ## Endpoints da API
 
 ### Health Check
+
 - `GET /health` - Verifica status do servidor
 
 ### Books
+
 - `GET /books` - Lista todos os livros
 
 ### Verses
+
 - `GET /verses/:bookId/:chapter` - Lista versículos de um capítulo (bookId é numérico)
 
 ### Tokens
+
 - `GET /tokens/:verseId` - Lista tokens de um versículo (com opcional ?sourceId=N)
 
 ### Manuscripts
+
 - `GET /manuscripts` - Lista todos os manuscritos
 - `GET /manuscripts/:bookId/:chapter/:verse` - Lista imagens de manuscritos para um versículo específico
 
 ## Próximos Passos
 
 ### Implementar ETL de:
+
 - OSHB + WLC para o AT (Antigo Testamento)
 - SBLGNT + MorphGNT para o NT (Novo Testamento)
 
 ### Adicionar endpoints de busca avançada:
+
 - Por lemma
 - Por morfologia
 - Por alinhamento entre versões (TM vs LXX vs NT)

@@ -1,7 +1,7 @@
 import { Router } from "express";
 import {
   handleGetGlossesByToken,
-  handleGetGlossesByVerse,
+  handleGetGlossesByVerse
 } from "./glosses.controller";
 
 const router = Router();

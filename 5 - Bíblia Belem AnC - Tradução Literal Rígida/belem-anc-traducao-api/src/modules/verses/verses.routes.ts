@@ -2,7 +2,7 @@ import { Router } from "express";
 import {
   handleListVerses,
   handleGetVerse,
-  handleSearchVerses,
+  handleSearchVerses
 } from "./verses.controller";
 
 const router = Router();

@@ -44,18 +44,18 @@ docker-compose up -d
 
 ## Endpoints
 
-| Método | Endpoint | Descrição |
-|--------|----------|-----------|
-| GET | `/health` | Health check |
-| GET | `/api/v1/books` | Lista livros bíblicos |
-| GET | `/api/v1/books/:code` | Detalhes de um livro |
-| GET | `/api/v1/verses/:book/:chapter` | Versículos de um capítulo |
-| GET | `/api/v1/verses/:book/:chapter/:verse` | Versículo com tokens |
-| GET | `/api/v1/verses/search?q=termo` | Busca textual |
-| GET | `/api/v1/tokens/:verseId` | Tokens de um versículo |
-| GET | `/api/v1/tokens/:verseId/interlinear` | Visão interlinear |
-| GET | `/api/v1/tokens/:verseId/morphology` | Análise morfológica |
-| GET | `/api/v1/glosses/verse/:verseId` | Glosses/camadas de apoio |
+| Método | Endpoint                               | Descrição                 |
+| ------ | -------------------------------------- | ------------------------- |
+| GET    | `/health`                              | Health check              |
+| GET    | `/api/v1/books`                        | Lista livros bíblicos     |
+| GET    | `/api/v1/books/:code`                  | Detalhes de um livro      |
+| GET    | `/api/v1/verses/:book/:chapter`        | Versículos de um capítulo |
+| GET    | `/api/v1/verses/:book/:chapter/:verse` | Versículo com tokens      |
+| GET    | `/api/v1/verses/search?q=termo`        | Busca textual             |
+| GET    | `/api/v1/tokens/:verseId`              | Tokens de um versículo    |
+| GET    | `/api/v1/tokens/:verseId/interlinear`  | Visão interlinear         |
+| GET    | `/api/v1/tokens/:verseId/morphology`   | Análise morfológica       |
+| GET    | `/api/v1/glosses/verse/:verseId`       | Glosses/camadas de apoio  |
 
 ### Parâmetros de Query
 
@@ -66,14 +66,14 @@ docker-compose up -d
 
 ## Camadas de Normalização (Camada B)
 
-| Camada | Descrição |
-|--------|-----------|
-| N0 | Texto literal (padrão) |
-| N1 | Glossário mínimo |
-| N2 | Marcações morfológicas |
-| N3 | Reordenação de leitura |
-| N4 | Expansão de elipses |
-| N5 | Alternativas lexicais |
+| Camada | Descrição              |
+| ------ | ---------------------- |
+| N0     | Texto literal (padrão) |
+| N1     | Glossário mínimo       |
+| N2     | Marcações morfológicas |
+| N3     | Reordenação de leitura |
+| N4     | Expansão de elipses    |
+| N5     | Alternativas lexicais  |
 
 ## ETL (Importação de Dados)
 

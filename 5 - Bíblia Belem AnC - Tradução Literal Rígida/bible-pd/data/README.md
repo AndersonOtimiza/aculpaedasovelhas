@@ -10,28 +10,33 @@
 ## Passo a Passo
 
 ### 1. Download do Evangelho de João
+
 ```powershell
 # Executar no terminal PowerShell
 .\scripts\download-john.ps1
 ```
 
 Este script:
+
 - Baixa o arquivo `43-JHN.txt` do repositório SBLGNT
 - Salva em `data/sblgnt/`
 - Arquivo contém texto grego com análise morfológica
 
 ### 2. Converter para JSON
+
 ```powershell
 .\scripts\convert-sblgnt-to-json.ps1
 ```
 
 Este script:
+
 - Lê o arquivo `43-JHN.txt`
 - Parse do formato SBLGNT (Referência TAB Texto TAB Parsing)
 - Gera arquivo `john.json` estruturado
 - Formato: array de versículos com tokens
 
 ### 3. Importar para o Banco de Dados
+
 ```bash
 # Garantir que o banco está rodando
 createdb biblia_codices_ai  # Se ainda não criou
@@ -43,6 +48,7 @@ npx ts-node src/etl/import-john.ts
 ```
 
 Este script:
+
 - Lê `john.json`
 - Insere versículos na tabela `verses`
 - Insere tokens na tabela `tokens`
@@ -52,6 +58,7 @@ Este script:
 ## Estrutura do Arquivo SBLGNT
 
 Formato original:
+
 ```
 430101	Ἐν	P-
 430101	ἀρχῇ	N-DSF
@@ -62,6 +69,7 @@ Formato original:
 ```
 
 Formato JSON gerado:
+
 ```json
 [
   {
@@ -82,24 +90,28 @@ Formato JSON gerado:
 Após importação, testar os endpoints:
 
 ### Listar livros (incluindo João)
+
 ```bash
 curl http://localhost:3000/books
 # Procurar por: {"id": 5, "code": "JHN", ...}
 ```
 
 ### Listar versículos de João 1
+
 ```bash
 curl http://localhost:3000/verses/5/1
 # Retorna todos os versículos do capítulo 1
 ```
 
 ### Ver tokens do primeiro versículo
+
 ```bash
 # Pegar ID do versículo da query anterior
 curl http://localhost:3000/tokens/[ID_DO_VERSICULO]
 ```
 
 ### Buscar por palavra específica (exemplo: λόγος - logos)
+
 ```bash
 # Quando implementado endpoint de busca
 curl "http://localhost:3000/tokens/search?text=λόγος"
@@ -108,6 +120,7 @@ curl "http://localhost:3000/tokens/search?text=λόγος"
 ## Formato dos Códigos Morfológicos
 
 SBLGNT usa códigos Robinson:
+
 - `N-NSM` = Noun, Nominative, Singular, Masculine
 - `V-IAI-3S` = Verb, Imperfect, Active, Indicative, 3rd person, Singular
 - `P-` = Preposition
@@ -132,22 +145,27 @@ SBLGNT usa códigos Robinson:
 ## Troubleshooting
 
 ### Erro ao baixar
+
 - Verificar conexão com internet
 - GitHub pode estar temporariamente indisponível
 - Tentar novamente após alguns minutos
 
 ### Erro na conversão
+
 - Verificar encoding do arquivo (UTF-8)
 - Arquivo pode estar corrompido, baixar novamente
 
 ### Erro na importação
+
 - Verificar se banco de dados está rodando
 - Confirmar que schema.sql foi executado
 - Verificar credenciais no .env
 - Garantir que livro "JHN" existe na tabela books
 
 ### Livro não encontrado
+
 Se João não estiver na tabela books, adicionar:
+
 ```sql
 INSERT INTO books (canon_order, code, name_original, name_pt, testament, trad_group)
 VALUES (43, 'JHN', 'Κατὰ Ἰωάννην', 'João', 'NT', 'GRC_NT')
@@ -157,6 +175,7 @@ ON CONFLICT (code) DO NOTHING;
 ## Licença
 
 Os dados do SBLGNT são licenciados sob CC BY 4.0:
+
 - Uso livre para qualquer propósito
 - Atribuição requerida
 - Fonte: SBLGNT © 2010 Logos Bible Software / SBL

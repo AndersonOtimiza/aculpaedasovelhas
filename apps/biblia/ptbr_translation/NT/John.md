@@ -23,27 +23,28 @@ Em princípio era o Verbo, e o Verbo era em direção a o Deus, e Deus era o Ver
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Ἐν | ἐν | PREP | Em | Preposição: em, dentro de |
-| 2 | ἀρχῇ | ἀρχή | N-DSF | princípio | Substantivo dativo singular feminino: origem, começo |
-| 3 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 4 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 5 | λόγος | λόγος | N-NSM | Verbo | Substantivo nominativo singular masculino: palavra, razão, discurso |
-| 6 | καὶ | καί | CONJ | e | Conjunção: e, também |
-| 7 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 8 | λόγος | λόγος | N-NSM | Verbo | Substantivo nominativo singular masculino |
-| 9 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 10 | πρὸς | πρός | PREP | em-direção-a | Preposição + acusativo: em direção a, junto a, com |
-| 11 | τὸν | ὁ | T-ASM | o | Artigo definido acusativo singular masculino |
-| 12 | θεόν | θεός | N-ASM | Deus | Substantivo acusativo singular masculino |
-| 13 | καὶ | καί | CONJ | e | Conjunção |
-| 14 | θεὸς | θεός | N-NSM | Deus | Substantivo nominativo singular masculino (sem artigo!) |
-| 15 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 16 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 17 | λόγος | λόγος | N-NSM | Verbo | Substantivo nominativo singular masculino |
+| Pos | Grego | Lema  | Morfologia | Tradução     | Notas                                                               |
+| --- | ----- | ----- | ---------- | ------------ | ------------------------------------------------------------------- |
+| 1   | Ἐν    | ἐν    | PREP       | Em           | Preposição: em, dentro de                                           |
+| 2   | ἀρχῇ  | ἀρχή  | N-DSF      | princípio    | Substantivo dativo singular feminino: origem, começo                |
+| 3   | ἦν    | εἰμί  | V-IAI-3S   | era          | Verbo imperfeito ativo indicativo 3ª pessoa singular                |
+| 4   | ὁ     | ὁ     | T-NSM      | o            | Artigo definido nominativo singular masculino                       |
+| 5   | λόγος | λόγος | N-NSM      | Verbo        | Substantivo nominativo singular masculino: palavra, razão, discurso |
+| 6   | καὶ   | καί   | CONJ       | e            | Conjunção: e, também                                                |
+| 7   | ὁ     | ὁ     | T-NSM      | o            | Artigo definido nominativo singular masculino                       |
+| 8   | λόγος | λόγος | N-NSM      | Verbo        | Substantivo nominativo singular masculino                           |
+| 9   | ἦν    | εἰμί  | V-IAI-3S   | era          | Verbo imperfeito ativo indicativo 3ª pessoa singular                |
+| 10  | πρὸς  | πρός  | PREP       | em-direção-a | Preposição + acusativo: em direção a, junto a, com                  |
+| 11  | τὸν   | ὁ     | T-ASM      | o            | Artigo definido acusativo singular masculino                        |
+| 12  | θεόν  | θεός  | N-ASM      | Deus         | Substantivo acusativo singular masculino                            |
+| 13  | καὶ   | καί   | CONJ       | e            | Conjunção                                                           |
+| 14  | θεὸς  | θεός  | N-NSM      | Deus         | Substantivo nominativo singular masculino (sem artigo!)             |
+| 15  | ἦν    | εἰμί  | V-IAI-3S   | era          | Verbo imperfeito ativo indicativo 3ª pessoa singular                |
+| 16  | ὁ     | ὁ     | T-NSM      | o            | Artigo definido nominativo singular masculino                       |
+| 17  | λόγος | λόγος | N-NSM      | Verbo        | Substantivo nominativo singular masculino                           |
 
 **Notas Críticas:**
+
 - **λόγος (logos)**: Termo complexo que significa "palavra", "razão", "discurso", "verbo". Mantido como "Verbo" pela tradição teológica.
 - **πρὸς τὸν θεόν**: Literalmente "em direção a o Deus", indicando movimento ou relacionamento íntimo.
 - **θεὸς ἦν ὁ λόγος**: Note que "θεὸς" (Deus) aparece SEM artigo definido, enquanto "ὁ λόγος" (o Verbo) TEM artigo. Isso é significativo gramaticalmente.
@@ -63,17 +64,18 @@ Este era em princípio em direção a o Deus.
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Οὗτος | οὗτος | D-NSM | Este | Pronome demonstrativo nominativo singular masculino |
-| 2 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 3 | ἐν | ἐν | PREP | em | Preposição |
-| 4 | ἀρχῇ | ἀρχή | N-DSF | princípio | Substantivo dativo singular feminino |
-| 5 | πρὸς | πρός | PREP | em-direção-a | Preposição + acusativo |
-| 6 | τὸν | ὁ | T-ASM | o | Artigo definido acusativo singular masculino |
-| 7 | θεόν | θεός | N-ASM | Deus | Substantivo acusativo singular masculino |
+| Pos | Grego | Lema  | Morfologia | Tradução     | Notas                                                |
+| --- | ----- | ----- | ---------- | ------------ | ---------------------------------------------------- |
+| 1   | Οὗτος | οὗτος | D-NSM      | Este         | Pronome demonstrativo nominativo singular masculino  |
+| 2   | ἦν    | εἰμί  | V-IAI-3S   | era          | Verbo imperfeito ativo indicativo 3ª pessoa singular |
+| 3   | ἐν    | ἐν    | PREP       | em           | Preposição                                           |
+| 4   | ἀρχῇ  | ἀρχή  | N-DSF      | princípio    | Substantivo dativo singular feminino                 |
+| 5   | πρὸς  | πρός  | PREP       | em-direção-a | Preposição + acusativo                               |
+| 6   | τὸν   | ὁ     | T-ASM      | o            | Artigo definido acusativo singular masculino         |
+| 7   | θεόν  | θεός  | N-ASM      | Deus         | Substantivo acusativo singular masculino             |
 
 **Notas Críticas:**
+
 - **Οὗτος (houtos)**: Pronome demonstrativo enfático referindo-se ao Verbo (λόγος).
 - Reafirma a preexistência eterna do Verbo junto a Deus.
 
@@ -92,22 +94,23 @@ Todas as coisas vieram a ser através dele, e sem ele não veio a ser nem sequer
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Πάντα | πᾶς | A-NPN | Todas-as-coisas | Adjetivo nominativo plural neutro: todas, cada |
-| 2 | δι' | διά | PREP | através | Preposição + genitivo: através de, por meio de |
-| 3 | αὐτοῦ | αὐτός | P-GSM | dele | Pronome pessoal genitivo singular masculino |
-| 4 | ἐγένετο | γίνομαι | V-2ADI-3S | vieram-a-ser | Verbo aoristo depoente indicativo 3ª pessoa singular |
-| 5 | καὶ | καί | CONJ | e | Conjunção |
-| 6 | χωρὶς | χωρίς | PREP | sem | Preposição + genitivo: sem, à parte de |
-| 7 | αὐτοῦ | αὐτός | P-GSM | ele | Pronome pessoal genitivo singular masculino |
-| 8 | ἐγένετο | γίνομαι | V-2ADI-3S | veio-a-ser | Verbo aoristo depoente indicativo 3ª pessoa singular |
-| 9 | οὐδὲ | οὐδέ | CONJ-N | nem-sequer | Conjunção negativa enfática |
-| 10 | ἕν | εἷς | A-NSN | uma-coisa | Numeral cardinal nominativo singular neutro |
-| 11 | ὃ | ὅς | R-NSN | a-qual | Pronome relativo nominativo singular neutro |
-| 12 | γέγονεν | γίνομαι | V-2RAI-3S | tem-vindo-a-ser | Verbo perfeito ativo indicativo 3ª pessoa singular |
+| Pos | Grego   | Lema    | Morfologia | Tradução        | Notas                                                |
+| --- | ------- | ------- | ---------- | --------------- | ---------------------------------------------------- |
+| 1   | Πάντα   | πᾶς     | A-NPN      | Todas-as-coisas | Adjetivo nominativo plural neutro: todas, cada       |
+| 2   | δι'     | διά     | PREP       | através         | Preposição + genitivo: através de, por meio de       |
+| 3   | αὐτοῦ   | αὐτός   | P-GSM      | dele            | Pronome pessoal genitivo singular masculino          |
+| 4   | ἐγένετο | γίνομαι | V-2ADI-3S  | vieram-a-ser    | Verbo aoristo depoente indicativo 3ª pessoa singular |
+| 5   | καὶ     | καί     | CONJ       | e               | Conjunção                                            |
+| 6   | χωρὶς   | χωρίς   | PREP       | sem             | Preposição + genitivo: sem, à parte de               |
+| 7   | αὐτοῦ   | αὐτός   | P-GSM      | ele             | Pronome pessoal genitivo singular masculino          |
+| 8   | ἐγένετο | γίνομαι | V-2ADI-3S  | veio-a-ser      | Verbo aoristo depoente indicativo 3ª pessoa singular |
+| 9   | οὐδὲ    | οὐδέ    | CONJ-N     | nem-sequer      | Conjunção negativa enfática                          |
+| 10  | ἕν      | εἷς     | A-NSN      | uma-coisa       | Numeral cardinal nominativo singular neutro          |
+| 11  | ὃ       | ὅς      | R-NSN      | a-qual          | Pronome relativo nominativo singular neutro          |
+| 12  | γέγονεν | γίνομαι | V-2RAI-3S  | tem-vindo-a-ser | Verbo perfeito ativo indicativo 3ª pessoa singular   |
 
 **Notas Críticas:**
+
 - **δι' αὐτοῦ (di' autou)**: "Através dele" - o Verbo como agente instrumental da criação.
 - **γέγονεν (gegonen)**: Tempo perfeito indica ação completa com efeitos contínuos: "tem vindo a ser e permanece existindo".
 
@@ -126,22 +129,23 @@ Em ele vida era, e a vida era a luz dos homens.
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Ἐν | ἐν | PREP | Em | Preposição |
-| 2 | αὐτῷ | αὐτός | P-DSM | ele | Pronome pessoal dativo singular masculino |
-| 3 | ζωὴ | ζωή | N-NSF | vida | Substantivo nominativo singular feminino |
-| 4 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 5 | καὶ | καί | CONJ | e | Conjunção |
-| 6 | ἡ | ὁ | T-NSF | a | Artigo definido nominativo singular feminino |
-| 7 | ζωὴ | ζωή | N-NSF | vida | Substantivo nominativo singular feminino |
-| 8 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 9 | τὸ | ὁ | T-NSN | a | Artigo definido nominativo singular neutro |
-| 10 | φῶς | φῶς | N-NSN | luz | Substantivo nominativo singular neutro |
-| 11 | τῶν | ὁ | T-GPM | dos | Artigo definido genitivo plural masculino |
-| 12 | ἀνθρώπων | ἄνθρωπος | N-GPM | homens | Substantivo genitivo plural masculino |
+| Pos | Grego    | Lema     | Morfologia | Tradução | Notas                                                |
+| --- | -------- | -------- | ---------- | -------- | ---------------------------------------------------- |
+| 1   | Ἐν       | ἐν       | PREP       | Em       | Preposição                                           |
+| 2   | αὐτῷ     | αὐτός    | P-DSM      | ele      | Pronome pessoal dativo singular masculino            |
+| 3   | ζωὴ      | ζωή      | N-NSF      | vida     | Substantivo nominativo singular feminino             |
+| 4   | ἦν       | εἰμί     | V-IAI-3S   | era      | Verbo imperfeito ativo indicativo 3ª pessoa singular |
+| 5   | καὶ      | καί      | CONJ       | e        | Conjunção                                            |
+| 6   | ἡ        | ὁ        | T-NSF      | a        | Artigo definido nominativo singular feminino         |
+| 7   | ζωὴ      | ζωή      | N-NSF      | vida     | Substantivo nominativo singular feminino             |
+| 8   | ἦν       | εἰμί     | V-IAI-3S   | era      | Verbo imperfeito ativo indicativo 3ª pessoa singular |
+| 9   | τὸ       | ὁ        | T-NSN      | a        | Artigo definido nominativo singular neutro           |
+| 10  | φῶς      | φῶς      | N-NSN      | luz      | Substantivo nominativo singular neutro               |
+| 11  | τῶν      | ὁ        | T-GPM      | dos      | Artigo definido genitivo plural masculino            |
+| 12  | ἀνθρώπων | ἄνθρωπος | N-GPM      | homens   | Substantivo genitivo plural masculino                |
 
 **Notas Críticas:**
+
 - **ζωὴ (zoe)**: "Vida" no sentido pleno, não meramente biológico mas espiritual e eterno.
 - **φῶς (phos)**: "Luz" como metáfora de revelação, conhecimento, verdade.
 
@@ -160,23 +164,24 @@ E a luz na escuridão brilha, e a escuridão não a apreendeu.
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Καὶ | καί | CONJ | E | Conjunção |
-| 2 | τὸ | ὁ | T-NSN | a | Artigo definido nominativo singular neutro |
-| 3 | φῶς | φῶς | N-NSN | luz | Substantivo nominativo singular neutro |
-| 4 | ἐν | ἐν | PREP | na | Preposição |
-| 5 | τῇ | ὁ | T-DSF | a | Artigo definido dativo singular feminino |
-| 6 | σκοτίᾳ | σκοτία | N-DSF | escuridão | Substantivo dativo singular feminino |
-| 7 | φαίνει | φαίνω | V-PAI-3S | brilha | Verbo presente ativo indicativo 3ª pessoa singular |
-| 8 | καὶ | καί | CONJ | e | Conjunção |
-| 9 | ἡ | ὁ | T-NSF | a | Artigo definido nominativo singular feminino |
-| 10 | σκοτία | σκοτία | N-NSF | escuridão | Substantivo nominativo singular feminino |
-| 11 | αὐτὸ | αὐτός | P-ASN | ela/a | Pronome pessoal acusativo singular neutro |
-| 12 | οὐ | οὐ | PRT-N | não | Partícula negativa |
-| 13 | κατέλαβεν | καταλαμβάνω | V-2AAI-3S | apreendeu | Verbo aoristo ativo indicativo 3ª pessoa singular |
+| Pos | Grego     | Lema        | Morfologia | Tradução  | Notas                                              |
+| --- | --------- | ----------- | ---------- | --------- | -------------------------------------------------- |
+| 1   | Καὶ       | καί         | CONJ       | E         | Conjunção                                          |
+| 2   | τὸ        | ὁ           | T-NSN      | a         | Artigo definido nominativo singular neutro         |
+| 3   | φῶς       | φῶς         | N-NSN      | luz       | Substantivo nominativo singular neutro             |
+| 4   | ἐν        | ἐν          | PREP       | na        | Preposição                                         |
+| 5   | τῇ        | ὁ           | T-DSF      | a         | Artigo definido dativo singular feminino           |
+| 6   | σκοτίᾳ    | σκοτία      | N-DSF      | escuridão | Substantivo dativo singular feminino               |
+| 7   | φαίνει    | φαίνω       | V-PAI-3S   | brilha    | Verbo presente ativo indicativo 3ª pessoa singular |
+| 8   | καὶ       | καί         | CONJ       | e         | Conjunção                                          |
+| 9   | ἡ         | ὁ           | T-NSF      | a         | Artigo definido nominativo singular feminino       |
+| 10  | σκοτία    | σκοτία      | N-NSF      | escuridão | Substantivo nominativo singular feminino           |
+| 11  | αὐτὸ      | αὐτός       | P-ASN      | ela/a     | Pronome pessoal acusativo singular neutro          |
+| 12  | οὐ        | οὐ          | PRT-N      | não       | Partícula negativa                                 |
+| 13  | κατέλαβεν | καταλαμβάνω | V-2AAI-3S  | apreendeu | Verbo aoristo ativo indicativo 3ª pessoa singular  |
 
 **Notas Críticas:**
+
 - **φαίνει (phainei)**: Tempo presente indica ação contínua: "continua brilhando".
 - **κατέλαβεν (katelaben)**: Verbo com duplo sentido - "apreender/compreender" ou "superar/vencer". A escuridão não conseguiu nem compreender nem extinguir a luz.
 
@@ -195,18 +200,19 @@ Veio a ser um homem, tendo sido enviado de junto de Deus; o nome dele, João.
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Ἐγένετο | γίνομαι | V-2ADI-3S | Veio-a-ser | Verbo aoristo depoente indicativo 3ª pessoa singular |
-| 2 | ἄνθρωπος | ἄνθρωπος | N-NSM | homem | Substantivo nominativo singular masculino |
-| 3 | ἀπεσταλμένος | ἀποστέλλω | V-RPP-NSM | tendo-sido-enviado | Particípio perfeito passivo nominativo singular masculino |
-| 4 | παρὰ | παρά | PREP | de-junto-de | Preposição + genitivo: de junto de, da parte de |
-| 5 | θεοῦ | θεός | N-GSM | Deus | Substantivo genitivo singular masculino |
-| 6 | ὄνομα | ὄνομα | N-NSN | nome | Substantivo nominativo singular neutro |
-| 7 | αὐτῷ | αὐτός | P-DSM | dele | Pronome pessoal dativo singular masculino |
-| 8 | Ἰωάννης | Ἰωάννης | N-NSM-P | João | Nome próprio nominativo singular masculino |
+| Pos | Grego        | Lema      | Morfologia | Tradução           | Notas                                                     |
+| --- | ------------ | --------- | ---------- | ------------------ | --------------------------------------------------------- |
+| 1   | Ἐγένετο      | γίνομαι   | V-2ADI-3S  | Veio-a-ser         | Verbo aoristo depoente indicativo 3ª pessoa singular      |
+| 2   | ἄνθρωπος     | ἄνθρωπος  | N-NSM      | homem              | Substantivo nominativo singular masculino                 |
+| 3   | ἀπεσταλμένος | ἀποστέλλω | V-RPP-NSM  | tendo-sido-enviado | Particípio perfeito passivo nominativo singular masculino |
+| 4   | παρὰ         | παρά      | PREP       | de-junto-de        | Preposição + genitivo: de junto de, da parte de           |
+| 5   | θεοῦ         | θεός      | N-GSM      | Deus               | Substantivo genitivo singular masculino                   |
+| 6   | ὄνομα        | ὄνομα     | N-NSN      | nome               | Substantivo nominativo singular neutro                    |
+| 7   | αὐτῷ         | αὐτός     | P-DSM      | dele               | Pronome pessoal dativo singular masculino                 |
+| 8   | Ἰωάννης      | Ἰωάννης   | N-NSM-P    | João               | Nome próprio nominativo singular masculino                |
 
 **Notas Críticas:**
+
 - **ἀπεσταλμένος (apestalmenos)**: Particípio perfeito passivo - "tendo sido enviado" com autoridade divina.
 - **παρὰ θεοῦ (para theou)**: "De junto de Deus" - indica missão divina direta.
 - Introdução de João Batista como testemunha.
@@ -226,24 +232,25 @@ Este veio para testemunho, para que testifique acerca da luz, para que todos cre
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Οὗτος | οὗτος | D-NSM | Este | Pronome demonstrativo nominativo singular masculino |
-| 2 | ἦλθεν | ἔρχομαι | V-2AAI-3S | veio | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 3 | εἰς | εἰς | PREP | para | Preposição + acusativo: para, com propósito de |
-| 4 | μαρτυρίαν | μαρτυρία | N-ASF | testemunho | Substantivo acusativo singular feminino |
-| 5 | ἵνα | ἵνα | CONJ | para-que | Conjunção subordinativa de propósito |
-| 6 | μαρτυρήσῃ | μαρτυρέω | V-AAS-3S | testifique | Verbo aoristo ativo subjuntivo 3ª pessoa singular |
-| 7 | περὶ | περί | PREP | acerca-de | Preposição + genitivo: acerca de, sobre |
-| 8 | τοῦ | ὁ | T-GSN | da | Artigo definido genitivo singular neutro |
-| 9 | φωτός | φῶς | N-GSN | luz | Substantivo genitivo singular neutro |
-| 10 | ἵνα | ἵνα | CONJ | para-que | Conjunção subordinativa de propósito |
-| 11 | πάντες | πᾶς | A-NPM | todos | Adjetivo nominativo plural masculino |
-| 12 | πιστεύσωσιν | πιστεύω | V-AAS-3P | creiam | Verbo aoristo ativo subjuntivo 3ª pessoa plural |
-| 13 | δι' | διά | PREP | através | Preposição + genitivo |
-| 14 | αὐτοῦ | αὐτός | P-GSM | dele | Pronome pessoal genitivo singular masculino |
+| Pos | Grego       | Lema     | Morfologia | Tradução   | Notas                                               |
+| --- | ----------- | -------- | ---------- | ---------- | --------------------------------------------------- |
+| 1   | Οὗτος       | οὗτος    | D-NSM      | Este       | Pronome demonstrativo nominativo singular masculino |
+| 2   | ἦλθεν       | ἔρχομαι  | V-2AAI-3S  | veio       | Verbo aoristo ativo indicativo 3ª pessoa singular   |
+| 3   | εἰς         | εἰς      | PREP       | para       | Preposição + acusativo: para, com propósito de      |
+| 4   | μαρτυρίαν   | μαρτυρία | N-ASF      | testemunho | Substantivo acusativo singular feminino             |
+| 5   | ἵνα         | ἵνα      | CONJ       | para-que   | Conjunção subordinativa de propósito                |
+| 6   | μαρτυρήσῃ   | μαρτυρέω | V-AAS-3S   | testifique | Verbo aoristo ativo subjuntivo 3ª pessoa singular   |
+| 7   | περὶ        | περί     | PREP       | acerca-de  | Preposição + genitivo: acerca de, sobre             |
+| 8   | τοῦ         | ὁ        | T-GSN      | da         | Artigo definido genitivo singular neutro            |
+| 9   | φωτός       | φῶς      | N-GSN      | luz        | Substantivo genitivo singular neutro                |
+| 10  | ἵνα         | ἵνα      | CONJ       | para-que   | Conjunção subordinativa de propósito                |
+| 11  | πάντες      | πᾶς      | A-NPM      | todos      | Adjetivo nominativo plural masculino                |
+| 12  | πιστεύσωσιν | πιστεύω  | V-AAS-3P   | creiam     | Verbo aoristo ativo subjuntivo 3ª pessoa plural     |
+| 13  | δι'         | διά      | PREP       | através    | Preposição + genitivo                               |
+| 14  | αὐτοῦ       | αὐτός    | P-GSM      | dele       | Pronome pessoal genitivo singular masculino         |
 
 **Notas Críticas:**
+
 - **εἰς μαρτυρίαν (eis martyrian)**: "Para testemunho" - propósito da missão de João.
 - **ἵνα... ἵνα (hina... hina)**: Dupla cláusula de propósito: (1) testificar da luz, (2) que todos creiam.
 - **δι' αὐτοῦ (di' autou)**: Refere-se ao testemunho de João, não à luz diretamente.
@@ -263,21 +270,22 @@ Não era aquele a luz, mas veio para que testifique acerca da luz.
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Οὐκ | οὐ | PRT-N | Não | Partícula negativa (antes de vogal) |
-| 2 | ἦν | εἰμί | V-IAI-3S | era | Verbo imperfeito ativo indicativo 3ª pessoa singular |
-| 3 | ἐκεῖνος | ἐκεῖνος | D-NSM | aquele | Pronome demonstrativo nominativo singular masculino |
-| 4 | τὸ | ὁ | T-NSN | a | Artigo definido nominativo singular neutro |
-| 5 | φῶς | φῶς | N-NSN | luz | Substantivo nominativo singular neutro |
-| 6 | ἀλλ' | ἀλλά | CONJ | mas | Conjunção adversativa (antes de vogal) |
-| 7 | ἵνα | ἵνα | CONJ | para-que | Conjunção subordinativa |
-| 8 | μαρτυρήσῃ | μαρτυρέω | V-AAS-3S | testifique | Verbo aoristo ativo subjuntivo 3ª pessoa singular |
-| 9 | περὶ | περί | PREP | acerca-de | Preposição + genitivo |
-| 10 | τοῦ | ὁ | T-GSN | da | Artigo definido genitivo singular neutro |
-| 11 | φωτός | φῶς | N-GSN | luz | Substantivo genitivo singular neutro |
+| Pos | Grego     | Lema     | Morfologia | Tradução   | Notas                                                |
+| --- | --------- | -------- | ---------- | ---------- | ---------------------------------------------------- |
+| 1   | Οὐκ       | οὐ       | PRT-N      | Não        | Partícula negativa (antes de vogal)                  |
+| 2   | ἦν        | εἰμί     | V-IAI-3S   | era        | Verbo imperfeito ativo indicativo 3ª pessoa singular |
+| 3   | ἐκεῖνος   | ἐκεῖνος  | D-NSM      | aquele     | Pronome demonstrativo nominativo singular masculino  |
+| 4   | τὸ        | ὁ        | T-NSN      | a          | Artigo definido nominativo singular neutro           |
+| 5   | φῶς       | φῶς      | N-NSN      | luz        | Substantivo nominativo singular neutro               |
+| 6   | ἀλλ'      | ἀλλά     | CONJ       | mas        | Conjunção adversativa (antes de vogal)               |
+| 7   | ἵνα       | ἵνα      | CONJ       | para-que   | Conjunção subordinativa                              |
+| 8   | μαρτυρήσῃ | μαρτυρέω | V-AAS-3S   | testifique | Verbo aoristo ativo subjuntivo 3ª pessoa singular    |
+| 9   | περὶ      | περί     | PREP       | acerca-de  | Preposição + genitivo                                |
+| 10  | τοῦ       | ὁ        | T-GSN      | da         | Artigo definido genitivo singular neutro             |
+| 11  | φωτός     | φῶς      | N-GSN      | luz        | Substantivo genitivo singular neutro                 |
 
 **Notas Críticas:**
+
 - **ἐκεῖνος (ekeinos)**: Pronome demonstrativo enfático referindo-se a João.
 - Clarificação necessária: João não é a luz, mas testemunha da luz (Jesus Cristo).
 
@@ -286,6 +294,7 @@ Não era aquele a luz, mas veio para que testifique acerca da luz.
 ### 1:9-18 (Resumo Estrutural)
 
 **Versículos 9-18** continuam desenvolvendo:
+
 - v.9: A luz verdadeira que ilumina todo homem
 - v.10-11: O mundo não reconheceu o Verbo; os seus próprios não o receberam
 - v.12-13: Aos que o receberam, deu autoridade de tornarem-se filhos de Deus
@@ -346,26 +355,27 @@ Porém, quantos o receberam, deu a eles autoridade de tornarem-se filhos de Deus
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Ὅσοι | ὅσος | R-NPM | Quantos | Pronome relativo correlativo nominativo plural masculino |
-| 2 | δὲ | δέ | CONJ | porém | Conjunção adversativa |
-| 3 | ἔλαβον | λαμβάνω | V-2AAI-3P | receberam | Verbo aoristo ativo indicativo 3ª pessoa plural |
-| 4 | αὐτόν | αὐτός | P-ASM | ele | Pronome pessoal acusativo singular masculino |
-| 5 | ἔδωκεν | δίδωμι | V-AAI-3S | deu | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 6 | αὐτοῖς | αὐτός | P-DPM | a-eles | Pronome pessoal dativo plural masculino |
-| 7 | ἐξουσίαν | ἐξουσία | N-ASF | autoridade | Substantivo acusativo singular feminino |
-| 8 | τέκνα | τέκνον | N-APN | filhos | Substantivo acusativo plural neutro |
-| 9 | θεοῦ | θεός | N-GSM | de-Deus | Substantivo genitivo singular masculino |
-| 10 | γενέσθαι | γίνομαι | V-2ADN | tornarem-se | Verbo aoristo depoente infinitivo |
-| 11 | τοῖς | ὁ | T-DPM | aos | Artigo definido dativo plural masculino |
-| 12 | πιστεύουσιν | πιστεύω | V-PAP-DPM | crendo | Verbo particípio presente ativo dativo plural masculino |
-| 13 | εἰς | εἰς | PREP | no | Preposição + acusativo: em, para dentro de |
-| 14 | τὸ | ὁ | T-ASN | o | Artigo definido acusativo singular neutro |
-| 15 | ὄνομα | ὄνομα | N-ASN | nome | Substantivo acusativo singular neutro |
-| 16 | αὐτοῦ | αὐτός | P-GSM | dele | Pronome pessoal genitivo singular masculino |
+| Pos | Grego       | Lema    | Morfologia | Tradução    | Notas                                                    |
+| --- | ----------- | ------- | ---------- | ----------- | -------------------------------------------------------- |
+| 1   | Ὅσοι        | ὅσος    | R-NPM      | Quantos     | Pronome relativo correlativo nominativo plural masculino |
+| 2   | δὲ          | δέ      | CONJ       | porém       | Conjunção adversativa                                    |
+| 3   | ἔλαβον      | λαμβάνω | V-2AAI-3P  | receberam   | Verbo aoristo ativo indicativo 3ª pessoa plural          |
+| 4   | αὐτόν       | αὐτός   | P-ASM      | ele         | Pronome pessoal acusativo singular masculino             |
+| 5   | ἔδωκεν      | δίδωμι  | V-AAI-3S   | deu         | Verbo aoristo ativo indicativo 3ª pessoa singular        |
+| 6   | αὐτοῖς      | αὐτός   | P-DPM      | a-eles      | Pronome pessoal dativo plural masculino                  |
+| 7   | ἐξουσίαν    | ἐξουσία | N-ASF      | autoridade  | Substantivo acusativo singular feminino                  |
+| 8   | τέκνα       | τέκνον  | N-APN      | filhos      | Substantivo acusativo plural neutro                      |
+| 9   | θεοῦ        | θεός    | N-GSM      | de-Deus     | Substantivo genitivo singular masculino                  |
+| 10  | γενέσθαι    | γίνομαι | V-2ADN     | tornarem-se | Verbo aoristo depoente infinitivo                        |
+| 11  | τοῖς        | ὁ       | T-DPM      | aos         | Artigo definido dativo plural masculino                  |
+| 12  | πιστεύουσιν | πιστεύω | V-PAP-DPM  | crendo      | Verbo particípio presente ativo dativo plural masculino  |
+| 13  | εἰς         | εἰς     | PREP       | no          | Preposição + acusativo: em, para dentro de               |
+| 14  | τὸ          | ὁ       | T-ASN      | o           | Artigo definido acusativo singular neutro                |
+| 15  | ὄνομα       | ὄνομα   | N-ASN      | nome        | Substantivo acusativo singular neutro                    |
+| 16  | αὐτοῦ       | αὐτός   | P-GSM      | dele        | Pronome pessoal genitivo singular masculino              |
 
 **Notas Críticas:**
+
 - **ἐξουσίαν (exousian)**: "Autoridade/direito legal" — não apenas permissão, mas poder legítimo concedido
 - **τέκνα θεοῦ (tekna theou)**: "Filhos de Deus" — τέκνον enfatiza nascimento/natureza, não adoção
 - **πιστεύουσιν εἰς (pisteuousin eis)**: "Crendo para dentro de" — fé ativa direcionada, não mero assentimento
@@ -384,6 +394,7 @@ Os-quais não de sangues nem de vontade de-carne nem de vontade de-varão mas de
 Os quais não de sangues, nem de vontade de carne, nem de vontade de varão, mas de Deus foram gerados.
 
 **Notas Críticas:**
+
 - **ἐξ αἱμάτων** (plural): "de sangues" - não por descendência natural
 - **ἐκ θεοῦ ἐγεννήθησαν**: "de Deus foram gerados" - nascimento espiritual
 
@@ -402,33 +413,34 @@ E o Verbo carne se fez e tabernaculou entre nós, e contemplamos a glória dele,
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Καὶ | καί | CONJ | E | Conjunção |
-| 2 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 3 | λόγος | λόγος | N-NSM | Verbo | Substantivo nominativo singular masculino |
-| 4 | σὰρξ | σάρξ | N-NSF | carne | Substantivo nominativo singular feminino |
-| 5 | ἐγένετο | γίνομαι | V-2ADI-3S | veio-a-ser | Verbo aoristo depoente indicativo 3ª pessoa singular |
-| 6 | καὶ | καί | CONJ | e | Conjunção |
-| 7 | ἐσκήνωσεν | σκηνόω | V-AAI-3S | tabernaculou | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 8 | ἐν | ἐν | PREP | entre | Preposição + dativo |
-| 9 | ἡμῖν | ἐγώ | P-1DP | nós | Pronome pessoal 1ª pessoa dativo plural |
-| 10 | καὶ | καί | CONJ | e | Conjunção |
-| 11 | ἐθεασάμεθα | θεάομαι | V-ADI-1P | contemplamos | Verbo aoristo depoente indicativo 1ª pessoa plural |
-| 12 | τὴν | ὁ | T-ASF | a | Artigo definido acusativo singular feminino |
-| 13 | δόξαν | δόξα | N-ASF | glória | Substantivo acusativo singular feminino |
-| 14 | αὐτοῦ | αὐτός | P-GSM | dele | Pronome pessoal genitivo singular masculino |
-| 15 | δόξαν | δόξα | N-ASF | glória | Substantivo acusativo singular feminino |
-| 16 | ὡς | ὡς | ADV | como | Advérbio/partícula comparativa |
-| 17 | μονογενοῦς | μονογενής | A-GSM | de-unigênito | Adjetivo genitivo singular masculino |
-| 18 | παρὰ | παρά | PREP | de-junto-de | Preposição + genitivo |
-| 19 | πατρός | πατήρ | N-GSM | Pai | Substantivo genitivo singular masculino |
-| 20 | πλήρης | πλήρης | A-NSM | cheio | Adjetivo nominativo singular masculino |
-| 21 | χάριτος | χάρις | N-GSF | de-graça | Substantivo genitivo singular feminino |
-| 22 | καὶ | καί | CONJ | e | Conjunção |
-| 23 | ἀληθείας | ἀλήθεια | N-GSF | verdade | Substantivo genitivo singular feminino |
+| Pos | Grego      | Lema      | Morfologia | Tradução     | Notas                                                |
+| --- | ---------- | --------- | ---------- | ------------ | ---------------------------------------------------- |
+| 1   | Καὶ        | καί       | CONJ       | E            | Conjunção                                            |
+| 2   | ὁ          | ὁ         | T-NSM      | o            | Artigo definido nominativo singular masculino        |
+| 3   | λόγος      | λόγος     | N-NSM      | Verbo        | Substantivo nominativo singular masculino            |
+| 4   | σὰρξ       | σάρξ      | N-NSF      | carne        | Substantivo nominativo singular feminino             |
+| 5   | ἐγένετο    | γίνομαι   | V-2ADI-3S  | veio-a-ser   | Verbo aoristo depoente indicativo 3ª pessoa singular |
+| 6   | καὶ        | καί       | CONJ       | e            | Conjunção                                            |
+| 7   | ἐσκήνωσεν  | σκηνόω    | V-AAI-3S   | tabernaculou | Verbo aoristo ativo indicativo 3ª pessoa singular    |
+| 8   | ἐν         | ἐν        | PREP       | entre        | Preposição + dativo                                  |
+| 9   | ἡμῖν       | ἐγώ       | P-1DP      | nós          | Pronome pessoal 1ª pessoa dativo plural              |
+| 10  | καὶ        | καί       | CONJ       | e            | Conjunção                                            |
+| 11  | ἐθεασάμεθα | θεάομαι   | V-ADI-1P   | contemplamos | Verbo aoristo depoente indicativo 1ª pessoa plural   |
+| 12  | τὴν        | ὁ         | T-ASF      | a            | Artigo definido acusativo singular feminino          |
+| 13  | δόξαν      | δόξα      | N-ASF      | glória       | Substantivo acusativo singular feminino              |
+| 14  | αὐτοῦ      | αὐτός     | P-GSM      | dele         | Pronome pessoal genitivo singular masculino          |
+| 15  | δόξαν      | δόξα      | N-ASF      | glória       | Substantivo acusativo singular feminino              |
+| 16  | ὡς         | ὡς        | ADV        | como         | Advérbio/partícula comparativa                       |
+| 17  | μονογενοῦς | μονογενής | A-GSM      | de-unigênito | Adjetivo genitivo singular masculino                 |
+| 18  | παρὰ       | παρά      | PREP       | de-junto-de  | Preposição + genitivo                                |
+| 19  | πατρός     | πατήρ     | N-GSM      | Pai          | Substantivo genitivo singular masculino              |
+| 20  | πλήρης     | πλήρης    | A-NSM      | cheio        | Adjetivo nominativo singular masculino               |
+| 21  | χάριτος    | χάρις     | N-GSF      | de-graça     | Substantivo genitivo singular feminino               |
+| 22  | καὶ        | καί       | CONJ       | e            | Conjunção                                            |
+| 23  | ἀληθείας   | ἀλήθεια   | N-GSF      | verdade      | Substantivo genitivo singular feminino               |
 
 **Notas Críticas:**
+
 - **σὰρξ ἐγένετο (sarx egeneto)**: "Carne se fez" — **A ENCARNAÇÃO**. O eterno Verbo assumiu natureza humana completa
 - **ἐσκήνωσεν (eskēnōsen)**: "Tabernaculou" — do verbo σκηνόω (viver em tenda). Referência direta ao Tabernáculo do AT onde a glória de Deus habitava (Êxodo 40:34-35). O Verbo é o novo Tabernáculo
 - **ἐθεασάμεθα (etheasametha)**: "Contemplamos" — não mera observação, mas contemplação profunda e atenta (raiz de "teatro")
@@ -488,6 +500,7 @@ Deus ninguém tem-visto jamais o unigênito Filho o sendo no seio do Pai aquele 
 Deus ninguém jamais tem visto; o Filho unigênito, o que está no seio do Pai, aquele o explicou.
 
 **Notas Críticas:**
+
 - **ἑώρακεν**: tempo perfeito - "tem visto e continua sem ver"
 - **εἰς τὸν κόλπον**: "no seio" - intimidade única
 - **ἐξηγήσατο**: "explicou/exegeu/revelou" - raiz de "exegese"
@@ -560,6 +573,7 @@ Disse Eu voz de-clamante no deserto Endireitai o caminho de-Senhor como disse Is
 Disse: Eu sou voz de clamante no deserto: Endireitai o caminho do Senhor, como disse Isaías o profeta.
 
 **Notas Críticas:**
+
 - Citação de Isaías 40:3
 - **φωνὴ βοῶντος**: "voz de clamante" - João identifica-se com a profecia
 
@@ -619,41 +633,42 @@ No dia seguinte, João vê Jesus vindo em direção a ele, e diz: Eis o Cordeiro
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Τῇ | ὁ | T-DSF | No | Artigo definido dativo singular feminino |
-| 2 | ἐπαύριον | ἐπαύριον | ADV | dia-seguinte | Advérbio temporal |
-| 3 | βλέπει | βλέπω | V-PAI-3S | vê | Verbo presente ativo indicativo 3ª pessoa singular |
-| 4 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 5 | Ἰωάννης | Ἰωάννης | N-NSM-P | João | Nome próprio nominativo singular masculino |
-| 6 | τὸν | ὁ | T-ASM | o | Artigo definido acusativo singular masculino |
-| 7 | Ἰησοῦν | Ἰησοῦς | N-ASM-P | Jesus | Nome próprio acusativo singular masculino |
-| 8 | ἐρχόμενον | ἔρχομαι | V-PNP-ASM | vindo | Verbo particípio presente depoente acusativo singular masculino |
-| 9 | πρὸς | πρός | PREP | em-direção-a | Preposição + acusativo: em direção a, para |
-| 10 | αὐτόν | αὐτός | P-ASM | ele | Pronome pessoal acusativo singular masculino |
-| 11 | καὶ | καί | CONJ | e | Conjunção |
-| 12 | λέγει | λέγω | V-PAI-3S | diz | Verbo presente ativo indicativo 3ª pessoa singular |
-| 13 | Ἴδε | ὁράω | V-2AAM-2S | Eis | Verbo aoristo ativo imperativo 2ª pessoa singular |
-| 14 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 15 | ἀμνὸς | ἀμνός | N-NSM | cordeiro | Substantivo nominativo singular masculino |
-| 16 | τοῦ | ὁ | T-GSM | do | Artigo definido genitivo singular masculino |
-| 17 | θεοῦ | θεός | N-GSM | Deus | Substantivo genitivo singular masculino |
-| 18 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 19 | αἴρων | αἴρω | V-PAP-NSM | levantando | Verbo particípio presente ativo nominativo singular masculino |
-| 20 | τὴν | ὁ | T-ASF | o | Artigo definido acusativo singular feminino |
-| 21 | ἁμαρτίαν | ἁμαρτία | N-ASF | pecado | Substantivo acusativo singular feminino |
-| 22 | τοῦ | ὁ | T-GSM | do | Artigo definido genitivo singular masculino |
-| 23 | κόσμου | κόσμος | N-GSM | mundo | Substantivo genitivo singular masculino |
+| Pos | Grego     | Lema     | Morfologia | Tradução     | Notas                                                           |
+| --- | --------- | -------- | ---------- | ------------ | --------------------------------------------------------------- |
+| 1   | Τῇ        | ὁ        | T-DSF      | No           | Artigo definido dativo singular feminino                        |
+| 2   | ἐπαύριον  | ἐπαύριον | ADV        | dia-seguinte | Advérbio temporal                                               |
+| 3   | βλέπει    | βλέπω    | V-PAI-3S   | vê           | Verbo presente ativo indicativo 3ª pessoa singular              |
+| 4   | ὁ         | ὁ        | T-NSM      | o            | Artigo definido nominativo singular masculino                   |
+| 5   | Ἰωάννης   | Ἰωάννης  | N-NSM-P    | João         | Nome próprio nominativo singular masculino                      |
+| 6   | τὸν       | ὁ        | T-ASM      | o            | Artigo definido acusativo singular masculino                    |
+| 7   | Ἰησοῦν    | Ἰησοῦς   | N-ASM-P    | Jesus        | Nome próprio acusativo singular masculino                       |
+| 8   | ἐρχόμενον | ἔρχομαι  | V-PNP-ASM  | vindo        | Verbo particípio presente depoente acusativo singular masculino |
+| 9   | πρὸς      | πρός     | PREP       | em-direção-a | Preposição + acusativo: em direção a, para                      |
+| 10  | αὐτόν     | αὐτός    | P-ASM      | ele          | Pronome pessoal acusativo singular masculino                    |
+| 11  | καὶ       | καί      | CONJ       | e            | Conjunção                                                       |
+| 12  | λέγει     | λέγω     | V-PAI-3S   | diz          | Verbo presente ativo indicativo 3ª pessoa singular              |
+| 13  | Ἴδε       | ὁράω     | V-2AAM-2S  | Eis          | Verbo aoristo ativo imperativo 2ª pessoa singular               |
+| 14  | ὁ         | ὁ        | T-NSM      | o            | Artigo definido nominativo singular masculino                   |
+| 15  | ἀμνὸς     | ἀμνός    | N-NSM      | cordeiro     | Substantivo nominativo singular masculino                       |
+| 16  | τοῦ       | ὁ        | T-GSM      | do           | Artigo definido genitivo singular masculino                     |
+| 17  | θεοῦ      | θεός     | N-GSM      | Deus         | Substantivo genitivo singular masculino                         |
+| 18  | ὁ         | ὁ        | T-NSM      | o            | Artigo definido nominativo singular masculino                   |
+| 19  | αἴρων     | αἴρω     | V-PAP-NSM  | levantando   | Verbo particípio presente ativo nominativo singular masculino   |
+| 20  | τὴν       | ὁ        | T-ASF      | o            | Artigo definido acusativo singular feminino                     |
+| 21  | ἁμαρτίαν  | ἁμαρτία  | N-ASF      | pecado       | Substantivo acusativo singular feminino                         |
+| 22  | τοῦ       | ὁ        | T-GSM      | do           | Artigo definido genitivo singular masculino                     |
+| 23  | κόσμου    | κόσμος   | N-GSM      | mundo        | Substantivo genitivo singular masculino                         |
 
 **Notas Críticas:**
+
 - **Ἴδε (Ide)**: "Eis!" — imperativo de ὁράω (ver), chamado urgente à atenção
 - **ὁ ἀμνὸς τοῦ θεοῦ (ho amnos tou theou)**: "**O Cordeiro de Deus**" — referências múltiplas:
-  * Cordeiro pascal (Êxodo 12:1-13) — libertação do Egito
-  * Servo Sofredor (Isaías 53:7) — "como cordeiro foi levado ao matadouro"
-  * Sacrifícios levíticos contínuos (Levítico 4-5)
+  - Cordeiro pascal (Êxodo 12:1-13) — libertação do Egito
+  - Servo Sofredor (Isaías 53:7) — "como cordeiro foi levado ao matadouro"
+  - Sacrifícios levíticos contínuos (Levítico 4-5)
 - **ὁ αἴρων (ho airōn)**: Particípio presente — "o que leva/remove continuamente". Verbo αἴρω tem duplo sentido:
-  * "Levar sobre si" (carregar o fardo)
-  * "Remover/tirar" (eliminar completamente)
+  - "Levar sobre si" (carregar o fardo)
+  - "Remover/tirar" (eliminar completamente)
 - **τὴν ἁμαρτίαν (tēn hamartian)**: "O pecado" — artigo definido singular. Não "pecados" (plural), mas **o pecado** como princípio, natureza, totalidade da condição pecaminosa do mundo
 
 ---
@@ -841,6 +856,7 @@ E diz a-ele Amém amém digo a-vós de agora vereis o céu tendo-sido-aberto e o
 E lhe diz: Amém, amém digo a vós: De agora em diante vereis o céu tendo sido aberto, e os anjos de Deus subindo e descendo sobre o Filho do homem.
 
 **Notas Críticas:**
+
 - **Ἀμὴν ἀμὴν**: "Amém, amém" - fórmula solene de verdade (primeira vez usada no Evangelho)
 - **ἀνεῳγότα**: particípio perfeito passivo - "tendo sido aberto e permanecendo aberto"
 - Referência à escada de Jacó (Gênesis 28:12)
@@ -902,6 +918,7 @@ Diz a-ela o Jesus O-que a-mim e a-ti mulher Ainda-não chegou a hora minha
 Jesus lhe diz: O que há entre mim e ti, mulher? Ainda não chegou a minha hora.
 
 **Notas Críticas:**
+
 - **Τί ἐμοὶ καὶ σοί**: expressão idiomática hebraica - "o que há entre mim e ti?" (não desrespeitoso)
 - **γύναι**: "mulher" - forma respeitosa de tratamento, não rude
 - **ἡ ὥρα μου**: "a minha hora" - tema recorrente em João, referente à crucificação
@@ -933,6 +950,7 @@ Eram porém ali talhas de-pedra seis postas segundo a purificação dos judeus c
 Ora, estavam ali seis talhas de pedra postas segundo a purificação dos judeus, contendo cada uma duas ou três medidas.
 
 **Notas Críticas:**
+
 - **μετρητάς**: medida grega (metretes) ≈ 39 litros. Total: 468-702 litros de vinho
 
 ---
@@ -1001,6 +1019,7 @@ Esta fez o princípio dos sinais o Jesus em Caná da Galileia e manifestou a gl�
 Esta foi a princípio dos sinais que Jesus fez em Caná da Galileia, e manifestou a glória dele; e os discípulos dele creram nele.
 
 **Notas Críticas:**
+
 - **τὴν ἀρχὴν τῶν σημείων**: "o princípio dos sinais" - primeiro dos sete sinais em João
 - **σημείων**: "sinais" - João prefere este termo a "milagres", enfatizando significado teológico
 
@@ -1085,6 +1104,7 @@ Lembraram-se porém os discípulos dele que tendo-sido-escrito está O zelo da c
 Porém os discípulos dele se lembraram que está escrito: O zelo da tua casa me consumiu.
 
 **Notas Críticas:**
+
 - Citação do Salmo 69:9
 
 ---
@@ -1114,6 +1134,7 @@ Respondeu o Jesus e disse a-eles Destruí o santuário este e em três dias leva
 Jesus respondeu e lhes disse: Destruí este santuário, e em três dias o levantarei.
 
 **Notas Críticas:**
+
 - **ναὸν**: "santuário" (o santo lugar interior), não ἱερόν (complexo do templo)
 - Profecia velada da ressurreição
 
@@ -1239,6 +1260,7 @@ Respondeu o Jesus e disse a-ele Amém amém digo a-ti se não alguém seja-nasci
 Jesus respondeu e lhe disse: Amém, amém digo a ti: se alguém não nascer de cima, não pode ver o reino de Deus.
 
 **Notas Críticas:**
+
 - **ἄνωθεν (anōthen)**: duplo sentido - "de cima" ou "novamente/de novo"
 - Este é o tema central do diálogo: novo nascimento espiritual
 
@@ -1269,6 +1291,7 @@ Respondeu o Jesus Amém amém digo a-ti se não alguém nasça de água e Espír
 Jesus respondeu: Amém, amém digo a ti: se alguém não nascer de água e de Espírito, não pode entrar no reino de Deus.
 
 **Notas Críticas:**
+
 - **ἐξ ὕδατος καὶ πνεύματος**: "de água e Espírito" - muito debatido (batismo? purificação? nascimento natural + espiritual?)
 
 ---
@@ -1311,6 +1334,7 @@ O vento onde quer sopra e a voz dele ouves mas não sabes de-onde vem e para-ond
 O vento sopra onde quer, e ouves a voz dele, mas não sabes de onde vem nem para onde vai; assim é todo o que nasceu do Espírito.
 
 **Notas Críticas:**
+
 - **πνεῦμα**: duplo sentido - "vento" e "Espírito" (mesma palavra em grego)
 
 ---
@@ -1392,6 +1416,7 @@ E como Moisés levantou a serpente no deserto assim ser-levantado é-necessário
 E como Moisés levantou a serpente no deserto, assim é necessário ser levantado o Filho do homem.
 
 **Notas Críticas:**
+
 - Referência a Números 21:8-9 (serpente de bronze)
 - **ὑψωθῆναι**: "ser levantado" - duplo sentido: crucificação e exaltação
 
@@ -1423,36 +1448,37 @@ Porque assim Deus amou o mundo, de tal maneira que deu o seu Filho unigênito, p
 
 **Análise Palavra-por-Palavra (v.16 - versículo central da Bíblia):**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Οὕτως | οὕτω | ADV | Assim | Advérbio de modo/intensidade |
-| 2 | γὰρ | γάρ | CONJ | pois | Conjunção explicativa |
-| 3 | ἠγάπησεν | ἀγαπάω | V-AAI-3S | amou | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 4 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 5 | θεὸς | θεός | N-NSM | Deus | Substantivo nominativo singular masculino |
-| 6 | τὸν | ὁ | T-ASM | o | Artigo definido acusativo singular masculino |
-| 7 | κόσμον | κόσμος | N-ASM | mundo | Substantivo acusativo singular masculino |
-| 8 | ὥστε | ὥστε | CONJ | de-tal-maneira-que | Conjunção consecutiva/resultado |
-| 9 | τὸν | ὁ | T-ASM | o | Artigo definido acusativo singular masculino |
-| 10 | υἱὸν | υἱός | N-ASM | Filho | Substantivo acusativo singular masculino |
-| 11 | αὐτοῦ | αὐτός | P-GSM | dele | Pronome pessoal genitivo singular masculino |
-| 12 | τὸν | ὁ | T-ASM | o | Artigo definido acusativo singular masculino |
-| 13 | μονογενῆ | μονογενής | A-ASM | unigênito | Adjetivo acusativo singular masculino |
-| 14 | ἔδωκεν | δίδωμι | V-AAI-3S | deu | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 15 | ἵνα | ἵνα | CONJ | para-que | Conjunção final (propósito) |
-| 16 | πᾶς | πᾶς | A-NSM | todo | Adjetivo nominativo singular masculino |
-| 17 | ὁ | ὁ | T-NSM | o | Artigo definido nominativo singular masculino |
-| 18 | πιστεύων | πιστεύω | V-PAP-NSM | crendo | Verbo particípio presente ativo nominativo singular masculino |
-| 19 | εἰς | εἰς | PREP | em/nele | Preposição + acusativo |
-| 20 | αὐτὸν | αὐτός | P-ASM | ele | Pronome pessoal acusativo singular masculino |
-| 21 | μὴ | μή | PRT-N | não | Partícula negativa (com subjuntivo) |
-| 22 | ἀπόληται | ἀπόλλυμι | V-2AMS-3S | pereça | Verbo aoristo médio subjuntivo 3ª pessoa singular |
-| 23 | ἀλλ' | ἀλλά | CONJ | mas | Conjunção adversativa |
-| 24 | ἔχῃ | ἔχω | V-PAS-3S | tenha | Verbo presente ativo subjuntivo 3ª pessoa singular |
-| 25 | ζωὴν | ζωή | N-ASF | vida | Substantivo acusativo singular feminino |
-| 26 | αἰώνιον | αἰώνιος | A-ASF | eterna | Adjetivo acusativo singular feminino |
+| Pos | Grego    | Lema      | Morfologia | Tradução           | Notas                                                         |
+| --- | -------- | --------- | ---------- | ------------------ | ------------------------------------------------------------- |
+| 1   | Οὕτως    | οὕτω      | ADV        | Assim              | Advérbio de modo/intensidade                                  |
+| 2   | γὰρ      | γάρ       | CONJ       | pois               | Conjunção explicativa                                         |
+| 3   | ἠγάπησεν | ἀγαπάω    | V-AAI-3S   | amou               | Verbo aoristo ativo indicativo 3ª pessoa singular             |
+| 4   | ὁ        | ὁ         | T-NSM      | o                  | Artigo definido nominativo singular masculino                 |
+| 5   | θεὸς     | θεός      | N-NSM      | Deus               | Substantivo nominativo singular masculino                     |
+| 6   | τὸν      | ὁ         | T-ASM      | o                  | Artigo definido acusativo singular masculino                  |
+| 7   | κόσμον   | κόσμος    | N-ASM      | mundo              | Substantivo acusativo singular masculino                      |
+| 8   | ὥστε     | ὥστε      | CONJ       | de-tal-maneira-que | Conjunção consecutiva/resultado                               |
+| 9   | τὸν      | ὁ         | T-ASM      | o                  | Artigo definido acusativo singular masculino                  |
+| 10  | υἱὸν     | υἱός      | N-ASM      | Filho              | Substantivo acusativo singular masculino                      |
+| 11  | αὐτοῦ    | αὐτός     | P-GSM      | dele               | Pronome pessoal genitivo singular masculino                   |
+| 12  | τὸν      | ὁ         | T-ASM      | o                  | Artigo definido acusativo singular masculino                  |
+| 13  | μονογενῆ | μονογενής | A-ASM      | unigênito          | Adjetivo acusativo singular masculino                         |
+| 14  | ἔδωκεν   | δίδωμι    | V-AAI-3S   | deu                | Verbo aoristo ativo indicativo 3ª pessoa singular             |
+| 15  | ἵνα      | ἵνα       | CONJ       | para-que           | Conjunção final (propósito)                                   |
+| 16  | πᾶς      | πᾶς       | A-NSM      | todo               | Adjetivo nominativo singular masculino                        |
+| 17  | ὁ        | ὁ         | T-NSM      | o                  | Artigo definido nominativo singular masculino                 |
+| 18  | πιστεύων | πιστεύω   | V-PAP-NSM  | crendo             | Verbo particípio presente ativo nominativo singular masculino |
+| 19  | εἰς      | εἰς       | PREP       | em/nele            | Preposição + acusativo                                        |
+| 20  | αὐτὸν    | αὐτός     | P-ASM      | ele                | Pronome pessoal acusativo singular masculino                  |
+| 21  | μὴ       | μή        | PRT-N      | não                | Partícula negativa (com subjuntivo)                           |
+| 22  | ἀπόληται | ἀπόλλυμι  | V-2AMS-3S  | pereça             | Verbo aoristo médio subjuntivo 3ª pessoa singular             |
+| 23  | ἀλλ'     | ἀλλά      | CONJ       | mas                | Conjunção adversativa                                         |
+| 24  | ἔχῃ      | ἔχω       | V-PAS-3S   | tenha              | Verbo presente ativo subjuntivo 3ª pessoa singular            |
+| 25  | ζωὴν     | ζωή       | N-ASF      | vida               | Substantivo acusativo singular feminino                       |
+| 26  | αἰώνιον  | αἰώνιος   | A-ASF      | eterna             | Adjetivo acusativo singular feminino                          |
 
 **Notas Críticas:**
+
 - **ἠγάπησεν (ēgapēsen)**: verbo ἀγαπάω (agapao) - amor divino, sacrificial, incondicional
 - **Οὕτως... ὥστε**: "Assim... de tal maneira que" - intensidade extrema do amor
 - **τὸν μονογενῆ**: "o unigênito" - único de seu tipo, incomparável
@@ -1486,6 +1512,7 @@ O crendo nele não é-julgado o porém não crendo já tem-sido-julgado porque n
 O que crê nele não é julgado; porém o que não crê já está julgado, porque não tem crido no nome do Filho unigênito de Deus.
 
 **Notas Críticas:**
+
 - **κέκριται**: perfeito passivo - "está julgado e permanece em estado de condenação"
 - **πεπίστευκεν**: perfeito ativo - "tem crido" (ação completa com efeito permanente)
 
@@ -1648,6 +1675,7 @@ Aquele é-necessário crescer me porém diminuir
 É necessário que aquele cresça e que eu diminua.
 
 **Notas Críticas:**
+
 - Declaração emblemática de João sobre seu ministério versus o de Cristo
 
 ---
@@ -1729,6 +1757,7 @@ O crendo no Filho tem vida eterna o porém desobedecendo ao Filho não verá vid
 O que crê no Filho tem vida eterna; porém o que desobedece ao Filho não verá a vida, mas a ira de Deus permanece sobre ele.
 
 **Notas Críticas:**
+
 - **ἀπειθῶν**: "desobedecendo" - não mera incredulidade intelectual, mas rejeição ativa e desobediência
 
 ---
@@ -1788,6 +1817,7 @@ Era-necessário porém ele atravessar através de Samaria
 Ora, era necessário que ele atravessasse Samaria.
 
 **Notas Críticas:**
+
 - **ἔδει**: "era necessário" - necessidade divina, não apenas geográfica
 
 ---
@@ -1817,6 +1847,7 @@ Era porém ali fonte de Jacó O então Jesus tendo-se-cansado da viagem sentava-
 Ora, estava ali a fonte de Jacó. Jesus, pois, cansado da viagem, sentava-se assim junto à fonte; era cerca da hora sexta.
 
 **Notas Críticas:**
+
 - **ὥρα ἦν ὡσεὶ ἕκτη**: hora sexta = meio-dia (horário mais quente do dia)
 
 ---
@@ -1924,6 +1955,7 @@ O-que porém beber da água que eu darei a-ele jamais terá-sede para o sempre m
 Mas o que beber da água que eu lhe der jamais terá sede; antes, a água que eu lhe der se tornará nele uma fonte de água jorrando para vida eterna.
 
 **Notas Críticas:**
+
 - **ὕδατος ἁλλομένου**: "água jorrando/saltitante" - imagem vívida de fonte viva
 
 ---
@@ -2005,6 +2037,7 @@ Os pais nossos neste o monte adoraram e vós dizeis que em Jerusalém é o lugar
 Os nossos pais adoraram neste monte, e vós dizeis que em Jerusalém é o lugar onde é necessário adorar.
 
 **Notas Críticas:**
+
 - Monte Gerizim (monte sagrado dos samaritanos) versus Jerusalém (templo judaico)
 
 ---
@@ -2047,6 +2080,7 @@ Mas vem hora e agora é quando os verdadeiros adoradores adorarão ao Pai em esp
 Mas vem a hora, e agora é, em que os verdadeiros adoradores adorarão o Pai em espírito e em verdade; pois também o Pai busca tais adoradores.
 
 **Notas Críticas:**
+
 - **ἐν πνεύματι καὶ ἀληθείᾳ**: "em espírito e verdade" - adoração genuína transcende lugar físico
 
 ---
@@ -2089,6 +2123,7 @@ Diz a-ela o Jesus Eu sou o falando a-ti
 Jesus lhe diz: Eu sou, o que fala contigo.
 
 **Notas Críticas:**
+
 - **Ἐγώ εἰμι**: "Eu sou" - declaração divina explícita (cf. Êxodo 3:14)
 
 ---
@@ -2458,6 +2493,7 @@ Este novamente segundo sinal fez o Jesus vindo da Judeia à Galileia
 Este foi o segundo sinal que Jesus fez, vindo da Judeia à Galileia.
 
 **Notas Críticas:**
+
 - **δεύτερον σημεῖον**: "segundo sinal" (primeiro foi em Caná 2:11)
 - Cura à distância demonstra autoridade divina sobre espaço
 
@@ -2492,6 +2528,7 @@ Está porém nos Jerusalém sobre a das-ovelhas tanque a chamada em-hebraico Bet
 Ora, há em Jerusalém, próximo à porta das Ovelhas, um tanque chamado em hebraico Betesda, que tem cinco pórticos.
 
 **Notas Críticas:**
+
 - **προβατικῇ**: "porta das ovelhas" (porta pela qual entravam animais para sacrifício)
 - **Βηθεσδὰ**: "casa da misericórdia" em hebraico
 
@@ -2691,6 +2728,7 @@ O porém Jesus respondeu a-eles O Pai meu até agora trabalha e-eu trabalho
 Mas Jesus lhes respondeu: Meu Pai trabalha até agora, e eu trabalho.
 
 **Notas Críticas:**
+
 - **ὁ πατήρ μου**: "meu Pai" - reivindicação de relação única com Deus
 - Jesus equipara sua atividade à de Deus, que sustenta a criação continuamente
 
@@ -2827,6 +2865,7 @@ E autoridade deu a-ele e juízo fazer porque Filho de-Homem é
 E deu-lhe autoridade para fazer juízo, porque é o Filho do Homem.
 
 **Notas Críticas:**
+
 - **υἱὸς ἀνθρώπου**: "Filho do Homem" - título messiânico (cf. Daniel 7:13-14)
 
 ---
@@ -3095,15 +3134,15 @@ Mas se não credes nos escritos dele, como crereis nas minhas palavras?
 
 ## Glossário de Termos-Chave
 
-| Grego | Transliteração | Tradução TEA | Notas |
-|-------|----------------|--------------|-------|
-| λόγος | logos | Verbo | Palavra, razão, discurso; mantido "Verbo" por tradição |
-| ζωή | zoe | vida | Vida no sentido pleno, espiritual |
-| φῶς | phos | luz | Luz como revelação e verdade |
-| σκοτία | skotia | escuridão | Trevas, ignorância espiritual |
-| μαρτυρία | martyria | testemunho | Testemunho jurídico/legal |
-| πιστεύω | pisteuō | crer | Confiar, ter fé |
-| θεός | theos | Deus | Divindade |
+| Grego    | Transliteração | Tradução TEA | Notas                                                  |
+| -------- | -------------- | ------------ | ------------------------------------------------------ |
+| λόγος    | logos          | Verbo        | Palavra, razão, discurso; mantido "Verbo" por tradição |
+| ζωή      | zoe            | vida         | Vida no sentido pleno, espiritual                      |
+| φῶς      | phos           | luz          | Luz como revelação e verdade                           |
+| σκοτία   | skotia         | escuridão    | Trevas, ignorância espiritual                          |
+| μαρτυρία | martyria       | testemunho   | Testemunho jurídico/legal                              |
+| πιστεύω  | pisteuō        | crer         | Confiar, ter fé                                        |
+| θεός     | theos          | Deus         | Divindade                                              |
 
 ---
 

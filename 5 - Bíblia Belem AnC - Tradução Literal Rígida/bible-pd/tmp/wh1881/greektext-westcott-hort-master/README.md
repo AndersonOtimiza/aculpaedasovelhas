@@ -16,7 +16,7 @@ Westcott and Hort.
 
 ## License?
 
-Public Domain.  Copy freely.
+Public Domain. Copy freely.
 
 ## Responsible parties?
 
@@ -33,13 +33,11 @@ Yes.
 1. Dr. Robinson sometimes sends updates to Ulrik.
 
 2. Should you find any errors, please inform Ulrik via email or a
-Github pull request.  Ulrik will then correspond with Dr. Robinson to
-resolve any issues in his upstream version, and then publish a new
-drop here.
-
+   Github pull request. Ulrik will then correspond with Dr. Robinson to
+   resolve any issues in his upstream version, and then publish a new
+   drop here.
 
 ## Contact?
 
 Please write to Ulrik Sandborg-Petersen via
 ulrikp-write-the-sign-scripturesys-dot-com.
-

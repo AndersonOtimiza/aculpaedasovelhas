@@ -13,18 +13,21 @@ Este glossário documenta as decisões lexicais para termos-chave do Antigo Test
 ## Termos Teológicos Fundamentais
 
 ### אֱלֹהִים (Elohim)
+
 - **Tradução padrão**: "Deus"
-- **Contextos especiais**: 
+- **Contextos especiais**:
   - Juízes/magistrados: "juízes" (com nota)
   - Deuses pagãos: "deuses" (minúscula)
 - **Ocorrências**: ~2,600x
 
 ### יְהוָה (YHWH - Tetragrama)
+
 - **Tradução padrão**: "SENHOR" (versalete)
 - **Princípio**: Respeito à tradição massorética (qere/ketiv)
 - **Ocorrências**: ~6,800x
 
 ### רוּחַ (ruach)
+
 - **Traduções contextuais**:
   - Espírito divino: "Espírito"
   - Vento: "vento"
@@ -36,10 +39,12 @@ Este glossário documenta as decisões lexicais para termos-chave do Antigo Test
 ## Termos de Criação e Cosmologia
 
 ### בָּרָא (bara')
+
 - **Tradução**: "criar" (criar do nada)
 - **Distinção de**: עָשָׂה (asah - "fazer")
 
 ### תֹהוּ וָבֹהוּ (tohu wabohu)
+
 - **Tradução literal**: "sem forma e vazia"
 - **Nota**: Hendíadis preservada
 

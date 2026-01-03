@@ -36,14 +36,14 @@ aculpaedasovelhas/
 └── README.md
 ```
 
-| Módulo | Path | Status |
-| ------ | ---- | ------ |
-| Site | [apps/site/](apps/site/) | Ativo |
-| Blog | [apps/blog/](apps/blog/) | Ativo |
-| Bíblia | [apps/biblia/](apps/biblia/) | Ativo |
-| exeg.ai | [apps/exeg-ai/](apps/exeg-ai/) | Ativo |
-| Livro | [content/livro/](content/livro/) | Ativo |
-| Podcast | [apps/podcast/](apps/podcast/) | Futuro |
+| Módulo     | Path                                 | Status |
+| ---------- | ------------------------------------ | ------ |
+| Site       | [apps/site/](apps/site/)             | Ativo  |
+| Blog       | [apps/blog/](apps/blog/)             | Ativo  |
+| Bíblia     | [apps/biblia/](apps/biblia/)         | Ativo  |
+| exeg.ai    | [apps/exeg-ai/](apps/exeg-ai/)       | Ativo  |
+| Livro      | [content/livro/](content/livro/)     | Ativo  |
+| Podcast    | [apps/podcast/](apps/podcast/)       | Futuro |
 | Comunidade | [apps/comunidade/](apps/comunidade/) | Futuro |
 
 ---
@@ -133,13 +133,13 @@ No nível avançado, a máquina de exegese do ecossistema. IA especializada em a
 
 ## Fluxo de Dados
 
-| De | Para | Tipo | Descrição |
-| -- | ---- | ---- | --------- |
-| Bíblia | exeg.ai | HTTP REST | Textos originais, morfologia, tokens |
-| exeg.ai | Blog | Análise | Easter Eggs, intertextualidade |
-| exeg.ai | Site | API | Busca semântica, explicações |
-| Livro | Site | Conteúdo | Capítulos, manifesto |
-| Bíblia | Site | Leitura | Tradução literal para usuário |
+| De      | Para    | Tipo      | Descrição                            |
+| ------- | ------- | --------- | ------------------------------------ |
+| Bíblia  | exeg.ai | HTTP REST | Textos originais, morfologia, tokens |
+| exeg.ai | Blog    | Análise   | Easter Eggs, intertextualidade       |
+| exeg.ai | Site    | API       | Busca semântica, explicações         |
+| Livro   | Site    | Conteúdo  | Capítulos, manifesto                 |
+| Bíblia  | Site    | Leitura   | Tradução literal para usuário        |
 
 ---
 

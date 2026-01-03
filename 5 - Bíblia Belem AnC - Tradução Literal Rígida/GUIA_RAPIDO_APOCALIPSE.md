@@ -5,9 +5,11 @@
 A tradução do **Apocalipse (Ἀποκάλυψις Ἰωάννου)** está agora 100% integrada em dois sistemas:
 
 ### 1. 🌐 Site Institucional Público
+
 📍 **URL**: `Site - aculpaedasovelhas.com/apocalipse-completo.html`
 
 **Recursos**:
+
 - ✅ Visualizador interativo com 22 capítulos
 - ✅ Grego original + Tradução portuguesa lado a lado
 - ✅ Modo Interlinear (palavra-por-palavra com morfologia)
@@ -15,9 +17,11 @@ A tradução do **Apocalipse (Ἀποκάλυψις Ἰωάννου)** está ago
 - ✅ Estatísticas (405 versículos, 282 termos)
 
 ### 2. 🤖 Plataforma de IA Privada
+
 📍 **Serviço**: `Plataforma de IA/src/services/revelation_service.py`
 
 **Recursos**:
+
 - ✅ API Python para consultas
 - ✅ Integração com BibleService
 - ✅ Suporte a análise interlinear
@@ -62,6 +66,7 @@ A tradução do **Apocalipse (Ἀποκάλυψις Ἰωάννου)** está ago
 ### Site Institucional
 
 **Acesso**:
+
 1. Abra `Site - aculpaedasovelhas.com/biblia.html`
 2. Clique em "🔥 Apocalipse" (badge ✅ COMPLETO)
 3. Navegue pelos capítulos
@@ -87,6 +92,7 @@ A tradução do **Apocalipse (Ἀποκάλυψις Ἰωάννου)** está ago
 ### Plataforma de IA
 
 **Exemplo 1**: Consultar versículo
+
 ```python
 from src.services.bible_service import BibleService
 
@@ -96,6 +102,7 @@ print(verse)
 ```
 
 **Output**:
+
 ```
 📖 Apocalipse 1:1
 
@@ -105,12 +112,14 @@ print(verse)
 ```
 
 **Exemplo 2**: Buscar termo
+
 ```python
 results = service.search_revelation("dragão", limit=5)
 print(results)
 ```
 
 **Output**:
+
 ```
 🔍 Busca: 'dragão' — 5 resultado(s)
 
@@ -122,12 +131,14 @@ E sua cauda arrasta a terça parte das estrelas do céu...
 ```
 
 **Exemplo 3**: Análise morfológica
+
 ```python
 analysis = service.get_revelation_interlinear(1, 1)
 print(analysis)
 ```
 
 **Output**:
+
 ```
 📊 Análise Interlinear — Apocalipse 1:1
 Método TEA (Tradução Extremamente Rígida)
@@ -150,23 +161,23 @@ Método TEA (Tradução Extremamente Rígida)
 
 ```javascript
 // === CARREGAMENTO ===
-await loadRevelationData()  // Carrega JSON (cache automático)
+await loadRevelationData(); // Carrega JSON (cache automático)
 
 // === METADADOS ===
-getBookInfo()               // Retorna info do livro
-getChaptersIndex()          // Retorna índice de navegação
-getStatistics()             // Calcula estatísticas
+getBookInfo(); // Retorna info do livro
+getChaptersIndex(); // Retorna índice de navegação
+getStatistics(); // Calcula estatísticas
 
 // === CONSULTAS ===
-getChapter(number)          // Retorna capítulo completo
-getVerse(chapter, verse)    // Retorna versículo específico
+getChapter(number); // Retorna capítulo completo
+getVerse(chapter, verse); // Retorna versículo específico
 
 // === BUSCA ===
-searchVerses(query, limit)  // Busca texto (grego + português)
-searchGlossary(greekWord)   // Busca palavra grega específica
+searchVerses(query, limit); // Busca texto (grego + português)
+searchGlossary(greekWord); // Busca palavra grega específica
 
 // === ANÁLISE ===
-getInterlinear(ch, v)       // Análise morfológica palavra-por-palavra
+getInterlinear(ch, v); // Análise morfológica palavra-por-palavra
 ```
 
 ### Exemplo de Uso
@@ -174,21 +185,21 @@ getInterlinear(ch, v)       // Análise morfológica palavra-por-palavra
 ```html
 <script src="api/apocalipse.js"></script>
 <script>
-    async function showChapter1() {
-        // Carregar capítulo 1
-        const chapter = await getChapter(1);
-        
-        // Iterar versículos
-        chapter.verses.forEach(verse => {
-            console.log(`${verse.verse}: ${verse.literal_translation}`);
-        });
-        
-        // Buscar "Jesus"
-        const results = await searchVerses("Jesus", 10);
-        console.log(`Encontradas ${results.length} ocorrências`);
-    }
-    
-    showChapter1();
+  async function showChapter1() {
+    // Carregar capítulo 1
+    const chapter = await getChapter(1);
+
+    // Iterar versículos
+    chapter.verses.forEach((verse) => {
+      console.log(`${verse.verse}: ${verse.literal_translation}`);
+    });
+
+    // Buscar "Jesus"
+    const results = await searchVerses("Jesus", 10);
+    console.log(`Encontradas ${results.length} ocorrências`);
+  }
+
+  showChapter1();
 </script>
 ```
 
@@ -247,14 +258,14 @@ analysis = service.get_revelation_interlinear(1, 1)
 
 ## 📈 Dados do Apocalipse
 
-| Métrica | Valor |
-|---------|-------|
-| **Capítulos** | 22 |
-| **Versículos** | 405 |
-| **Palavras totais** | ~10,000 |
-| **Termos únicos (grego)** | 282 |
-| **Média palavras/versículo** | 24.7 |
-| **Tamanho arquivo** | 4.45 MB |
+| Métrica                      | Valor   |
+| ---------------------------- | ------- |
+| **Capítulos**                | 22      |
+| **Versículos**               | 405     |
+| **Palavras totais**          | ~10,000 |
+| **Termos únicos (grego)**    | 282     |
+| **Média palavras/versículo** | 24.7    |
+| **Tamanho arquivo**          | 4.45 MB |
 
 ---
 
@@ -319,6 +330,7 @@ python -c "from src.services.bible_service import BibleService; s = BibleService
 ```
 
 **Output esperado**:
+
 ```
 ✅ Apocalipse carregado: 405 versículos
 {'title': 'Apocalipse de João', 'greek_title': 'Ἀποκάλυψις Ἰωάννου', ...}
@@ -329,18 +341,21 @@ python -c "from src.services.bible_service import BibleService; s = BibleService
 ## 🔍 Próximos Passos
 
 ### Site Institucional
+
 - [ ] Adicionar download PDF
 - [ ] Implementar compartilhamento de versículos
 - [ ] Criar favoritos/bookmarks
 - [ ] Adicionar notas de rodapé
 
 ### Plataforma de IA
+
 - [ ] Adicionar ao índice FAISS (busca semântica)
 - [ ] Treinar modelo específico com Apocalipse
 - [ ] Implementar estudos guiados por capítulo
 - [ ] Criar perguntas frequentes sobre versículos
 
 ### Outros Livros
+
 - [ ] Traduzir Evangelho de João (21 capítulos)
 - [ ] Traduzir Daniel (12 capítulos)
 - [ ] Criar índice unificado de todos os livros
@@ -359,6 +374,7 @@ python -c "from src.services.bible_service import BibleService; s = BibleService
 ## ✅ Checklist de Integração
 
 ### Site Institucional
+
 - [x] Página interativa criada (`apocalipse-completo.html`)
 - [x] API JavaScript implementada (`api/apocalipse.js`)
 - [x] Dados JSON copiados para `data/`
@@ -371,6 +387,7 @@ python -c "from src.services.bible_service import BibleService; s = BibleService
 - [x] Mobile responsivo
 
 ### Plataforma de IA
+
 - [x] `RevelationService` criado
 - [x] `BibleService` integrado
 - [x] Métodos de consulta implementados
@@ -381,6 +398,7 @@ python -c "from src.services.bible_service import BibleService; s = BibleService
 - [x] Tratamento de erros completo
 
 ### Documentação
+
 - [x] Guia de integração completo
 - [x] Exemplos de uso (JavaScript)
 - [x] Exemplos de uso (Python)

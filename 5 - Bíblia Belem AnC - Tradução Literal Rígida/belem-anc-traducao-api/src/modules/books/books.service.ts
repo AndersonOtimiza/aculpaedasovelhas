@@ -35,7 +35,7 @@ export async function listBooks(params?: ListBooksParams): Promise<Book[]> {
     values.push(params.trad_group);
   }
 
-  sql += ` ORDER BY canon_order`;
+  sql += " ORDER BY canon_order";
 
   const result = await query(sql, values);
   return result.rows as Book[];

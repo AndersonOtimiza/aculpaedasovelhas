@@ -8,10 +8,10 @@ export const env = {
     port: parseInt(process.env.DB_PORT || "5432"),
     user: process.env.DB_USER || "postgres",
     password: process.env.DB_PASSWORD || "postgres",
-    database: process.env.DB_NAME || "belem_anc_traducao",
+    database: process.env.DB_NAME || "belem_anc_traducao"
   },
   server: {
     port: parseInt(process.env.PORT || "3001"),
-    nodeEnv: process.env.NODE_ENV || "development",
-  },
+    nodeEnv: process.env.NODE_ENV || "development"
+  }
 };

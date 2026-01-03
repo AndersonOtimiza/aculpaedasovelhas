@@ -1,6 +1,7 @@
 # Estrutura de Subpastas - Antigo Testamento
 
 ## Pentateuco (5 livros)
+
 - Genesis.json / Genesis.md
 - Exodus.json / Exodus.md
 - Leviticus.json / Leviticus.md
@@ -8,6 +9,7 @@
 - Deuteronomy.json / Deuteronomy.md
 
 ## Históricos (12 livros)
+
 - Joshua.json / Joshua.md
 - Judges.json / Judges.md
 - Ruth.json / Ruth.md
@@ -22,6 +24,7 @@
 - Esther.json / Esther.md
 
 ## Poéticos (5 livros)
+
 - Job.json / Job.md
 - Psalms.json / Psalms.md
 - Proverbs.json / Proverbs.md
@@ -29,6 +32,7 @@
 - SongOfSongs.json / SongOfSongs.md
 
 ## Profetas Maiores (5 livros)
+
 - Isaiah.json / Isaiah.md
 - Jeremiah.json / Jeremiah.md
 - Lamentations.json / Lamentations.md
@@ -36,6 +40,7 @@
 - Daniel.json / Daniel.md
 
 ## Profetas Menores (12 livros)
+
 - Hosea.json / Hosea.md
 - Joel.json / Joel.md
 - Amos.json / Amos.md

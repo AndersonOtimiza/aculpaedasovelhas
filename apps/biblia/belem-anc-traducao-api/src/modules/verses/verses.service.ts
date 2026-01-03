@@ -94,7 +94,7 @@ export async function getVerseWithTokens(
   const verseData = verseResult.rows[0] as Verse;
 
   // Buscar tokens do versículo
-  let tokenSql = `
+  const tokenSql = `
     SELECT
       t.position, t.text_utf8, t.script, t.normalized, t.pt_literal,
       m.lemma, m.strong_number, m.morph_code
@@ -122,7 +122,7 @@ export async function getVerseWithTokens(
   return {
     ...verseData,
     tokens: tokenResult.rows as VerseToken[],
-    translations: translationsResult.rows as VerseTranslation[],
+    translations: translationsResult.rows as VerseTranslation[]
   };
 }
 

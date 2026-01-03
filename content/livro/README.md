@@ -43,7 +43,7 @@ Uma obra revolucionária que desafia tudo o que você conhece sobre a Bíblia. R
 - Revelações enviadas pelo Espírito Santo de Deus
 - A responsabilidade é das Ovelhas. Faça a sua parte.
 
-> *"E conhecereis a verdade, e a verdade vos libertará" – João 8:32*
+> _"E conhecereis a verdade, e a verdade vos libertará" – João 8:32_
 
 ---
 

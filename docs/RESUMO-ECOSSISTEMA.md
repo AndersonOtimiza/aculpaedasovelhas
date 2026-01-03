@@ -14,7 +14,7 @@ Site → Blog → Podcast → Livrinho → Bíblia → Comunidade → exeg.ai
 2. **Blog** - Artigos inéditos revelando códigos bíblicos ocultos (com IA exeg.ai)
 3. **Podcast** - Conteúdo acessível no dia a dia
 4. **O Livrinho** - "A Culpa é das Ovelhas" (online gratuito ou físico)
-   - Edições: *666 — The Beast Exposed* e *O anticristo revelado*
+   - Edições: _666 — The Beast Exposed_ e _O anticristo revelado_
 5. **Bíblia Belém An.C 2025** - Tradução literal rígida (hebraico, aramaico, grego)
 6. **Comunidade** - Acompanhamento coletivo
 7. **exeg.ai** - Máquina de exegese avançada (IA especializada em "Easter Eggs bíblicos")
@@ -23,15 +23,15 @@ Site → Blog → Podcast → Livrinho → Bíblia → Comunidade → exeg.ai
 
 ## Status dos Módulos
 
-| # | Módulo | Status | Observações |
-|---|--------|--------|-------------|
-| 1 | Site | **Funcional** | 22+ páginas HTML, Docker, Cloudflare, API Python |
-| 2 | Blog | Estrutura apenas | Só pasta `Artigos/` - precisa implementar |
-| 3 | Podcast | Vazio | Só README - precisa implementar |
-| 4 | Livro | **Conteúdo pronto** | 3 documentos .docx prontos |
-| 5 | Bíblia | **Funcional** | API Node.js/TypeScript, fontes textuais (BHSA, SBLGNT, etc.) |
-| 6 | Comunidade | Vazio | Só `Project.txt` - precisa implementar |
-| 7 | exeg.ai | **Implementado** | Python FastAPI, FAISS GPU, SentenceTransformers, Ollama |
+| #   | Módulo     | Status              | Observações                                                  |
+| --- | ---------- | ------------------- | ------------------------------------------------------------ |
+| 1   | Site       | **Funcional**       | 22+ páginas HTML, Docker, Cloudflare, API Python             |
+| 2   | Blog       | Estrutura apenas    | Só pasta `Artigos/` - precisa implementar                    |
+| 3   | Podcast    | Vazio               | Só README - precisa implementar                              |
+| 4   | Livro      | **Conteúdo pronto** | 3 documentos .docx prontos                                   |
+| 5   | Bíblia     | **Funcional**       | API Node.js/TypeScript, fontes textuais (BHSA, SBLGNT, etc.) |
+| 6   | Comunidade | Vazio               | Só `Project.txt` - precisa implementar                       |
+| 7   | exeg.ai    | **Implementado**    | Python FastAPI, FAISS GPU, SentenceTransformers, Ollama      |
 
 ---
 
@@ -106,32 +106,33 @@ aculpaedasovelhas/
 
 ## Integrações Técnicas Verificadas
 
-| Status | Integração | Protocolo |
-|--------|------------|-----------|
-| ✅ | Site (1) ↔ exeg.ai (7) | API HTTP |
-| ✅ | Bíblia (5) ↔ exeg.ai (7) | API :3001 → :8000 |
-| ✅ | Site (1) hospeda Livrinho (4) | HTML/EPUB |
-| ⚠️ | Blog (2) precisa de backend | - |
-| ⚠️ | Podcast (3) precisa de infraestrutura | - |
-| ⚠️ | Comunidade (6) precisa de plataforma | - |
+| Status | Integração                            | Protocolo         |
+| ------ | ------------------------------------- | ----------------- |
+| ✅     | Site (1) ↔ exeg.ai (7)                | API HTTP          |
+| ✅     | Bíblia (5) ↔ exeg.ai (7)              | API :3001 → :8000 |
+| ✅     | Site (1) hospeda Livrinho (4)         | HTML/EPUB         |
+| ⚠️     | Blog (2) precisa de backend           | -                 |
+| ⚠️     | Podcast (3) precisa de infraestrutura | -                 |
+| ⚠️     | Comunidade (6) precisa de plataforma  | -                 |
 
 ---
 
 ## Integrações Confirmadas (Implementadas)
 
-| De | Para | Implementação | Arquivo |
-|----|------|---------------|---------|
-| Bíblia :3001 | exeg.ai :8000 | Cliente HTTP Python | `#exeg.ai/src/services/bible_api_client.py` |
-| exeg.ai | Ollama | LLM Service | `#exeg.ai/src/services/llm_service.py` |
-| exeg.ai | FAISS | Busca Semântica | `#exeg.ai/src/services/faiss_service.py` |
-| Site | AI Agent (Ollama) | FastAPI + Ollama | `apps/site/api/ai_agent.py` |
-| Livro | Site | JSON knowledge base | `apps/site/knowledge/` |
+| De           | Para              | Implementação       | Arquivo                                     |
+| ------------ | ----------------- | ------------------- | ------------------------------------------- |
+| Bíblia :3001 | exeg.ai :8000     | Cliente HTTP Python | `#exeg.ai/src/services/bible_api_client.py` |
+| exeg.ai      | Ollama            | LLM Service         | `#exeg.ai/src/services/llm_service.py`      |
+| exeg.ai      | FAISS             | Busca Semântica     | `#exeg.ai/src/services/faiss_service.py`    |
+| Site         | AI Agent (Ollama) | FastAPI + Ollama    | `apps/site/api/ai_agent.py`                 |
+| Livro        | Site              | JSON knowledge base | `apps/site/knowledge/`                      |
 
 ---
 
 ## APIs Disponíveis
 
 ### Site API (`/api`)
+
 - `/api/ai/chat` - Chat com AN Agent Bible Study
 - `/api/ai/verse` - Busca versículos Belem AnC
 - `/api/ai/search` - Busca texto
@@ -139,6 +140,7 @@ aculpaedasovelhas/
 - `/api/ai/compare` - Comparação de traduções
 
 ### Bíblia API (`:3001`)
+
 - `/api/v1/books` - Livros bíblicos
 - `/api/v1/verses/{book}/{chapter}` - Versículos
 - `/api/v1/tokens/{verseId}` - Tokens/morfologia
@@ -159,14 +161,15 @@ aculpaedasovelhas/
 
 ## Stack Tecnológico
 
-| Componente | Tecnologia | Status |
-|------------|------------|--------|
-| API Tradução | Node.js + TypeScript + PostgreSQL | **Pronto** |
-| AI Agent | Python + FastAPI + FAISS + Torch | **Pronto** |
-| Frontend | HTML/CSS/JS + Cloudflare Pages | **Pronto** |
-| LLMs | OpenAI, Anthropic, Cohere, Ollama | **Configurado** |
+| Componente   | Tecnologia                        | Status          |
+| ------------ | --------------------------------- | --------------- |
+| API Tradução | Node.js + TypeScript + PostgreSQL | **Pronto**      |
+| AI Agent     | Python + FastAPI + FAISS + Torch  | **Pronto**      |
+| Frontend     | HTML/CSS/JS + Cloudflare Pages    | **Pronto**      |
+| LLMs         | OpenAI, Anthropic, Cohere, Ollama | **Configurado** |
 
 ### Tecnologias Identificadas
+
 - **Frontend:** HTML/CSS/JavaScript
 - **Backend:** Node.js + TypeScript, Python
 - **IA/ML:** PyTorch, TensorRT, GPU support
@@ -177,21 +180,23 @@ aculpaedasovelhas/
 
 ## Site aculpaedasovelhas.org
 
-| Aspecto | Descrição |
-|---------|-----------|
+| Aspecto                | Descrição                                                       |
+| ---------------------- | --------------------------------------------------------------- |
 | Posição no Ecossistema | **Portal Principal** - Porta de entrada para todo o ecossistema |
-| Domínio | aculpaedasovelhas.org |
-| Hospedagem | Cloudflare Pages (deploy manual via Wrangler) |
-| Repositório | Privado no GitHub |
-| Branch | master |
+| Domínio                | aculpaedasovelhas.org                                           |
+| Hospedagem             | Cloudflare Pages (deploy manual via Wrangler)                   |
+| Repositório            | Privado no GitHub                                               |
+| Branch                 | master                                                          |
 
 ### Assets do Site
+
 - `styles.css` - Estilos principais (tema dark/light)
 - `script.js` - JavaScript principal
 - `kindle-reader.js` - Modo leitura imersiva
 - `api/` - API FastAPI para autenticação/downloads
 
 ### Características
+
 - Design responsivo (mobile-first)
 - Tema Dark/Light com persistência (localStorage)
 - Paleta minimalista estilo Claude/VS Code
@@ -202,6 +207,7 @@ aculpaedasovelhas/
 ### Estrutura Principal (22 arquivos HTML)
 
 **Páginas Principais:**
+
 - `index.html` - Home/Portal principal
 - `manifesto.html` - O Manifesto
 - `livrinho.html` - Leitura do livro (modo Kindle)
@@ -211,17 +217,21 @@ aculpaedasovelhas/
 - `sobre.html` - Sobre o projeto / IA Bible Study
 
 **Artigos:**
+
 - `artigo-666.html`
 - `artigo-666-enigma.html`
 - `artigo-chaves-frameworks.html`
 - `artigo-lobos-ovelhas.html`
 
 **Centro Legal (7 páginas):**
+
 - `legal.html`, `termos.html`, `licenca.html`, `contrato-b2b.html`
 - `politica-api.html`, `sla.html`, `rfc.html`, `iso.html`, `guideline.html`
 
 ### Deploy
+
 O deploy é **manual** via Wrangler CLI:
+
 ```bash
 npx wrangler pages deploy . --project-name=aculpaedasovelhas
 ```
@@ -230,12 +240,12 @@ npx wrangler pages deploy . --project-name=aculpaedasovelhas
 
 ## Repositório
 
-| Propriedade | Valor |
-|-------------|-------|
-| Nome | aculpaedasovelhas-site |
-| Visibilidade | **private** |
-| Privado | true |
-| Branch padrão | master |
+| Propriedade   | Valor                  |
+| ------------- | ---------------------- |
+| Nome          | aculpaedasovelhas-site |
+| Visibilidade  | **private**            |
+| Privado       | true                   |
+| Branch padrão | master                 |
 
 > O repositório é **privado**, o que reduz significativamente o risco de exposição dos dados que estavam no histórico.
 
@@ -244,6 +254,7 @@ npx wrangler pages deploy . --project-name=aculpaedasovelhas
 ## Padrão dos READMEs
 
 Todos os READMEs agora incluem:
+
 - Título alinhado ao ecossistema
 - Posição no roteiro: `Site → Blog → Podcast → Livrinho → Bíblia → Comunidade → exeg.ai`
 - Descrição do módulo
@@ -258,4 +269,4 @@ Todos os READMEs agora incluem:
 
 ---
 
-*Última atualização: 2025-01-03 - exeg.ai implementado*
+_Última atualização: 2025-01-03 - exeg.ai implementado_

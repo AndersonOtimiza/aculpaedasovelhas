@@ -55,28 +55,33 @@ cloudflared tunnel route dns aculpaedasovelhas-api biblia.aculpaedasovelhas.org
 ### 3. Atualizar cloudflared.yml
 
 Edite `#exeg.ai/cloudflared.yml` e substitua:
+
 - `TUNNEL_ID_AQUI` pelo ID do tunnel criado
 
 ### 4. Iniciar Serviços
 
 **Terminal 1 - Bible API:**
+
 ```powershell
 cd "5 - Bíblia Belem AnC - Tradução Literal Rígida\belem-anc-traducao-api"
 npm run dev
 ```
 
 **Terminal 2 - Ollama:**
+
 ```powershell
 ollama serve
 ```
 
 **Terminal 3 - exeg.ai:**
+
 ```powershell
 cd "#exeg.ai"
 python -m src.main
 ```
 
 **Terminal 4 - Tunnel:**
+
 ```powershell
 cd "#exeg.ai"
 .\start-tunnel.ps1
@@ -86,11 +91,11 @@ cd "#exeg.ai"
 
 ## Endpoints Públicos
 
-| Endpoint | URL |
-|----------|-----|
-| exeg.ai API | https://exeg.aculpaedasovelhas.org |
+| Endpoint     | URL                                     |
+| ------------ | --------------------------------------- |
+| exeg.ai API  | https://exeg.aculpaedasovelhas.org      |
 | exeg.ai Docs | https://exeg.aculpaedasovelhas.org/docs |
-| Bible API | https://biblia.aculpaedasovelhas.org |
+| Bible API    | https://biblia.aculpaedasovelhas.org    |
 
 ---
 
@@ -129,6 +134,7 @@ curl https://biblia.aculpaedasovelhas.org/api/v1/verses/REV/13
 ## Troubleshooting
 
 ### Tunnel não conecta
+
 ```powershell
 # Verificar status
 cloudflared tunnel info aculpaedasovelhas-api
@@ -139,12 +145,14 @@ cloudflared tunnel create aculpaedasovelhas-api
 ```
 
 ### Serviço offline
+
 ```powershell
 # Verificar portas
 netstat -an | findstr "3001 8000 11434"
 ```
 
 ### CORS errors
+
 O CORS está habilitado em ambas as APIs. Se houver problemas, verifique os headers.
 
 ---
@@ -157,4 +165,4 @@ O CORS está habilitado em ambas as APIs. Se houver problemas, verifique os head
 
 ---
 
-*Última atualização: 2025-01-03*
+_Última atualização: 2025-01-03_

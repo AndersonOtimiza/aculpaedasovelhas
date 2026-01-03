@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   # Banco de dados PostgreSQL
@@ -13,7 +13,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
     ports:
-      - "5433:5432"  # Porta 5433 para não conflitar com outros PostgreSQL
+      - "5433:5432" # Porta 5433 para não conflitar com outros PostgreSQL
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s

@@ -49,7 +49,9 @@ export async function listTokensByVerse(verseId: number): Promise<Token[]> {
   return result.rows as Token[];
 }
 
-export async function getTokenById(tokenId: number): Promise<TokenWithMorphology | null> {
+export async function getTokenById(
+  tokenId: number
+): Promise<TokenWithMorphology | null> {
   const result = await query(
     `SELECT
        t.id, t.verse_id, t.position, t.text_utf8, t.script,
@@ -65,7 +67,9 @@ export async function getTokenById(tokenId: number): Promise<TokenWithMorphology
   return result.rows[0] || null;
 }
 
-export async function getInterlinear(verseId: number): Promise<InterlinearToken[]> {
+export async function getInterlinear(
+  verseId: number
+): Promise<InterlinearToken[]> {
   const result = await query(
     `SELECT
        t.position,
@@ -84,7 +88,9 @@ export async function getInterlinear(verseId: number): Promise<InterlinearToken[
   return result.rows as InterlinearToken[];
 }
 
-export async function getTokensWithMorphology(verseId: number): Promise<TokenWithMorphology[]> {
+export async function getTokensWithMorphology(
+  verseId: number
+): Promise<TokenWithMorphology[]> {
   const result = await query(
     `SELECT
        t.id, t.verse_id, t.position, t.text_utf8, t.script,

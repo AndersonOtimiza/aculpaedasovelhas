@@ -23,36 +23,36 @@ Revelação de Jesus Cristo, a qual deu a ele o Deus, mostrar aos servos dele as
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | Ἀποκάλυψις | ἀποκάλυψις | N-NSF | revelação | Nominativo singular feminino |
-| 2 | Ἰησοῦ | Ἰησοῦς | N-GSM | Jesus | Genitivo singular masculino |
-| 3 | Χριστοῦ | Χριστός | N-GSM | Cristo | Genitivo singular masculino |
-| 4 | ἣν | ὅς | RR-ASF | a qual | Pronome relativo acusativo singular feminino |
-| 5 | ἔδωκεν | δίδωμι | V-3AAI-S | deu | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 6 | αὐτῷ | αὐτός | RP-DSM | a ele | Pronome dativo singular masculino |
-| 7 | ὁ | ὁ | RA-NSM | o | Artigo nominativo singular masculino |
-| 8 | θεὸς | θεός | N-NSM | Deus | Nominativo singular masculino |
-| 9 | δεῖξαι | δείκνυμι | V-AAN | mostrar | Verbo aoristo ativo infinitivo |
-| 10 | τοῖς | ὁ | RA-DPM | aos | Artigo dativo plural masculino |
-| 11 | δούλοις | δοῦλος | N-DPM | servos | Dativo plural masculino |
-| 12 | αὐτοῦ | αὐτός | RP-GSM | dele | Pronome genitivo singular masculino |
-| 13 | ἃ | ὅς | RR-APN | as quais | Pronome relativo acusativo plural neutro |
-| 14 | δεῖ | δέω | V-3PAI-S | é necessário | Verbo presente ativo indicativo 3ª pessoa singular |
-| 15 | γενέσθαι | γίνομαι | V-AMN | tornar-se | Verbo aoristo médio infinitivo |
-| 16 | ἐν | ἐν | P | em | Preposição |
-| 17 | τάχει | τάχος | N-DSN | brevidade | Dativo singular neutro |
-| 18 | καὶ | καί | C | e | Conjunção |
-| 19 | ἐσήμανεν | σημαίνω | V-3AAI-S | sinalizou | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 20 | ἀποστείλας | ἀποστέλλω | V-AAPNSM | tendo enviado | Particípio aoristo ativo nominativo singular masculino |
-| 21 | διὰ | διά | P | através | Preposição |
-| 22 | τοῦ | ὁ | RA-GSM | do | Artigo genitivo singular masculino |
-| 23 | ἀγγέλου | ἄγγελος | N-GSM | anjo | Genitivo singular masculino |
-| 24 | αὐτοῦ | αὐτός | RP-GSM | dele | Pronome genitivo singular masculino |
-| 25 | τῷ | ὁ | RA-DSM | ao | Artigo dativo singular masculino |
-| 26 | δούλῳ | δοῦλος | N-DSM | servo | Dativo singular masculino |
-| 27 | αὐτοῦ | αὐτός | RP-GSM | dele | Pronome genitivo singular masculino |
-| 28 | Ἰωάννῃ | Ἰωάννης | N-DSM | João | Dativo singular masculino |
+| Pos | Grego      | Lema       | Morfologia | Tradução      | Notas                                                  |
+| --- | ---------- | ---------- | ---------- | ------------- | ------------------------------------------------------ |
+| 1   | Ἀποκάλυψις | ἀποκάλυψις | N-NSF      | revelação     | Nominativo singular feminino                           |
+| 2   | Ἰησοῦ      | Ἰησοῦς     | N-GSM      | Jesus         | Genitivo singular masculino                            |
+| 3   | Χριστοῦ    | Χριστός    | N-GSM      | Cristo        | Genitivo singular masculino                            |
+| 4   | ἣν         | ὅς         | RR-ASF     | a qual        | Pronome relativo acusativo singular feminino           |
+| 5   | ἔδωκεν     | δίδωμι     | V-3AAI-S   | deu           | Verbo aoristo ativo indicativo 3ª pessoa singular      |
+| 6   | αὐτῷ       | αὐτός      | RP-DSM     | a ele         | Pronome dativo singular masculino                      |
+| 7   | ὁ          | ὁ          | RA-NSM     | o             | Artigo nominativo singular masculino                   |
+| 8   | θεὸς       | θεός       | N-NSM      | Deus          | Nominativo singular masculino                          |
+| 9   | δεῖξαι     | δείκνυμι   | V-AAN      | mostrar       | Verbo aoristo ativo infinitivo                         |
+| 10  | τοῖς       | ὁ          | RA-DPM     | aos           | Artigo dativo plural masculino                         |
+| 11  | δούλοις    | δοῦλος     | N-DPM      | servos        | Dativo plural masculino                                |
+| 12  | αὐτοῦ      | αὐτός      | RP-GSM     | dele          | Pronome genitivo singular masculino                    |
+| 13  | ἃ          | ὅς         | RR-APN     | as quais      | Pronome relativo acusativo plural neutro               |
+| 14  | δεῖ        | δέω        | V-3PAI-S   | é necessário  | Verbo presente ativo indicativo 3ª pessoa singular     |
+| 15  | γενέσθαι   | γίνομαι    | V-AMN      | tornar-se     | Verbo aoristo médio infinitivo                         |
+| 16  | ἐν         | ἐν         | P          | em            | Preposição                                             |
+| 17  | τάχει      | τάχος      | N-DSN      | brevidade     | Dativo singular neutro                                 |
+| 18  | καὶ        | καί        | C          | e             | Conjunção                                              |
+| 19  | ἐσήμανεν   | σημαίνω    | V-3AAI-S   | sinalizou     | Verbo aoristo ativo indicativo 3ª pessoa singular      |
+| 20  | ἀποστείλας | ἀποστέλλω  | V-AAPNSM   | tendo enviado | Particípio aoristo ativo nominativo singular masculino |
+| 21  | διὰ        | διά        | P          | através       | Preposição                                             |
+| 22  | τοῦ        | ὁ          | RA-GSM     | do            | Artigo genitivo singular masculino                     |
+| 23  | ἀγγέλου    | ἄγγελος    | N-GSM      | anjo          | Genitivo singular masculino                            |
+| 24  | αὐτοῦ      | αὐτός      | RP-GSM     | dele          | Pronome genitivo singular masculino                    |
+| 25  | τῷ         | ὁ          | RA-DSM     | ao            | Artigo dativo singular masculino                       |
+| 26  | δούλῳ      | δοῦλος     | N-DSM      | servo         | Dativo singular masculino                              |
+| 27  | αὐτοῦ      | αὐτός      | RP-GSM     | dele          | Pronome genitivo singular masculino                    |
+| 28  | Ἰωάννῃ     | Ἰωάννης    | N-DSM      | João          | Dativo singular masculino                              |
 
 ---
 
@@ -69,21 +69,21 @@ O qual testemunhou a palavra do Deus e o testemunho de Jesus Cristo, quantas coi
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | ὃς | ὅς | RR-NSM | o qual | Pronome relativo nominativo singular masculino |
-| 2 | ἐμαρτύρησεν | μαρτυρέω | V-3AAI-S | testemunhou | Verbo aoristo ativo indicativo 3ª pessoa singular |
-| 3 | τὸν | ὁ | RA-ASM | a | Artigo acusativo singular masculino |
-| 4 | λόγον | λόγος | N-ASM | palavra | Acusativo singular masculino |
-| 5 | τοῦ | ὁ | RA-GSM | do | Artigo genitivo singular masculino |
-| 6 | θεοῦ | θεός | N-GSM | Deus | Genitivo singular masculino |
-| 7 | καὶ | καί | C | e | Conjunção |
-| 8 | τὴν | ὁ | RA-ASF | o | Artigo acusativo singular feminino |
-| 9 | μαρτυρίαν | μαρτυρία | N-ASF | testemunho | Acusativo singular feminino |
-| 10 | Ἰησοῦ | Ἰησοῦς | N-GSM | Jesus | Genitivo singular masculino |
-| 11 | Χριστοῦ | Χριστός | N-GSM | Cristo | Genitivo singular masculino |
-| 12 | ὅσα | ὅσος | RR-APN | quantas coisas | Pronome relativo acusativo plural neutro |
-| 13 | εἶδεν | ὁράω | V-3AAI-S | viu | Verbo aoristo ativo indicativo 3ª pessoa singular |
+| Pos | Grego       | Lema     | Morfologia | Tradução       | Notas                                             |
+| --- | ----------- | -------- | ---------- | -------------- | ------------------------------------------------- |
+| 1   | ὃς          | ὅς       | RR-NSM     | o qual         | Pronome relativo nominativo singular masculino    |
+| 2   | ἐμαρτύρησεν | μαρτυρέω | V-3AAI-S   | testemunhou    | Verbo aoristo ativo indicativo 3ª pessoa singular |
+| 3   | τὸν         | ὁ        | RA-ASM     | a              | Artigo acusativo singular masculino               |
+| 4   | λόγον       | λόγος    | N-ASM      | palavra        | Acusativo singular masculino                      |
+| 5   | τοῦ         | ὁ        | RA-GSM     | do             | Artigo genitivo singular masculino                |
+| 6   | θεοῦ        | θεός     | N-GSM      | Deus           | Genitivo singular masculino                       |
+| 7   | καὶ         | καί      | C          | e              | Conjunção                                         |
+| 8   | τὴν         | ὁ        | RA-ASF     | o              | Artigo acusativo singular feminino                |
+| 9   | μαρτυρίαν   | μαρτυρία | N-ASF      | testemunho     | Acusativo singular feminino                       |
+| 10  | Ἰησοῦ       | Ἰησοῦς   | N-GSM      | Jesus          | Genitivo singular masculino                       |
+| 11  | Χριστοῦ     | Χριστός  | N-GSM      | Cristo         | Genitivo singular masculino                       |
+| 12  | ὅσα         | ὅσος     | RR-APN     | quantas coisas | Pronome relativo acusativo plural neutro          |
+| 13  | εἶδεν       | ὁράω     | V-3AAI-S   | viu            | Verbo aoristo ativo indicativo 3ª pessoa singular |
 
 ---
 
@@ -100,28 +100,28 @@ Bem-aventurado o lendo e os ouvintes das palavras da profecia e os guardando as 
 
 **Análise Palavra-por-Palavra:**
 
-| Pos | Grego | Lema | Morfologia | Tradução | Notas |
-|-----|-------|------|------------|----------|-------|
-| 1 | μακάριος | μακάριος | A-NSM | bem-aventurado | Adjetivo nominativo singular masculino |
-| 2 | ὁ | ὁ | RA-NSM | o | Artigo nominativo singular masculino |
-| 3 | ἀναγινώσκων | ἀναγινώσκω | V-PAPNSM | lendo | Particípio presente ativo nominativo singular masculino |
-| 4 | καὶ | καί | C | e | Conjunção |
-| 5 | οἱ | ὁ | RA-NPM | os | Artigo nominativo plural masculino |
-| 6 | ἀκούοντες | ἀκούω | V-PAPNPM | ouvintes | Particípio presente ativo nominativo plural masculino |
-| 7 | τοὺς | ὁ | RA-APM | as | Artigo acusativo plural masculino |
-| 8 | λόγους | λόγος | N-APM | palavras | Acusativo plural masculino |
-| 9 | τῆς | ὁ | RA-GSF | da | Artigo genitivo singular feminino |
-| 10 | προφητείας | προφητεία | N-GSF | profecia | Genitivo singular feminino |
-| 11 | καὶ | καί | C | e | Conjunção |
-| 12 | τηροῦντες | τηρέω | V-PAPNPM | guardando | Particípio presente ativo nominativo plural masculino |
-| 13 | τὰ | ὁ | RA-APN | as | Artigo acusativo plural neutro |
-| 14 | ἐν | ἐν | P | em | Preposição |
-| 15 | αὐτῇ | αὐτός | RP-DSF | ela | Pronome dativo singular feminino |
-| 16 | γεγραμμένα | γράφω | V-RPPAPN | tendo sido escritas | Particípio perfeito passivo acusativo plural neutro |
-| 17 | ὁ | ὁ | RA-NSM | o | Artigo nominativo singular masculino |
-| 18 | γὰρ | γάρ | C | pois | Conjunção explicativa |
-| 19 | καιρὸς | καιρός | N-NSM | tempo | Nominativo singular masculino |
-| 20 | ἐγγύς | ἐγγύς | ADV | próximo | Advérbio |
+| Pos | Grego       | Lema       | Morfologia | Tradução            | Notas                                                   |
+| --- | ----------- | ---------- | ---------- | ------------------- | ------------------------------------------------------- |
+| 1   | μακάριος    | μακάριος   | A-NSM      | bem-aventurado      | Adjetivo nominativo singular masculino                  |
+| 2   | ὁ           | ὁ          | RA-NSM     | o                   | Artigo nominativo singular masculino                    |
+| 3   | ἀναγινώσκων | ἀναγινώσκω | V-PAPNSM   | lendo               | Particípio presente ativo nominativo singular masculino |
+| 4   | καὶ         | καί        | C          | e                   | Conjunção                                               |
+| 5   | οἱ          | ὁ          | RA-NPM     | os                  | Artigo nominativo plural masculino                      |
+| 6   | ἀκούοντες   | ἀκούω      | V-PAPNPM   | ouvintes            | Particípio presente ativo nominativo plural masculino   |
+| 7   | τοὺς        | ὁ          | RA-APM     | as                  | Artigo acusativo plural masculino                       |
+| 8   | λόγους      | λόγος      | N-APM      | palavras            | Acusativo plural masculino                              |
+| 9   | τῆς         | ὁ          | RA-GSF     | da                  | Artigo genitivo singular feminino                       |
+| 10  | προφητείας  | προφητεία  | N-GSF      | profecia            | Genitivo singular feminino                              |
+| 11  | καὶ         | καί        | C          | e                   | Conjunção                                               |
+| 12  | τηροῦντες   | τηρέω      | V-PAPNPM   | guardando           | Particípio presente ativo nominativo plural masculino   |
+| 13  | τὰ          | ὁ          | RA-APN     | as                  | Artigo acusativo plural neutro                          |
+| 14  | ἐν          | ἐν         | P          | em                  | Preposição                                              |
+| 15  | αὐτῇ        | αὐτός      | RP-DSF     | ela                 | Pronome dativo singular feminino                        |
+| 16  | γεγραμμένα  | γράφω      | V-RPPAPN   | tendo sido escritas | Particípio perfeito passivo acusativo plural neutro     |
+| 17  | ὁ           | ὁ          | RA-NSM     | o                   | Artigo nominativo singular masculino                    |
+| 18  | γὰρ         | γάρ        | C          | pois                | Conjunção explicativa                                   |
+| 19  | καιρὸς      | καιρός     | N-NSM      | tempo               | Nominativo singular masculino                           |
+| 20  | ἐγγύς       | ἐγγύς      | ADV        | próximo             | Advérbio                                                |
 
 ---
 
@@ -133,7 +133,7 @@ Bem-aventurado o lendo e os ouvintes das palavras da profecia e os guardando as 
 
 2. **Tradução Palavra-por-Palavra:** Cada palavra grega recebe equivalente português, sem omissões ou adições interpretativas.
 
-3. **Ajustes TEA (Mínimos):** 
+3. **Ajustes TEA (Mínimos):**
    - Artigos definidos adicionados onde obrigatório em português
    - Preposições ajustadas para regência portuguesa
    - Verbos no infinitivo flexionados quando necessário

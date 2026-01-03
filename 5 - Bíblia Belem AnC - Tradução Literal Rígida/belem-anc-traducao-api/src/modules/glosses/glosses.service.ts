@@ -10,7 +10,10 @@ export interface Gloss {
 
 export type GlossLayer = "N1" | "N2" | "N3" | "N4" | "N5";
 
-export async function getGlossesByToken(tokenId: number, layer?: GlossLayer): Promise<Gloss[]> {
+export async function getGlossesByToken(
+  tokenId: number,
+  layer?: GlossLayer
+): Promise<Gloss[]> {
   let sql = `
     SELECT id, token_id, layer, content, metadata
     FROM glosses
@@ -19,17 +22,20 @@ export async function getGlossesByToken(tokenId: number, layer?: GlossLayer): Pr
   const values: unknown[] = [tokenId];
 
   if (layer) {
-    sql += ` AND layer = $2`;
+    sql += " AND layer = $2";
     values.push(layer);
   }
 
-  sql += ` ORDER BY layer`;
+  sql += " ORDER BY layer";
 
   const result = await query(sql, values);
   return result.rows as Gloss[];
 }
 
-export async function getGlossesByVerse(verseId: number, layer?: GlossLayer): Promise<Gloss[]> {
+export async function getGlossesByVerse(
+  verseId: number,
+  layer?: GlossLayer
+): Promise<Gloss[]> {
   let sql = `
     SELECT g.id, g.token_id, g.layer, g.content, g.metadata
     FROM glosses g
@@ -39,11 +45,11 @@ export async function getGlossesByVerse(verseId: number, layer?: GlossLayer): Pr
   const values: unknown[] = [verseId];
 
   if (layer) {
-    sql += ` AND g.layer = $2`;
+    sql += " AND g.layer = $2";
     values.push(layer);
   }
 
-  sql += ` ORDER BY t.position, g.layer`;
+  sql += " ORDER BY t.position, g.layer";
 
   const result = await query(sql, values);
   return result.rows as Gloss[];
@@ -80,9 +86,8 @@ export async function updateGloss(
 }
 
 export async function deleteGloss(glossId: number): Promise<boolean> {
-  const result = await query(
-    `DELETE FROM glosses WHERE id = $1 RETURNING id`,
-    [glossId]
-  );
+  const result = await query("DELETE FROM glosses WHERE id = $1 RETURNING id", [
+    glossId
+  ]);
   return result.rowCount !== null && result.rowCount > 0;
 }
