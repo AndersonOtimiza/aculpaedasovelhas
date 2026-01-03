@@ -67,7 +67,15 @@
       "Bash(start \"\" \"http://localhost:8081/ia.html\")",
       "Bash(for file in *.html)",
       "Bash(do sed -i 's/href=\"\"livrinho.html\"\" class=\"\"nav-link\"\"/href=\"\"livro.html\"\" class=\"\"nav-link\"\"/g' \"$file\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(copy:*)",
+      "Bash(cmd /c copy \"c:\\\\#Projetos\\\\Projeto - O Livrinho\\\\apps\\\\site\\\\ia.html\" \"c:\\\\#Projetos\\\\Projeto - O Livrinho\\\\apps\\\\site\\\\exeg.html\")",
+      "Bash(start \"\" \"http://localhost:8081/exeg.html\")",
+      "Bash(npx wrangler:*)",
+      "Bash(start \"\" \"https://exeg-ai.pages.dev\")",
+      "Bash(code --install-extension:*)",
+      "Bash(git clone:*)",
+      "Bash(where:*)"
     ]
   }
 }
