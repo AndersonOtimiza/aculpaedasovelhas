@@ -1,7 +1,9 @@
 """
 LLM integration service supporting Ollama, OpenAI, and Anthropic.
 """
+import asyncio
 import httpx
+import requests
 from typing import Dict, Any
 from abc import ABC, abstractmethod
 from src.config.settings import settings
@@ -30,6 +32,39 @@ class OllamaProvider(BaseLLMProvider):
         self.model = settings.OLLAMA_MODEL
         self.timeout = settings.OLLAMA_TIMEOUT
 
+    def _sync_generate(
+        self,
+        prompt: str,
+        system_prompt: str,
+        temperature: float,
+    ) -> Dict[str, Any]:
+        """Synchronous generation using requests (httpx has issues on Windows)."""
+        full_prompt = f"[Sistema]: {system_prompt}\n\n[Usuario]: {prompt}\n\n[Assistente]:"
+
+        response = requests.post(
+            f"{self.url}/api/generate",
+            json={
+                "model": self.model,
+                "prompt": full_prompt,
+                "stream": False,
+                "options": {
+                    "temperature": temperature,
+                    "top_p": 0.9,
+                    "num_predict": 4096,
+                },
+            },
+            timeout=self.timeout,
+        )
+        response.raise_for_status()
+        result = response.json()
+
+        return {
+            "response": result.get("response", ""),
+            "model": self.model,
+            "provider": "ollama",
+            "tokens_used": result.get("eval_count"),
+        }
+
     async def generate(
         self,
         prompt: str,
@@ -37,31 +72,9 @@ class OllamaProvider(BaseLLMProvider):
         temperature: float = 0.7,
     ) -> Dict[str, Any]:
         """Generate using Ollama API."""
-        full_prompt = f"[Sistema]: {system_prompt}\n\n[Usuario]: {prompt}\n\n[Assistente]:"
-
-        async with httpx.AsyncClient(timeout=self.timeout) as client:
-            response = await client.post(
-                f"{self.url}/api/generate",
-                json={
-                    "model": self.model,
-                    "prompt": full_prompt,
-                    "stream": False,
-                    "options": {
-                        "temperature": temperature,
-                        "top_p": 0.9,
-                        "num_predict": 2048,
-                    },
-                },
-            )
-            response.raise_for_status()
-            result = response.json()
-
-            return {
-                "response": result.get("response", ""),
-                "model": self.model,
-                "provider": "ollama",
-                "tokens_used": result.get("eval_count"),
-            }
+        return await asyncio.to_thread(
+            self._sync_generate, prompt, system_prompt, temperature
+        )
 
 
 class OpenAIProvider(BaseLLMProvider):

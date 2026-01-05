@@ -16,7 +16,7 @@ ingress:
   # exeg.ai - Plataforma de Exegese com IA
   # ===========================================
   - hostname: plataforma.exeg.ai
-    service: http://localhost:8000
+    service: http://localhost:8001
     originRequest:
       noTLSVerify: true
       connectTimeout: 30s
@@ -26,6 +26,12 @@ ingress:
   # Bíblia API - Tradução Belem An.C
   # ===========================================
   - hostname: biblia.aculpaedasovelhas.org
+    service: http://localhost:3001
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+
+  - hostname: bible-belem-anc-reader.exeg.ai
     service: http://localhost:3001
     originRequest:
       noTLSVerify: true
