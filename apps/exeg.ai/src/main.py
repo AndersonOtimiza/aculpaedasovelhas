@@ -58,11 +58,12 @@ app.add_middleware(
 )
 
 # Import and include routers
-from src.routes import health, ask, find_similar, explain_links, auth, billing, openai_compat
+from src.routes import health, ask, find_similar, explain_links, auth, billing, openai_compat, leads
 
 app.include_router(health.router, tags=["Health"])
 app.include_router(auth.router, tags=["Authentication"])
 app.include_router(billing.router, tags=["Billing"])
+app.include_router(leads.router, tags=["Leads"])
 app.include_router(ask.router, prefix="/ask", tags=["LLM"])
 app.include_router(find_similar.router, prefix="/find-similar", tags=["Semantic Search"])
 app.include_router(explain_links.router, prefix="/explain-links", tags=["Intertextuality"])
@@ -82,6 +83,8 @@ async def root():
                 "/health": "Service health check",
                 "/auth/register": "User registration",
                 "/auth/login": "User authentication",
+                "/api/register": "Lead capture (institutional site)",
+                "/api/download": "Track lead sources",
                 "/ask": "Direct LLM query (requires auth)",
                 "/find-similar": "Semantic search using FAISS",
                 "/explain-links": "Find and explain intertextual connections",

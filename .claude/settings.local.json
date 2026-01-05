@@ -126,7 +126,17 @@
       "Bash(nslookup:*)",
       "Bash(powershell -Command \"\\(Get-Content src/services/llm_service.py -Raw\\) -replace ''full_prompt = f\"\"\\\\[Sistema\\\\]: \\\\{system_prompt\\\\}\\\\r?\\\\n\\\\r?\\\\n\\\\[Usuario\\\\]: \\\\{prompt\\\\}\\\\r?\\\\n\\\\r?\\\\n\\\\[Assistente\\\\]:\"\"'', ''full_prompt = f\"\"[Sistema]: {system_prompt}\\\\n\\\\n[Usuario]: {prompt}\\\\n\\\\n[Assistente]:\"\"'' | Set-Content src/services/llm_service.py -NoNewline\")",
       "Bash(net stop:*)",
-      "Bash(cloudflared tunnel:*)"
+      "Bash(cloudflared tunnel:*)",
+      "Bash(cmd //c \"taskkill /PID 111952 /F\")",
+      "Bash(cmd //c \"taskkill /PID 155120 /F\")",
+      "Bash(cmd //c \"taskkill /PID 148484 /F\")",
+      "Bash(op --version:*)",
+      "Bash(npm run dev:*)",
+      "Bash(cmd //c \"taskkill /PID 105816 /F\")",
+      "Bash(cmd //c \"taskkill /PID 152392 /F\")",
+      "Bash(npm install)",
+      "Bash(npx prettier . --write)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: remove regras de formatação conflitantes do ESLint\n\nRemove regras indent, quotes e semi que conflitavam com Prettier.\nO eslint-config-prettier já gerencia essas regras automaticamente.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

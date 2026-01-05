@@ -19,7 +19,7 @@ class Settings(BaseSettings):
 
     # Ollama
     OLLAMA_URL: str = "http://localhost:11434"
-    OLLAMA_MODEL: str = "qwen3:4b"
+    OLLAMA_MODEL: str = "qwen2.5:7b-instruct"
     OLLAMA_TIMEOUT: int = 120
 
     # OpenAI (optional)
