@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      exeg.ai - Plataforma de Exegese Inteligente | IA para Estudos Biblicos
+    </title>
+    <meta
+      name="description"
+      content="exeg.ai: Inteligencia Artificial para exegese biblica. Estude os codices originais em Grego Koine, Aramaico e Hebraico com assistencia de IA."
+    />
+    <meta property="og:title" content="exeg.ai - Exegese Inteligente com IA" />
+    <meta
+      property="og:description"
+      content="Plataforma de IA para estudos biblicos profundos baseados nos codices originais."
+    />
+    <link rel="stylesheet" href="styles.css?v=20260103" />
+    <style>
+      /* exeg.ai - Design Minimalista Premium */
+      .exegai-page {
+        background: #ffffff;
+        color: #1a1a1a;
+      }
+
+      .exegai-page .site-header {
+        background: #ffffff;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .exegai-page .logo-text,
+      .exegai-page .nav-link {
+        color: #1a1a1a;
+      }
+
+      .exegai-page .nav-link:hover,
+      .exegai-page .nav-link.active {
+        color: #c46849;
+      }
+
+      .exegai-page .theme-toggle {
+        background: #f5f5f5;
+        border: 1px solid #e5e5e5;
+        color: #1a1a1a;
+      }
+
+      /* Hero */
+      .exegai-hero {
+        padding: 160px 20px 120px;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .exegai-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(196, 104, 73, 0.15);
+        color: #c46849;
+        padding: 8px 16px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 32px;
+      }
+
+      .exegai-title {
+        font-size: clamp(48px, 8vw, 72px);
+        font-weight: 700;
+        color: #1a1a1a;
+        margin: 0 0 24px 0;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .exegai-title span {
+        background: linear-gradient(135deg, #c46849, #d4785a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .exegai-subtitle {
+        font-size: 20px;
+        color: #6b7280;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        line-height: 1.6;
+      }
+
+      .exegai-cta-group {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+      }
+
+      .exegai-btn-primary {
+        background: #1a1a1a;
+        color: #ffffff;
+        padding: 16px 32px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border: none;
+      }
+
+      .exegai-btn-primary:hover {
+        background: #333333;
+        transform: translateY(-2px);
+      }
+
+      .exegai-btn-secondary {
+        background: #ffffff;
+        color: #1a1a1a;
+        padding: 16px 32px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid #e5e5e5;
+        transition: all 0.2s ease;
+      }
+
+      .exegai-btn-secondary:hover {
+        background: #f9fafb;
+        border-color: #d1d5db;
+      }
+
+      .exegai-stats {
+        display: flex;
+        gap: 48px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 32px;
+        border-top: 1px solid #e5e5e5;
+      }
+
+      .exegai-stat {
+        text-align: center;
+      }
+
+      .exegai-stat-value {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+
+      .exegai-stat-label {
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 4px;
+      }
+
+      /* Demo Terminal */
+      .exegai-demo {
+        max-width: 800px;
+        margin: 0 auto 120px;
+        padding: 0 20px;
+      }
+
+      .exegai-terminal {
+        background: #0f172a;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      .terminal-header {
+        background: #1e293b;
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .terminal-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+
+      .terminal-dot.red {
+        background: #ef4444;
+      }
+      .terminal-dot.yellow {
+        background: #eab308;
+      }
+      .terminal-dot.green {
+        background: #22c55e;
+      }
+
+      .terminal-title {
+        flex: 1;
+        text-align: center;
+        color: #94a3b8;
+        font-size: 13px;
+        font-family: monospace;
+      }
+
+      .terminal-body {
+        padding: 24px;
+        font-family: "SF Mono", "Fira Code", monospace;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .terminal-line {
+        margin: 8px 0;
+      }
+
+      .terminal-prompt {
+        color: #22c55e;
+      }
+
+      .terminal-command {
+        color: #f8fafc;
+      }
+
+      .terminal-output {
+        color: #94a3b8;
+      }
+
+      .terminal-highlight {
+        color: #d4785a;
+      }
+
+      .terminal-accent {
+        color: #38bdf8;
+      }
+
+      /* Features Section */
+      .exegai-features {
+        padding: 120px 20px;
+        background: #fafafa;
+      }
+
+      .exegai-features-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .exegai-section-header {
+        text-align: center;
+        margin-bottom: 64px;
+      }
+
+      .exegai-section-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin: 0 0 16px 0;
+      }
+
+      .exegai-section-subtitle {
+        font-size: 18px;
+        color: #6b7280;
+      }
+
+      .exegai-features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 24px;
+      }
+
+      .exegai-feature-card {
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        border-radius: 16px;
+        padding: 32px;
+        transition: all 0.2s ease;
+      }
+
+      .exegai-feature-card:hover {
+        border-color: #d1d5db;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        transform: translateY(-4px);
+      }
+
+      .exegai-feature-icon {
+        width: 48px;
+        height: 48px;
+        background: rgba(196, 104, 73, 0.15);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .exegai-feature-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0 0 12px 0;
+      }
+
+      .exegai-feature-desc {
+        font-size: 15px;
+        color: #6b7280;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      /* How it Works */
+      .exegai-how {
+        padding: 120px 20px;
+        background: #ffffff;
+      }
+
+      .exegai-how-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .exegai-steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        margin-top: 64px;
+      }
+
+      @media (max-width: 768px) {
+        .exegai-steps {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+      }
+
+      .exegai-step {
+        text-align: center;
+      }
+
+      .exegai-step-number {
+        width: 56px;
+        height: 56px;
+        background: #1a1a1a;
+        color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 auto 24px;
+      }
+
+      .exegai-step-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0 0 12px 0;
+      }
+
+      .exegai-step-desc {
+        font-size: 15px;
+        color: #6b7280;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      /* Pricing */
+      .exegai-pricing {
+        padding: 120px 20px;
+        background: #fafafa;
+      }
+
+      .exegai-pricing-inner {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .exegai-pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 64px;
+      }
+
+      @media (max-width: 768px) {
+        .exegai-pricing-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .exegai-pricing-card {
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        border-radius: 20px;
+        padding: 40px;
+      }
+
+      .exegai-pricing-card.featured {
+        border: 2px solid #c46849;
+        position: relative;
+      }
+
+      .exegai-pricing-card.featured::before {
+        content: "Popular";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #c46849;
+        color: #ffffff;
+        padding: 4px 16px;
+        border-radius: 100px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .exegai-pricing-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0 0 8px 0;
+      }
+
+      .exegai-pricing-desc {
+        font-size: 14px;
+        color: #6b7280;
+        margin: 0 0 24px 0;
+      }
+
+      .exegai-pricing-price {
+        font-size: 48px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin: 0 0 24px 0;
+      }
+
+      .exegai-pricing-price span {
+        font-size: 16px;
+        font-weight: 400;
+        color: #6b7280;
+      }
+
+      .exegai-pricing-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 32px 0;
+      }
+
+      .exegai-pricing-features li {
+        padding: 8px 0;
+        color: #4b5563;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .exegai-pricing-features li::before {
+        content: "✓";
+        color: #22c55e;
+        font-weight: 600;
+      }
+
+      .exegai-pricing-btn {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .exegai-pricing-btn.primary {
+        background: #1a1a1a;
+        color: #ffffff;
+      }
+
+      .exegai-pricing-btn.primary:hover {
+        background: #333333;
+      }
+
+      .exegai-pricing-btn.secondary {
+        background: #f3f4f6;
+        color: #1a1a1a;
+      }
+
+      .exegai-pricing-btn.secondary:hover {
+        background: #e5e7eb;
+      }
+
+      /* CTA Section */
+      .exegai-cta {
+        padding: 120px 20px;
+        background: #1a1a1a;
+        text-align: center;
+      }
+
+      .exegai-cta-inner {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .exegai-cta-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 0 0 16px 0;
+      }
+
+      .exegai-cta-subtitle {
+        font-size: 18px;
+        color: #9ca3af;
+        margin: 0 0 40px 0;
+      }
+
+      .exegai-cta-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .exegai-cta-btn-primary {
+        background: #ffffff;
+        color: #1a1a1a;
+        padding: 16px 32px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .exegai-cta-btn-primary:hover {
+        background: #f3f4f6;
+        transform: translateY(-2px);
+      }
+
+      /* Footer override */
+      .exegai-page .footer {
+        background: #0f172a;
+      }
+    </style>
+  </head>
+  <body class="exegai-page">
+    <header class="site-header">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&#9670;</span>
+          <span class="logo-text">exeg.ai</span>
+        </a>
+        <nav class="nav-menu">
+          <a href="#recursos" class="nav-link">Recursos</a>
+          <a href="#como-funciona" class="nav-link">Como Funciona</a>
+          <a href="#precos" class="nav-link">Precos</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="legal.html" class="nav-link">Docs</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          Menu
+        </button>
+        <a
+          href="app.html"
+          class="exegai-btn-primary"
+          style="padding: 10px 20px; font-size: 14px"
+          >Comecar Gratis</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="exegai-hero">
+        <div class="exegai-badge">
+          <span>&#10024;</span>
+          <span>Inteligencia Artificial para Exegese Biblica</span>
+        </div>
+        <h1 class="exegai-title">
+          O Agente de IA para<br /><span>Estudos Biblicos</span>
+        </h1>
+        <p class="exegai-subtitle">
+          Explore os codices originais em Grego Koine, Aramaico e Hebraico com
+          um assistente de IA treinado especificamente para exegese biblica.
+        </p>
+        <div class="exegai-cta-group">
+          <a href="app.html" class="exegai-btn-primary">Comecar Gratis</a>
+          <a href="#como-funciona" class="exegai-btn-secondary"
+            >Ver Demonstracao</a
+          >
+        </div>
+        <div class="exegai-stats">
+          <div class="exegai-stat">
+            <div class="exegai-stat-value">66</div>
+            <div class="exegai-stat-label">Livros da Biblia</div>
+          </div>
+          <div class="exegai-stat">
+            <div class="exegai-stat-value">3</div>
+            <div class="exegai-stat-label">Idiomas Originais</div>
+          </div>
+          <div class="exegai-stat">
+            <div class="exegai-stat-value">&#8734;</div>
+            <div class="exegai-stat-label">Perguntas Premium</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo Terminal -->
+      <section class="exegai-demo">
+        <div class="exegai-terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">exeg.ai - AN Agent Bible Study</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">voce > </span>
+              <span class="terminal-command"
+                >Analise Apocalipse 13:18 no grego original</span
+              >
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">Analisando passagem...</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-highlight">Texto Grego:</span>
+              <span class="terminal-output">
+                &#8038;&#948;&#949; &#7969; &#963;&#959;&#966;&#943;&#945;
+                &#7952;&#963;&#964;&#943;&#957;...</span
+              >
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-highlight">Numero:</span>
+              <span class="terminal-accent"> &#967;&#958;&#962;</span>
+              <span class="terminal-output">
+                (chi-xi-stigma) = 600 + 60 + 6</span
+              >
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-highlight">Insight:</span>
+              <span class="terminal-output">
+                O termo "&#968;&#951;&#966;&#953;&#963;&#940;&#964;&#969;"
+                (psephisato) significa "calcular"</span
+              >
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output"
+                >usando pedras de contagem (psephos)...</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="recursos" class="exegai-features">
+        <div class="exegai-features-inner">
+          <div class="exegai-section-header">
+            <h2 class="exegai-section-title">Recursos Poderosos</h2>
+            <p class="exegai-section-subtitle">
+              Tudo que voce precisa para estudos biblicos profundos
+            </p>
+          </div>
+          <div class="exegai-features-grid">
+            <div class="exegai-feature-card">
+              <div class="exegai-feature-icon">&#129302;</div>
+              <h3 class="exegai-feature-title">Assistente IA Biblico</h3>
+              <p class="exegai-feature-desc">
+                Converse com uma IA treinada em textos biblicos, comentarios
+                patristicos e estudos teologicos academicos.
+              </p>
+            </div>
+            <div class="exegai-feature-card">
+              <div class="exegai-feature-icon">&#127760;</div>
+              <h3 class="exegai-feature-title">Analise Multilingue</h3>
+              <p class="exegai-feature-desc">
+                Estude passagens em Grego Koine, Aramaico e Hebraico com
+                traducoes literais e analise morfologica.
+              </p>
+            </div>
+            <div class="exegai-feature-card">
+              <div class="exegai-feature-icon">&#128269;</div>
+              <h3 class="exegai-feature-title">Busca Semantica</h3>
+              <p class="exegai-feature-desc">
+                Encontre passagens relacionadas por significado e contexto, nao
+                apenas por palavras-chave.
+              </p>
+            </div>
+            <div class="exegai-feature-card">
+              <div class="exegai-feature-icon">&#128202;</div>
+              <h3 class="exegai-feature-title">Comparacao de Manuscritos</h3>
+              <p class="exegai-feature-desc">
+                Compare diferentes manuscritos e traducoes lado a lado com notas
+                criticas.
+              </p>
+            </div>
+            <div class="exegai-feature-card">
+              <div class="exegai-feature-icon">&#128218;</div>
+              <h3 class="exegai-feature-title">Biblioteca Integrada</h3>
+              <p class="exegai-feature-desc">
+                Acesso a lexicos, dicionarios biblicos, comentarios e recursos
+                de estudo.
+              </p>
+            </div>
+            <div class="exegai-feature-card">
+              <div class="exegai-feature-icon">&#128172;</div>
+              <h3 class="exegai-feature-title">Historico de Estudos</h3>
+              <p class="exegai-feature-desc">
+                Salve e retome suas conversas e estudos a qualquer momento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it Works -->
+      <section id="como-funciona" class="exegai-how">
+        <div class="exegai-how-inner">
+          <div class="exegai-section-header">
+            <h2 class="exegai-section-title">Como Funciona</h2>
+            <p class="exegai-section-subtitle">Simples, poderoso e intuitivo</p>
+          </div>
+          <div class="exegai-steps">
+            <div class="exegai-step">
+              <div class="exegai-step-number">1</div>
+              <h3 class="exegai-step-title">Faca sua Pergunta</h3>
+              <p class="exegai-step-desc">
+                Digite qualquer pergunta sobre a Biblia, um versiculo ou um tema
+                teologico.
+              </p>
+            </div>
+            <div class="exegai-step">
+              <div class="exegai-step-number">2</div>
+              <h3 class="exegai-step-title">IA Analisa</h3>
+              <p class="exegai-step-desc">
+                Nossa IA consulta os codices originais e fontes academicas para
+                formular uma resposta.
+              </p>
+            </div>
+            <div class="exegai-step">
+              <div class="exegai-step-number">3</div>
+              <h3 class="exegai-step-title">Receba Insights</h3>
+              <p class="exegai-step-desc">
+                Obtenha respostas detalhadas com referencias aos textos
+                originais e analises contextuais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="precos" class="exegai-pricing">
+        <div class="exegai-pricing-inner">
+          <div class="exegai-section-header">
+            <h2 class="exegai-section-title">Planos</h2>
+            <p class="exegai-section-subtitle">
+              Escolha o plano ideal para seus estudos
+            </p>
+          </div>
+          <div class="exegai-pricing-grid">
+            <div class="exegai-pricing-card">
+              <h3 class="exegai-pricing-name">Gratuito</h3>
+              <p class="exegai-pricing-desc">Para quem esta comecando</p>
+              <div class="exegai-pricing-price">R$0 <span>/mes</span></div>
+              <ul class="exegai-pricing-features">
+                <li>5 perguntas por dia</li>
+                <li>Acesso a traducao Belem AnC</li>
+                <li>Busca basica</li>
+                <li>Comunidade</li>
+              </ul>
+              <a href="app.html" class="exegai-pricing-btn secondary"
+                >Criar Conta</a
+              >
+            </div>
+            <div class="exegai-pricing-card featured">
+              <h3 class="exegai-pricing-name">Premium</h3>
+              <p class="exegai-pricing-desc">Acesso completo a plataforma</p>
+              <div class="exegai-pricing-price">R$29 <span>/mes</span></div>
+              <ul class="exegai-pricing-features">
+                <li>Perguntas ilimitadas</li>
+                <li>Analise multilingue completa</li>
+                <li>Biblioteca de estudos</li>
+                <li>Historico de conversas</li>
+                <li>Suporte prioritario</li>
+              </ul>
+              <a href="assinatura.html" class="exegai-pricing-btn primary"
+                >Assinar Agora</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="exegai-cta">
+        <div class="exegai-cta-inner">
+          <h2 class="exegai-cta-title">Pronto para aprofundar seus estudos?</h2>
+          <p class="exegai-cta-subtitle">
+            Comece gratuitamente e descubra uma nova forma de estudar as
+            Escrituras.
+          </p>
+          <div class="exegai-cta-buttons">
+            <a href="app.html" class="exegai-cta-btn-primary">Comecar Gratis</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon">&#9670;</span>
+              <span class="logo-text">exeg.ai</span>
+            </div>
+            <p>Exegese Inteligente</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Produto</h4>
+              <a href="#recursos">Recursos</a>
+              <a href="#precos">Precos</a>
+              <a href="app.html">Criar Conta</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Ecossistema</h4>
+              <a href="biblia-belem.html">Biblia Belem AnC</a>
+              <a href="livro.html">O Livrinho</a>
+              <a href="comunidade.html">Comunidade</a>
+              <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <a href="legal.html">Centro Legal</a>
+              <a href="termos.html">Termos de Uso</a>
+              <a href="sla.html">SLA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 exeg.ai - Uma plataforma do ecossistema A Culpa e das
+            Ovelhas.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

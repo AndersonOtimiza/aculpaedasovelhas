@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLA - Acordo de Nível de Serviço - A Culpa é das Ovelhas</title>
+    <meta
+      name="description"
+      content="Service Level Agreement - Acordo de Nível de Serviço da Plataforma Belem AnC"
+    />
+    <link rel="stylesheet" href="styles.css?v=20251228" />
+    <link rel="stylesheet" href="legal-styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&#9670;</span>
+          <span class="logo-text">O Livrinho</span>
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="manifesto.html" class="nav-link">Manifesto</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="legal.html" class="nav-link active">Legal</a>
+          <a href="livro.html" class="nav-link">O Livrinho</a>
+          <a href="biblia-belem.html" class="nav-link">Biblia</a>
+          <a href="artigos.html" class="nav-link">Artigos</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          ☰
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          title="Alternar tema"
+          aria-label="Alternar tema"
+        >
+          Claro
+        </button>
+      </div>
+    </header>
+
+    <main class="legal-page">
+      <div class="legal-container">
+        <a href="legal.html" class="back-link">Voltar ao Centro Legal</a>
+
+        <header class="legal-header">
+          <div class="legal-badge">⚡ SLA</div>
+          <h1>Acordo de Nível de Serviço</h1>
+          <p class="legal-subtitle">
+            Service Level Agreement — Plataforma Belem AnC
+          </p>
+          <div class="version-info">
+            <span class="version-tag">📄 Versão BR–SLA–001</span>
+            <span class="version-tag">⚡ Vigência Imediata</span>
+          </div>
+        </header>
+
+        <div class="controller-box">
+          <h3>👤 Provedor do Serviço</h3>
+          <p><strong>BELEM, ANDERSON COSTA</strong></p>
+          <p><strong>CPF:</strong> 096.864.597-66</p>
+          <p>
+            <strong>Endereço de referência:</strong> Cubo Itaú — São Paulo/SP —
+            Brasil
+          </p>
+          <p>
+            <strong>Site institucional:</strong>
+            <a href="https://otimiza.pro">https://otimiza.pro</a>
+          </p>
+          <p>
+            <strong>Plataforma:</strong>
+            <a href="https://plataforma.otimiza.pro"
+              >https://plataforma.otimiza.pro</a
+            >
+          </p>
+        </div>
+
+        <div class="uptime-highlight">
+          <span class="uptime-number">99,5%</span>
+          <span class="uptime-label">Disponibilidade Mensal Garantida</span>
+        </div>
+
+        <section class="section info">
+          <h2><span class="section-icon">📋</span>1. ESCOPO DO SLA</h2>
+          <p>Este Acordo de Nível de Serviço define:</p>
+          <ul>
+            <li>métricas de disponibilidade da Plataforma</li>
+            <li>tempo de resposta para incidentes</li>
+            <li>procedimentos de comunicação</li>
+            <li>compensações por descumprimento</li>
+          </ul>
+          <div class="scope-box">
+            <p>
+              Este SLA aplica-se a todos os serviços da Plataforma Belem AnC,
+              incluindo API, interface web e sistemas de integração.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>
+            <span class="section-icon">📊</span>2. MÉTRICAS DE DISPONIBILIDADE
+          </h2>
+          <p>
+            <strong>2.1.</strong> A Plataforma compromete-se com disponibilidade
+            mínima de <strong>99,5%</strong> ao mês.
+          </p>
+          <p><strong>2.2.</strong> O cálculo exclui:</p>
+          <ul>
+            <li>
+              manutenções programadas (notificadas com 48h de antecedência)
+            </li>
+            <li>eventos de força maior</li>
+            <li>falhas de terceiros (provedores de infraestrutura)</li>
+            <li>ataques de negação de serviço (DDoS)</li>
+          </ul>
+          <p>
+            <strong>2.3.</strong> Tempo máximo de indisponibilidade permitida:
+          </p>
+          <table class="sla-table">
+            <thead>
+              <tr>
+                <th>Período</th>
+                <th>Tempo Permitido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mensal</td>
+                <td>3h 39min</td>
+              </tr>
+              <tr>
+                <td>Trimestral</td>
+                <td>10h 57min</td>
+              </tr>
+              <tr>
+                <td>Anual</td>
+                <td>43h 48min</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section">
+          <h2>
+            <span class="section-icon">🚨</span>3. CLASSIFICAÇÃO DE INCIDENTES
+          </h2>
+          <p>Os incidentes são classificados por severidade:</p>
+          <div class="incident-levels">
+            <div class="incident-card critical">
+              <div class="incident-header">
+                <span class="incident-badge">P1</span>
+                <span class="incident-title">Crítico</span>
+              </div>
+              <p>
+                Serviço completamente indisponível. Impacto total nos usuários.
+              </p>
+              <div class="incident-response">
+                <span class="response-time">⚡ Resposta: 30 min</span>
+                <span class="resolution-time">🔧 Resolução: 4h</span>
+              </div>
+            </div>
+            <div class="incident-card high">
+              <div class="incident-header">
+                <span class="incident-badge">P2</span>
+                <span class="incident-title">Alto</span>
+              </div>
+              <p>Funcionalidade principal degradada. Impacto significativo.</p>
+              <div class="incident-response">
+                <span class="response-time">⚡ Resposta: 2h</span>
+                <span class="resolution-time">🔧 Resolução: 8h</span>
+              </div>
+            </div>
+            <div class="incident-card medium">
+              <div class="incident-header">
+                <span class="incident-badge">P3</span>
+                <span class="incident-title">Médio</span>
+              </div>
+              <p>Funcionalidade secundária afetada. Workaround disponível.</p>
+              <div class="incident-response">
+                <span class="response-time">⚡ Resposta: 8h</span>
+                <span class="resolution-time">🔧 Resolução: 48h</span>
+              </div>
+            </div>
+            <div class="incident-card low">
+              <div class="incident-header">
+                <span class="incident-badge">P4</span>
+                <span class="incident-title">Baixo</span>
+              </div>
+              <p>Questões menores, cosméticas ou informativas.</p>
+              <div class="incident-response">
+                <span class="response-time">⚡ Resposta: 24h</span>
+                <span class="resolution-time">🔧 Resolução: 5 dias</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section info">
+          <h2><span class="section-icon">📞</span>4. CANAIS DE COMUNICAÇÃO</h2>
+          <p>
+            <strong>4.1.</strong> Canais disponíveis para reporte de incidentes:
+          </p>
+          <ul>
+            <li><strong>E-mail:</strong> suporte@otimiza.pro</li>
+            <li><strong>Status Page:</strong> status.otimiza.pro</li>
+            <li><strong>Ticket System:</strong> Via plataforma</li>
+          </ul>
+          <p><strong>4.2.</strong> Notificações de manutenção:</p>
+          <ul>
+            <li>E-mail aos usuários cadastrados</li>
+            <li>Banner na plataforma</li>
+            <li>Atualização na Status Page</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="section-icon">🛠️</span>5. JANELAS DE MANUTENÇÃO</h2>
+          <p>
+            <strong>5.1.</strong> Manutenções programadas ocorrem
+            preferencialmente:
+          </p>
+          <ul>
+            <li>
+              <strong>Horário:</strong> Domingos, 02:00 às 06:00 (horário de
+              Brasília)
+            </li>
+            <li>
+              <strong>Notificação:</strong> Mínimo 48 horas de antecedência
+            </li>
+          </ul>
+          <p><strong>5.2.</strong> Manutenções emergenciais:</p>
+          <ul>
+            <li>Podem ocorrer a qualquer momento</li>
+            <li>Notificação simultânea ou posterior</li>
+            <li>Post-mortem público em até 72h</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>
+            <span class="section-icon">💰</span>6. COMPENSAÇÕES (CRÉDITOS)
+          </h2>
+          <p><strong>6.1.</strong> Em caso de descumprimento do SLA:</p>
+          <table class="sla-table">
+            <thead>
+              <tr>
+                <th>Disponibilidade</th>
+                <th>Crédito</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>99,0% — 99,4%</td>
+                <td>10% do valor mensal</td>
+              </tr>
+              <tr>
+                <td>95,0% — 98,9%</td>
+                <td>25% do valor mensal</td>
+              </tr>
+              <tr>
+                <td>Abaixo de 95,0%</td>
+                <td>50% do valor mensal</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong>6.2.</strong> Créditos devem ser solicitados em até 30 dias
+            após o período afetado.
+          </p>
+          <p>
+            <strong>6.3.</strong> Créditos são aplicados em faturas futuras, não
+            em reembolso.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>
+            <span class="section-icon">📈</span>7. MONITORAMENTO E RELATÓRIOS
+          </h2>
+          <p>
+            <strong>7.1.</strong> A Plataforma mantém monitoramento 24/7
+            incluindo:
+          </p>
+          <ul>
+            <li>Health checks automáticos</li>
+            <li>Métricas de latência</li>
+            <li>Logs de disponibilidade</li>
+            <li>Alertas automatizados</li>
+          </ul>
+          <p>
+            <strong>7.2.</strong> Relatórios mensais de disponibilidade
+            disponíveis sob demanda.
+          </p>
+        </section>
+
+        <section class="section info">
+          <h2><span class="section-icon">🔐</span>8. SEGURANÇA E BACKUP</h2>
+          <p><strong>8.1.</strong> Medidas de segurança incluem:</p>
+          <ul>
+            <li>Criptografia em trânsito (TLS 1.3)</li>
+            <li>Criptografia em repouso</li>
+            <li>Autenticação multi-fator disponível</li>
+            <li>Rate limiting e proteção DDoS</li>
+          </ul>
+          <p><strong>8.2.</strong> Política de backup:</p>
+          <ul>
+            <li>Backups diários automatizados</li>
+            <li>Retenção mínima de 30 dias</li>
+            <li>RPO (Recovery Point Objective): 24 horas</li>
+            <li>RTO (Recovery Time Objective): 4 horas</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="section-icon">⚠️</span>9. EXCLUSÕES</h2>
+          <p>Este SLA <strong>NÃO</strong> se aplica a:</p>
+          <ul>
+            <li>Serviços gratuitos ou em beta</li>
+            <li>Ambientes de desenvolvimento/teste</li>
+            <li>Uso que viole os Termos de Uso</li>
+            <li>Problemas causados pelo Cliente</li>
+            <li>Fatores fora do controle razoável do Provedor</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="section-icon">🔄</span>10. REVISÕES DO SLA</h2>
+          <p><strong>10.1.</strong> Este SLA pode ser revisado:</p>
+          <ul>
+            <li>Anualmente, com notificação prévia de 60 dias</li>
+            <li>Para melhoria das condições (imediato)</li>
+          </ul>
+          <p><strong>10.2.</strong> Revisões que reduzam benefícios:</p>
+          <ul>
+            <li>Não afetam contratos vigentes até renovação</li>
+            <li>Requerem aceite explícito para novos termos</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="section-icon">🏛️</span>11. LEGISLAÇÃO E FORO</h2>
+          <p>Este SLA é regido pelas leis brasileiras.</p>
+          <p>
+            Fica eleito o foro da <strong>Comarca do Rio de Janeiro/RJ</strong>,
+            com renúncia de qualquer outro.
+          </p>
+        </section>
+
+        <div class="document-id">
+          <h3>📋 Identificação do Documento</h3>
+          <p><strong>SLA — Acordo de Nível de Serviço</strong></p>
+          <p><strong>Versão:</strong> BR–SLA–001</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon">&#9670;</span>
+              <span class="logo-text">O LIVRINHO</span>
+            </div>
+            <p>A Culpa e das Ovelhas - Edicao 666</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Navegacao</h4>
+              <a href="index.html">Inicio</a>
+              <a href="manifesto.html">Manifesto</a>
+              <a href="livrinho.html">O Livrinho</a>
+              <a href="autor.html">O Autor</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Recursos</h4>
+              <a href="artigos.html">Artigos</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="legal.html">Legal</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Contato</h4>
+              <a href="https://otimiza.pro">otimiza.pro</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 O Livrinho - A Culpa é das Ovelhas. Anderson Belem
+            Costa.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="legal-scripts.js"></script>
+  </body>
+</html>
