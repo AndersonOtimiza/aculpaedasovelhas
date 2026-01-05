@@ -23,6 +23,15 @@ ingress:
       noHappyEyeballs: true
 
   # ===========================================
+  # exeg.ai Chat UI - Interface do Chatbot
+  # ===========================================
+  - hostname: chat.exeg.ai
+    service: http://localhost:5173
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+
+  # ===========================================
   # Bíblia API - Tradução Belem An.C
   # ===========================================
   - hostname: biblia.aculpaedasovelhas.org
