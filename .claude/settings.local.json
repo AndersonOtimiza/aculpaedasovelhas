@@ -84,7 +84,9 @@
       "Bash(start \"\" \"https://exeg.ai\")",
       "Bash(git check-ignore:*)",
       "Bash(docker build:*)",
-      "Bash(docker run:*)"
+      "Bash(docker run:*)",
+      "Bash(start \"\" \"https://exeg.ai/biblia\")",
+      "Bash(start \"\" \"https://exeg-ai.pages.dev/biblia\")"
     ]
   }
 }
