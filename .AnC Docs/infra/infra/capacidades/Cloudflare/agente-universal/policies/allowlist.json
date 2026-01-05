@@ -1,0 +1,24 @@
+{
+  "shell_cli": {
+    "allowedCommands": [
+      "^git( |$).*",
+      "^docker compose( |$).*",
+      "^docker build( |$).*",
+      "^node wp-intelligent-agent\.js .*",
+      "^op run .* wp-intelligent-agent\.js .*",
+      "^python scripts/troubleshoot-docker\.ps1.*",
+      "^powershell -File scripts/troubleshoot-docker\.ps1.*"
+    ],
+    "deny": ["rm -rf /.*", "format.*", "mkfs.*", "shutdown.*", "reboot.*"]
+  },
+  "http_rest": {
+    "allowedDomains": [
+      "^https?:\\/\\/([a-z0-9.-]+)\\.atlassian\\.net.*$",
+      "^https?:\\/\\/api\\.github\\.com.*$",
+      "^https?:\\/\\/.*$"
+    ]
+  },
+  "browser_playwright": {
+    "maxSteps": 25
+  }
+}

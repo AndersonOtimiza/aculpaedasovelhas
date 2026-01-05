@@ -81,7 +81,10 @@
       "Bash(start \"\" \"http://localhost:8080/biblia-belem-AnC.html\")",
       "Bash(start \"\" \"c:\\\\Projetos\\\\Projeto - O Livrinho\\\\apps\\\\site\")",
       "Bash(start \"\" \"http://localhost:8080/\")",
-      "Bash(start \"\" \"https://exeg.ai\")"
+      "Bash(start \"\" \"https://exeg.ai\")",
+      "Bash(git check-ignore:*)",
+      "Bash(docker build:*)",
+      "Bash(docker run:*)"
     ]
   }
 }

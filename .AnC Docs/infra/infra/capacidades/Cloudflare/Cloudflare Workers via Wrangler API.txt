@@ -1,0 +1,202 @@
+Perfeito.
+Segue a **seção de Deploy Automático Cloudflare Workers (via Wrangler API)** — integração direta com o seu agente e VSCode Insiders, sem adivinhações.
+Tudo é compatível com o uso de **1Password CLI (`op`)** para buscar credenciais e com **Node.js ≥ 20**.
+
+---
+
+## 🚀 SEÇÃO: DEPLOY AUTOMÁTICO DE WORKERS (Cloudflare Wrangler API)
+
+Adicionar este bloco ao final do arquivo `wp-intelligent-agent.js`.
+
+```javascript
+// ==================== DEPLOY AUTOMÁTICO WORKERS (Wrangler API) ====================
+
+// Dependências: npm install child_process fs path
+import fs from "fs";
+import path from "path";
+
+// Função utilitária para obter conta Cloudflare do 1Password
+async function getCfAccountFromOp() {
+  const creds = await getCfCredsFromOp();
+  if (!creds.accountId) {
+    throw new Error("Campo 'accountId' não encontrado no 1Password → Cloudflare_API");
+  }
+  return creds.accountId;
+}
+
+// Executa comandos Wrangler CLI (requer wrangler instalado globalmente)
+async function runWrangler(cmd, cwd = process.cwd()) {
+  const { stdout, stderr } = await exec(`wrangler ${cmd}`, { cwd });
+  if (stderr && stderr.trim()) console.error(stderr);
+  return stdout.trim();
+}
+
+// Gera arquivo wrangler.toml dinamicamente
+async function generateWranglerConfig(workerName, accountId, zoneId) {
+  const config = `
+name = "${workerName}"
+main = "./dist/${workerName}.js"
+account_id = "${accountId}"
+compatibility_date = "${new Date().toISOString().slice(0, 10)}"
+workers_dev = true
+
+[vars]
+ZONE_ID = "${zoneId}"
+  `;
+  fs.mkdirSync("./dist", { recursive: true });
+  fs.writeFileSync("./wrangler.toml", config, "utf8");
+  console.log("✅ wrangler.toml criado");
+}
+
+// Faz build do script (caso use TypeScript ou bundler)
+async function buildWorker(workerPath) {
+  if (workerPath.endsWith(".ts")) {
+    console.log("Compilando TypeScript...");
+    await exec(`npx tsc ${workerPath} --outDir dist`);
+  } else {
+    const fileName = path.basename(workerPath);
+    fs.copyFileSync(workerPath, `./dist/${fileName}`);
+  }
+}
+
+// Publica o Worker via Wrangler
+async function deployWorker(workerPath, workerName) {
+  const creds = await getCfCredsFromOp();
+  const accountId = creds.accountId;
+  const zoneId = creds.zoneId;
+
+  await generateWranglerConfig(workerName, accountId, zoneId);
+  await buildWorker(workerPath);
+
+  console.log(`🚀 Publicando Worker "${workerName}"...`);
+  const output = await runWrangler(`deploy --name ${workerName}`);
+  console.log(output);
+  console.log("✅ Worker publicado com sucesso.");
+}
+
+// ==================== CLI EXTENDIDO ====================
+
+cli
+  .command("cf:deploy <scriptPath> <workerName>")
+  .description("Publica Worker automaticamente usando Wrangler CLI e credenciais seguras do 1Password")
+  .action(async (scriptPath, workerName) => {
+    try {
+      await deployWorker(scriptPath, workerName);
+    } catch (err) {
+      console.error("Erro no deploy:", err.message);
+      process.exit(1);
+    }
+  });
+```
+
+---
+
+## 🧰 Pré-requisitos
+
+### 1. Instalar Wrangler CLI
+
+No terminal:
+
+```bash
+npm install -g wrangler
+```
+
+Verifique:
+
+```bash
+wrangler --version
+```
+
+---
+
+### 2. Configurar Token Cloudflare no 1Password
+
+No item `Cloudflare_API` (cofre `OtimizaPro`):
+
+| Campo       | Valor                                                     |
+| ----------- | --------------------------------------------------------- |
+| `apiToken`  | Token Cloudflare com permissão de “Workers Scripts: Edit” |
+| `accountId` | ID da conta Cloudflare                                    |
+| `zoneId`    | ID da zona (ex: otimiza.pro)                              |
+
+---
+
+### 3. Permissões mínimas do Token
+
+**API Token “OtimizaAgent”** precisa de:
+
+* `Workers Scripts:Edit`
+* `Workers KV Storage:Edit`
+* `R2 Storage:Edit`
+* `Account:Read`
+* `Zone:Read`
+
+---
+
+## ⚙️ Exemplo de uso
+
+### Publicar um Worker
+
+```bash
+node wp-intelligent-agent.js cf:deploy ./workers/otimiza-agent.js otimiza-agent
+```
+
+### Publicar TypeScript
+
+```bash
+node wp-intelligent-agent.js cf:deploy ./workers/otimiza-agent.ts otimiza-agent
+```
+
+> O agente irá:
+>
+> 1. Buscar o `accountId`, `zoneId` e `apiToken` no 1Password.
+> 2. Gerar automaticamente o arquivo `wrangler.toml`.
+> 3. Compilar o código (se `.ts`).
+> 4. Fazer deploy via `wrangler deploy`.
+
+---
+
+## 📁 Estrutura recomendada
+
+```
+wp-intelligent-agent/
+├── workers/
+│   ├── otimiza-agent.js
+│   └── analytics-worker.ts
+├── dist/
+│   └── (arquivos gerados)
+├── wp-intelligent-agent.js
+└── wrangler.toml (gerado automaticamente)
+```
+
+---
+
+## 🔐 Segurança e Logs
+
+* Nenhum token é escrito em disco.
+* `wrangler.toml` é gerado em tempo real e pode ser apagado após deploy:
+
+  ```bash
+  rm wrangler.toml
+  ```
+* Para logar implantações:
+
+  ```bash
+  node wp-intelligent-agent.js cf:deploy ./workers/otimiza-agent.js otimiza-agent >> logs/deploy.log
+  ```
+
+---
+
+## 🧠 Boas práticas de automação
+
+| Recomendação            | Descrição                               |
+| ----------------------- | --------------------------------------- |
+| **Versionar scripts**   | Mantenha Workers no GitHub (`/workers`) |
+| **Ambientes separados** | Use `wrangler publish --env production` |
+| **Monitoramento**       | Integre com Cloudflare Analytics API    |
+| **Rollback rápido**     | Mantenha releases antigos no Git        |
+| **Auditoria segura**    | Logue operações, não tokens             |
+
+---
+
+Deseja que eu adicione **deploy automatizado contínuo (CI/CD)** — para o agente publicar Workers no Cloudflare **diretamente ao confirmar push no GitHub** (usando Actions e 1Password Connect)?

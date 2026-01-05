@@ -1,0 +1,38 @@
+# Cloudflare Tunnel Configuration
+# Expõe: exeg.ai (:8000) e Bible API (:3001)
+#
+# SETUP:
+# 1. cloudflared tunnel login
+# 2. cloudflared tunnel create aculpaedasovelhas-api
+# 3. Copie o tunnel ID para este arquivo
+# 4. cloudflared tunnel route dns aculpaedasovelhas-api exeg.aculpaedasovelhas.org
+# 5. cloudflared tunnel route dns aculpaedasovelhas-api biblia.aculpaedasovelhas.org
+# 6. cloudflared tunnel run aculpaedasovelhas-api
+
+tunnel: TUNNEL_ID_AQUI
+credentials-file: ~/.cloudflared/TUNNEL_ID_AQUI.json
+
+ingress:
+  # ===========================================
+  # exeg.ai - Máquina de Exegese Avançada
+  # ===========================================
+  - hostname: exeg.aculpaedasovelhas.org
+    service: http://localhost:8000
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+      noHappyEyeballs: true
+
+  # ===========================================
+  # Bíblia API - Tradução Belem An.C
+  # ===========================================
+  - hostname: biblia.aculpaedasovelhas.org
+    service: http://localhost:3001
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+
+  # ===========================================
+  # Fallback
+  # ===========================================
+  - service: http_status:404

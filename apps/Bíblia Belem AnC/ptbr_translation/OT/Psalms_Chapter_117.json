@@ -1,0 +1,108 @@
+{
+  "book": "Psalms",
+  "book_pt": "Salmos",
+  "testament": "OT",
+  "author": "Anderson Belem Costa (Belem, AnC)",
+  "method": "Belém AnC-Ipísis Iliteris Fidelity Method",
+  "rigidity_level": "TEA",
+  "source": "Westminster Leningrad Codex (WLC)",
+  "chapter": 117,
+  "verses": [
+    {
+      "chapter": 117,
+      "verse": 1,
+      "hebrew_text": "הַֽלְל֣וּ אֶת־יְ֭הוָה כָּל־גּוֹיִ֑ם שַׁ֝בְּח֗וּהוּ כָּל־הָאֻמִּֽים",
+      "literal_translation": "[הַֽלְל֣וּ] [אֶת־יְ֭הוָה] [כָּל־גּוֹיִ֑ם] [שַׁ֝בְּח֗וּהוּ] [כָּל־הָאֻמִּֽים]",
+      "readable_translation": "[הַֽלְל֣וּ] [אֶת־יְ֭הוָה] [כָּל־גּוֹיִ֑ם] [שַׁ֝בְּח֗וּהוּ] [כָּל־הָאֻמִּֽים]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "הַֽלְל֣וּ",
+          "hebrew_clean": "הַלְלוּ",
+          "translation": "[הַֽלְל֣וּ]"
+        },
+        {
+          "position": 2,
+          "hebrew": "אֶת־יְ֭הוָה",
+          "hebrew_clean": "אֶתיְהוָה",
+          "translation": "[אֶת־יְ֭הוָה]"
+        },
+        {
+          "position": 3,
+          "hebrew": "כָּל־גּוֹיִ֑ם",
+          "hebrew_clean": "כָּלגּוֹיִם",
+          "translation": "[כָּל־גּוֹיִ֑ם]"
+        },
+        {
+          "position": 4,
+          "hebrew": "שַׁ֝בְּח֗וּהוּ",
+          "hebrew_clean": "שַבְּחוּהוּ",
+          "translation": "[שַׁ֝בְּח֗וּהוּ]"
+        },
+        {
+          "position": 5,
+          "hebrew": "כָּל־הָאֻמִּֽים",
+          "hebrew_clean": "כָּלהָאֻמִּים",
+          "translation": "[כָּל־הָאֻמִּֽים]"
+        }
+      ]
+    },
+    {
+      "chapter": 117,
+      "verse": 2,
+      "hebrew_text": "כִּ֥י גָ֘בַ֤ר עָלֵ֨ינוּ ׀ חַסְדּ֗וֹ וֶֽאֱמֶת־יְהוָ֥ה לְעוֹלָ֗ם הַֽלְלוּ־יָֽהּ",
+      "literal_translation": "que [גָ֘בַ֤ר] [עָלֵ֨ינוּ] [׀] [חַסְדּ֗וֹ] [וֶֽאֱמֶת־יְהוָ֥ה] [לְעוֹלָ֗ם] [הַֽלְלוּ־יָֽהּ]",
+      "readable_translation": "que [גָ֘בַ֤ר] [עָלֵ֨ינוּ] [׀] [חַסְדּ֗וֹ] [וֶֽאֱמֶת־יְהוָ֥ה] [לְעוֹלָ֗ם] [הַֽלְלוּ־יָֽהּ]",
+      "words": [
+        {
+          "position": 1,
+          "hebrew": "כִּ֥י",
+          "hebrew_clean": "כִּי",
+          "translation": "que"
+        },
+        {
+          "position": 2,
+          "hebrew": "גָ֘בַ֤ר",
+          "hebrew_clean": "גָבַר",
+          "translation": "[גָ֘בַ֤ר]"
+        },
+        {
+          "position": 3,
+          "hebrew": "עָלֵ֨ינוּ",
+          "hebrew_clean": "עָלֵינוּ",
+          "translation": "[עָלֵ֨ינוּ]"
+        },
+        {
+          "position": 4,
+          "hebrew": "׀",
+          "hebrew_clean": "",
+          "translation": "[׀]"
+        },
+        {
+          "position": 5,
+          "hebrew": "חַסְדּ֗וֹ",
+          "hebrew_clean": "חַסְדּוֹ",
+          "translation": "[חַסְדּ֗וֹ]"
+        },
+        {
+          "position": 6,
+          "hebrew": "וֶֽאֱמֶת־יְהוָ֥ה",
+          "hebrew_clean": "וֶאֱמֶתיְהוָה",
+          "translation": "[וֶֽאֱמֶת־יְהוָ֥ה]"
+        },
+        {
+          "position": 7,
+          "hebrew": "לְעוֹלָ֗ם",
+          "hebrew_clean": "לְעוֹלָם",
+          "translation": "[לְעוֹלָ֗ם]"
+        },
+        {
+          "position": 8,
+          "hebrew": "הַֽלְלוּ־יָֽהּ",
+          "hebrew_clean": "הַלְלוּיָהּ",
+          "translation": "[הַֽלְלוּ־יָֽהּ]"
+        }
+      ]
+    }
+  ]
+}

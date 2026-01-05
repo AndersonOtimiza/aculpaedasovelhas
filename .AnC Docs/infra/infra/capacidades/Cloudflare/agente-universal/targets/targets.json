@@ -1,0 +1,42 @@
+{
+  "default": {
+    "adapter": "browser_playwright",
+    "base_url": "https://example.com",
+    "auth": { "type": "none" }
+  },
+  "jira": {
+    "adapter": "http_rest",
+    "base_url": "https://SUA-ORG.atlassian.net",
+    "auth": {
+      "type": "basic_env",
+      "user_env": "APP_USER",
+      "pass_env": "APP_PASS"
+    }
+  },
+  "github": {
+    "adapter": "http_rest",
+    "base_url": "https://api.github.com",
+    "auth": { "type": "bearer_env", "token_env": "GITHUB_TOKEN" }
+  },
+  "local_cli": {
+    "adapter": "shell_cli",
+    "base_path": "/workspace",
+    "env": {}
+  },
+  "wordpress": {
+    "adapter": "node_cli",
+    "description": "Gerencia o site WordPress via wp-intelligent-agent.js"
+  },
+  "cloudflare_agent": {
+    "adapter": "node_cli",
+    "description": "Gerencia o Cloudflare via wp-intelligent-agent.js"
+  },
+  "cloudflare": {
+    "adapter": "shell_cli",
+    "base_path": "/workspace",
+    "env": {
+      "PYTHONUNBUFFERED": "1"
+    },
+    "command_template": "python \"agora ensine ele a utilizar o cloudflare.py\" {args}"
+  }
+}

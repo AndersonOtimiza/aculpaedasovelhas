@@ -1,0 +1,140 @@
+Plano de Implementação: exeg.ai
+Máquina de Exegese Avançada - IA especializada em "Easter Eggs" bíblicos
+Resumo
+Implementar o exeg.ai como uma API Python FastAPI na porta :8000 com:
+Busca semântica via FAISS + SentenceTransformers
+LLM local via Ollama (+ OpenAI/Anthropic opcionais)
+Integração com Bible API (:3001)
+Endpoints
+Endpoint	Método	Descrição
+/health	GET	Status dos serviços
+/ask	POST	Query direta ao LLM
+/find-similar	POST	Busca semântica FAISS
+/explain-links	POST	Intertextualidade + LLM
+Estrutura de Diretórios
+
+#exeg.ai/
+├── src/
+│   ├── __init__.py
+│   ├── main.py                    # Entry point FastAPI
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── settings.py            # Pydantic Settings
+│   │   └── constants.py           # System prompts
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── health.py
+│   │   ├── ask.py
+│   │   ├── find_similar.py
+│   │   └── explain_links.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── llm_service.py         # Ollama/OpenAI/Anthropic
+│   │   ├── embedding_service.py   # SentenceTransformers
+│   │   ├── faiss_service.py       # FAISS index
+│   │   ├── bible_api_client.py    # Cliente Bible API
+│   │   └── intertextuality_service.py
+│   └── models/
+│       ├── __init__.py
+│       ├── requests.py            # Pydantic request models
+│       └── responses.py           # Pydantic response models
+├── scripts/
+│   └── build_faiss_index.py       # Construir índice FAISS
+├── indexes/faiss/                 # Índices FAISS
+├── models/sentence-transformers/  # Cache de modelos
+├── data/embeddings/               # Cache de embeddings
+├── requirements.txt
+├── requirements-gpu.txt
+├── .env.example
+└── README.md
+Sequência de Implementação
+Fase 1: Fundação
+ Criar estrutura de diretórios
+ src/config/settings.py - Configuração com Pydantic Settings
+ src/config/constants.py - System prompt do exeg.ai
+ src/models/requests.py - Modelos de request
+ src/models/responses.py - Modelos de response
+ src/main.py - App FastAPI básico
+Fase 2: Serviços Core
+ src/services/bible_api_client.py - Cliente HTTP para Bible API
+ src/services/embedding_service.py - SentenceTransformers
+ src/services/faiss_service.py - Gerenciamento FAISS
+ scripts/build_faiss_index.py - Script para construir índice
+Fase 3: LLM e Rotas
+ src/services/llm_service.py - Ollama + OpenAI + Anthropic
+ src/routes/health.py - Health check
+ src/routes/ask.py - Query LLM
+ src/routes/find_similar.py - Busca semântica
+ src/routes/explain_links.py - Intertextualidade
+Fase 4: Finalização
+ src/services/intertextuality_service.py - Easter Eggs
+ requirements.txt e requirements-gpu.txt
+ .env.example
+ README.md
+Dependências Principais
+
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+httpx>=0.25.0
+sentence-transformers>=2.2.0
+faiss-gpu  # GPU com CUDA
+numpy>=1.24.0
+torch==2.5.1+cu124
+Nota: faiss-gpu requer CUDA instalado. Instalar via conda é recomendado:
+
+conda install -c pytorch faiss-gpu
+Variáveis de Ambiente
+
+API_PORT=8000
+BIBLIA_API_URL=http://localhost:3001
+OLLAMA_URL=http://localhost:11434
+OLLAMA_MODEL=qwen3:4b
+EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
+FAISS_INDEX_PATH=./indexes/faiss/bible_index.faiss
+Padrões a Seguir
+Response format: { success: bool, data: T, error: str }
+Ollama integration: Padrão de apps/site/api/ai_agent.py
+Modular routes: FastAPI APIRouter por endpoint
+Async HTTP: httpx para chamadas assíncronas
+Arquivos de Referência
+Arquivo	Uso
+apps/site/api/ai_agent.py	Padrão Ollama + Pydantic
+apps/biblia/belem-anc-traducao-api/	Estrutura modular
+.claude/memory/CONTEXT.md	Variáveis de ambiente
+Pré-requisitos
+Bible API rodando em :3001
+Ollama instalado e rodando
+Python 3.11+
+User approved the plan
+Plano aprovado! Vou criar a lista de tarefas e começar a implementação.
+Update Todos
+
+Criar estrutura de diretórios do exeg.ai
+
+Implementar src/config/settings.py
+
+Implementar src/config/constants.py
+
+Implementar src/models/requests.py
+
+Implementar src/models/responses.py
+
+Implementar src/main.py
+
+Implementar src/services/bible_api_client.py
+
+Implementar src/services/embedding_service.py
+
+Implementar src/services/faiss_service.py
+
+Implementar src/services/llm_service.py
+
+Implementar rotas (health, ask, find_similar, explain_links)
+
+Implementar src/services/intertextuality_service.py
+
+Criar scripts/build_faiss_index.py
+
+Criar requirements.txt e .env.example

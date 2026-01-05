@@ -9,6 +9,9 @@ node_modules/
 **/__pycache__/
 *.pyc
 
+# Logs
+*.log
+
 # Banco de dados local
 *.db
 #exeg.ai/database/*.db
@@ -18,3 +21,8 @@ node_modules/
 
 # Arquivos temporários
 nul
+
+# Environment files (local)
+.env
+.env.*
+!.env.example
