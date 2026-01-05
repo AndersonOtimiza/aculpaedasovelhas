@@ -124,7 +124,9 @@
       "Bash(npx playwright:*)",
       "Bash(cmd //c \"taskkill /IM python.exe /F\")",
       "Bash(nslookup:*)",
-      "Bash(powershell -Command \"\\(Get-Content src/services/llm_service.py -Raw\\) -replace ''full_prompt = f\"\"\\\\[Sistema\\\\]: \\\\{system_prompt\\\\}\\\\r?\\\\n\\\\r?\\\\n\\\\[Usuario\\\\]: \\\\{prompt\\\\}\\\\r?\\\\n\\\\r?\\\\n\\\\[Assistente\\\\]:\"\"'', ''full_prompt = f\"\"[Sistema]: {system_prompt}\\\\n\\\\n[Usuario]: {prompt}\\\\n\\\\n[Assistente]:\"\"'' | Set-Content src/services/llm_service.py -NoNewline\")"
+      "Bash(powershell -Command \"\\(Get-Content src/services/llm_service.py -Raw\\) -replace ''full_prompt = f\"\"\\\\[Sistema\\\\]: \\\\{system_prompt\\\\}\\\\r?\\\\n\\\\r?\\\\n\\\\[Usuario\\\\]: \\\\{prompt\\\\}\\\\r?\\\\n\\\\r?\\\\n\\\\[Assistente\\\\]:\"\"'', ''full_prompt = f\"\"[Sistema]: {system_prompt}\\\\n\\\\n[Usuario]: {prompt}\\\\n\\\\n[Assistente]:\"\"'' | Set-Content src/services/llm_service.py -NoNewline\")",
+      "Bash(net stop:*)",
+      "Bash(cloudflared tunnel:*)"
     ]
   }
 }
