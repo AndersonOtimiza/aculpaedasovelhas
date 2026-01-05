@@ -59,6 +59,21 @@ aculpaedasovelhas/
 
 ---
 
+## Mapeamento de Portas (Exclusivas)
+
+| Porta     | Projeto          | Descrição                         |
+| --------- | ---------------- | --------------------------------- |
+| **3001**  | Bíblia Belém AnC | API de tradução bíblica (Node.js) |
+| **5173**  | exeg.ai Chatbot  | Interface de chat (SvelteKit)     |
+| **8000**  | Site API         | AN Agent Bible Study              |
+| **8001**  | exeg.ai API      | Máquina de exegese (FastAPI)      |
+| **8081**  | exeg.ai Frontend | Site institucional                |
+| **11434** | Ollama           | LLM local                         |
+
+> **IMPORTANTE:** Cada projeto deve usar APENAS sua porta designada para evitar conflitos.
+
+---
+
 ## Fluxo de Dados Real
 
 ```
@@ -145,14 +160,23 @@ aculpaedasovelhas/
 - `/api/v1/tokens/{verseId}` - Tokens/morfologia
 - `/api/v1/glosses` - Camadas de glossário N1-N5
 
-### exeg.ai API (`:8000`)
+### exeg.ai API (`:8001`)
 
 - `GET /` - Informações do serviço
 - `GET /health` - Status de todos os componentes (FAISS, Ollama, Bible API)
 - `POST /ask` - Query direta ao LLM (Ollama/OpenAI/Anthropic)
 - `POST /find-similar` - Busca semântica FAISS com filtros (testamento, livro)
 - `POST /explain-links` - Intertextualidade + explicação LLM
+- `GET /v1/models` - Lista modelos (OpenAI-compatible)
+- `POST /v1/chat/completions` - Chat completions (OpenAI-compatible)
 - `GET /docs` - Swagger UI (documentação interativa)
+
+### exeg.ai Chatbot (`:5173`)
+
+Interface de chat web baseada no Hugging Face Chat UI.
+
+- Acesso: http://localhost:5173
+- Consome a API exeg.ai na porta 8001
 
 **Localização:** `#exeg.ai/`
 

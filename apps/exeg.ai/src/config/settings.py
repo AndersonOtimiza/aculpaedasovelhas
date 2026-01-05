@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
 
     # Server
-    API_PORT: int = 8000
+    API_PORT: int = 8001  # Porta exclusiva do exeg.ai
     DEBUG: bool = False
 
     # Bible API
