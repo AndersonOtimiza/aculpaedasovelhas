@@ -11,20 +11,38 @@
 ## Bible Belem, An.C
 
 - **Site em Prod:** https://aculpaedasovelhas.org/biblia-belem
-- **URL Local:** http://localhost:8080/biblia-belem.html
-- **Interface Client:** Leitor bíblico interativo
-- **URL Local:** http://localhost:8080/ler-biblia.html
+- **Página de apresentação (Local):** http://localhost:8080/biblia-belem.html
+- **Interface de Leitura (Local):** http://localhost:8080/ler-biblia.html _(caminho correto)_
+- **Arquivo fonte:** `apps/site/ler-biblia.html`
 - **API Prod:** https://biblia.aculpaedasovelhas.org
 - **API Local:** http://localhost:3001
 
 ---
 
-## exeg.ai
+## exeg.ai (API)
 
-- **Site em Prod:** https://exeg.ai / https://exeg.aculpaedasovelhas.org
-- **URL Local:** http://localhost:8002
-- **Interface Client:** http://localhost:8080/exegai.html
-- **Docs API:** https://exeg.aculpaedasovelhas.org/docs (Prod) / http://localhost:8002/docs (Local)
+- **API Prod:** https://plataforma.exeg.ai
+- **API Alias:** https://plataform.exeg.ai (redireciona para plataforma.exeg.ai)
+- **API Local:** http://localhost:8002
+- **Docs API:** https://plataforma.exeg.ai/docs (Prod) / http://localhost:8002/docs (Local)
+- **Código fonte:** `apps/exeg.ai/`
+
+---
+
+## exeg.ai (Site Institucional)
+
+- **Site em Prod:** https://exeg.ai
+- **URL Local:** Servir `apps/exeg.ai-site/` na porta 8081
+- **Código fonte:** `apps/exeg.ai-site/`
+- **Páginas:**
+  - `index.html` - Landing page
+  - `assinatura.html` - Planos e assinatura
+  - `biblia-belem.html` - Apresentação da Bíblia
+  - `blog.html` - Blog
+  - `comunidade.html` - Comunidade
+  - `livro.html` - O Livrinho
+  - `legal.html` - Termos legais
+  - `sla.html` - SLA
 
 ---
 
@@ -53,7 +71,7 @@
 
 - **Arquivo de config:** `apps/exeg.ai/cloudflared.yml`
 - **Rotas configuradas:**
-  - `exeg.aculpaedasovelhas.org` → localhost:8000
+  - `plataforma.exeg.ai` → localhost:8000
   - `biblia.aculpaedasovelhas.org` → localhost:3001
 
 ### Setup do Túnel (comandos iniciais)
@@ -61,7 +79,7 @@
 ```powershell
 cloudflared tunnel login
 cloudflared tunnel create aculpaedasovelhas-api
-cloudflared tunnel route dns aculpaedasovelhas-api exeg.aculpaedasovelhas.org
+cloudflared tunnel route dns aculpaedasovelhas-api plataforma.exeg.ai
 cloudflared tunnel route dns aculpaedasovelhas-api biblia.aculpaedasovelhas.org
 ```
 
@@ -73,7 +91,7 @@ cloudflared tunnel route dns aculpaedasovelhas-api biblia.aculpaedasovelhas.org
 | ----------- | ----------- | ---------------------------- | -------------------------- |
 | Site Web    | 8080        | aculpaedasovelhas.org        | Nginx/HTML/CSS/JS          |
 | Bible API   | 3001        | biblia.aculpaedasovelhas.org | Node.js/TypeScript/Express |
-| exeg.ai API | 8000/8002   | exeg.aculpaedasovelhas.org   | Python/FastAPI             |
+| exeg.ai API | 8000/8002   | plataforma.exeg.ai           | Python/FastAPI             |
 | PostgreSQL  | 5433        | localhost (interno)          | PostgreSQL 16              |
 | Ollama      | 11434       | localhost (interno)          | LLM Local                  |
 
@@ -203,5 +221,5 @@ docker-compose up -d
 | https://aculpaedasovelhas.org/livrinho     | Página do livro |
 | https://aculpaedasovelhas.org/biblia-belem | Bíblia Belem    |
 | https://biblia.aculpaedasovelhas.org       | API da Bíblia   |
-| https://exeg.aculpaedasovelhas.org         | API exeg.ai     |
-| https://exeg.aculpaedasovelhas.org/docs    | Swagger UI      |
+| https://plataforma.exeg.ai                 | API exeg.ai     |
+| https://plataforma.exeg.ai/docs            | Swagger UI      |

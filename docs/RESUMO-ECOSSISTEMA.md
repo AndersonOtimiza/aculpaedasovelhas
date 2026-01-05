@@ -39,23 +39,22 @@ Site → Blog → Podcast → Livrinho → Bíblia → Comunidade → exeg.ai
 
 ```
 aculpaedasovelhas/
-├── #exeg.ai/           ✅ Máquina de Exegese Avançada (IMPLEMENTADO)
-│   ├── src/            ✅ Código fonte FastAPI
-│   ├── scripts/        ✅ Build FAISS index
-│   └── indexes/        ✅ Índices FAISS
+├── .AnC Docs/          ✅ Documentação e infra
+│   └── infra/          ✅ Cloudflare, workflows
 ├── apps/
-│   ├── site/           ✅ Portal principal
+│   ├── site/           ✅ Portal principal (aculpaedasovelhas.org)
+│   │   └── ler-biblia.html  ✅ Interface de leitura Bible Belem AnC
+│   ├── exeg.ai/        ✅ API Máquina de Exegese (FastAPI + FAISS)
+│   ├── exeg.ai-site/   ✅ Site institucional exeg.ai
+│   ├── Bíblia Belem AnC/ ✅ API Tradução (Node.js + PostgreSQL)
+│   ├── livro/          ✅ O Livrinho (conteúdo)
 │   ├── blog/           ⚠️ Estrutura apenas
-│   ├── biblia/         ✅ API Tradução Belem AnC
 │   ├── podcast/        ⚠️ Futuro
 │   └── comunidade/     ⚠️ Futuro
-├── content/
-│   └── livro/          ✅ O Livrinho
 ├── docs/
 │   └── RESUMO-ECOSSISTEMA.md
-├── infra/
-│   └── capacidades/    ✅ Cloudflare, 1Password, etc.
-└── README.md           ✅ Atualizado
+├── .claude/memory/     ✅ Memória estendida do agente
+└── URLS-PROJETOS.md    ✅ URLs e infraestrutura
 ```
 
 ---
@@ -119,13 +118,13 @@ aculpaedasovelhas/
 
 ## Integrações Confirmadas (Implementadas)
 
-| De           | Para              | Implementação       | Arquivo                                     |
-| ------------ | ----------------- | ------------------- | ------------------------------------------- |
-| Bíblia :3001 | exeg.ai :8000     | Cliente HTTP Python | `#exeg.ai/src/services/bible_api_client.py` |
-| exeg.ai      | Ollama            | LLM Service         | `#exeg.ai/src/services/llm_service.py`      |
-| exeg.ai      | FAISS             | Busca Semântica     | `#exeg.ai/src/services/faiss_service.py`    |
-| Site         | AI Agent (Ollama) | FastAPI + Ollama    | `apps/site/api/ai_agent.py`                 |
-| Livro        | Site              | JSON knowledge base | `apps/site/knowledge/`                      |
+| De           | Para              | Implementação       | Arquivo                                         |
+| ------------ | ----------------- | ------------------- | ----------------------------------------------- |
+| Bíblia :3001 | exeg.ai :8002     | Cliente HTTP Python | `apps/exeg.ai/src/services/bible_api_client.py` |
+| exeg.ai      | Ollama            | LLM Service         | `apps/exeg.ai/src/services/llm_service.py`      |
+| exeg.ai      | FAISS             | Busca Semântica     | `apps/exeg.ai/src/services/faiss_service.py`    |
+| Site         | AI Agent (Ollama) | FastAPI + Ollama    | `apps/site/api/ai_agent.py`                     |
+| Livro        | Site              | JSON knowledge base | `apps/site/api/knowledge/`                      |
 
 ---
 
@@ -204,29 +203,49 @@ aculpaedasovelhas/
 - SEO otimizado (meta tags, Open Graph)
 - EPUB disponível para download
 
-### Estrutura Principal (22 arquivos HTML)
+### Estrutura Principal (26 arquivos HTML)
 
 **Páginas Principais:**
 
 - `index.html` - Home/Portal principal
 - `manifesto.html` - O Manifesto
 - `livrinho.html` - Leitura do livro (modo Kindle)
+- `livro.html` - Página do livro
 - `autor.html` - Sobre o autor
+- `sobre.html` - Sobre o projeto
+
+**Bíblia e IA:**
+
+- `biblia-belem.html` - Apresentação da Bíblia Belem AnC
+- `ler-biblia.html` - Interface de leitura interativa
+- `exegai.html` - Plataforma exeg.ai
+
+**Blog e Artigos:**
+
+- `blog.html` - Blog
 - `artigos.html` - Sistema de artigos
-- `traducao.html` - Tradução bíblica
-- `sobre.html` - Sobre o projeto / IA Bible Study
+- `artigo-lobos-ovelhas.html` - Artigo sobre lobos e ovelhas
 
-**Artigos:**
+**Autenticação e Assinatura:**
 
-- `artigo-666.html`
-- `artigo-666-enigma.html`
-- `artigo-chaves-frameworks.html`
-- `artigo-lobos-ovelhas.html`
+- `login.html` - Login
+- `registro.html` - Registro de usuários
+- `assinatura.html` - Planos de assinatura
 
-**Centro Legal (7 páginas):**
+**Comunidade:**
 
-- `legal.html`, `termos.html`, `licenca.html`, `contrato-b2b.html`
-- `politica-api.html`, `sla.html`, `rfc.html`, `iso.html`, `guideline.html`
+- `comunidade.html` - Comunidade
+
+**Centro Legal:**
+
+- `legal.html` - Centro legal
+- `licenca.html` - Licença
+- `contrato-b2b.html` - Contrato B2B
+- `politica-api.html` - Política de API
+- `sla.html` - SLA
+- `rfc.html` - RFC
+- `iso.html` - ISO
+- `guideline.html` - Guidelines
 
 ### Deploy
 
@@ -269,4 +288,4 @@ Todos os READMEs agora incluem:
 
 ---
 
-_Última atualização: 2025-01-03 - exeg.ai implementado_
+_Última atualização: 2026-01-05 - Estrutura atualizada com exeg.ai-site e ler-biblia.html_

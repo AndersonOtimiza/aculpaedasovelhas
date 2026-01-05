@@ -3,20 +3,19 @@
 #
 # SETUP:
 # 1. cloudflared tunnel login
-# 2. cloudflared tunnel create aculpaedasovelhas-api
-# 3. Copie o tunnel ID para este arquivo
-# 4. cloudflared tunnel route dns aculpaedasovelhas-api exeg.aculpaedasovelhas.org
-# 5. cloudflared tunnel route dns aculpaedasovelhas-api biblia.aculpaedasovelhas.org
-# 6. cloudflared tunnel run aculpaedasovelhas-api
+# 2. cloudflared tunnel create exeg-ai
+# 3. cloudflared tunnel route dns exeg-ai plataforma.exeg.ai
+# 4. cloudflared tunnel route dns exeg-ai biblia.aculpaedasovelhas.org
+# 5. cloudflared tunnel run exeg-ai
 
-tunnel: TUNNEL_ID_AQUI
-credentials-file: ~/.cloudflared/TUNNEL_ID_AQUI.json
+tunnel: fab88c28-772c-4ceb-b5c3-71767406fb6b
+credentials-file: ~/.cloudflared/fab88c28-772c-4ceb-b5c3-71767406fb6b.json
 
 ingress:
   # ===========================================
-  # exeg.ai - Máquina de Exegese Avançada
+  # exeg.ai - Plataforma de Exegese com IA
   # ===========================================
-  - hostname: exeg.aculpaedasovelhas.org
+  - hostname: plataforma.exeg.ai
     service: http://localhost:8000
     originRequest:
       noTLSVerify: true

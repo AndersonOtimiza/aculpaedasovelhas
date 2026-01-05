@@ -344,4 +344,4 @@ EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
 
 ---
 
-_Última atualização: 2026-01-03_
+_Última atualização: 2026-01-05_
