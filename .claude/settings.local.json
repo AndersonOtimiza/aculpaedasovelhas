@@ -75,7 +75,11 @@
       "Bash(start \"\" \"https://exeg-ai.pages.dev\")",
       "Bash(code --install-extension:*)",
       "Bash(git clone:*)",
-      "Bash(where:*)"
+      "Bash(where:*)",
+      "Bash(del \"c:\\\\Projetos\\\\Projeto - O Livrinho\\\\apps\\\\site\\\\biblia.html\")",
+      "Bash(rm:*)",
+      "Bash(start \"\" \"http://localhost:8080/biblia-belem-AnC.html\")",
+      "Bash(start \"\" \"c:\\\\Projetos\\\\Projeto - O Livrinho\\\\apps\\\\site\")"
     ]
   }
 }
