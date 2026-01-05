@@ -58,7 +58,7 @@ app.add_middleware(
 )
 
 # Import and include routers
-from src.routes import health, ask, find_similar, explain_links, auth, billing
+from src.routes import health, ask, find_similar, explain_links, auth, billing, openai_compat
 
 app.include_router(health.router, tags=["Health"])
 app.include_router(auth.router, tags=["Authentication"])
@@ -66,6 +66,7 @@ app.include_router(billing.router, tags=["Billing"])
 app.include_router(ask.router, prefix="/ask", tags=["LLM"])
 app.include_router(find_similar.router, prefix="/find-similar", tags=["Semantic Search"])
 app.include_router(explain_links.router, prefix="/explain-links", tags=["Intertextuality"])
+app.include_router(openai_compat.router, tags=["OpenAI Compatible"])
 
 
 @app.get("/")
@@ -86,6 +87,8 @@ async def root():
                 "/explain-links": "Find and explain intertextual connections",
                 "/billing/credits": "Check credit balance",
                 "/billing/plans": "View subscription plans",
+                "/v1/models": "OpenAI-compatible models list",
+                "/v1/chat/completions": "OpenAI-compatible chat completions",
             },
             "docs": "/docs",
         },

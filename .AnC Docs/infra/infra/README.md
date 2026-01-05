@@ -19,32 +19,33 @@ Site → Blog → Livrinho → Bíblia → exeg.ai
 
 ```text
 aculpaedasovelhas/
-├── apps/                    # Aplicações principais
-│   ├── site/               # Portal aculpaedasovelhas.org
-│   ├── blog/               # Sistema de artigos
-│   ├── biblia/             # API Tradução Belem AnC (junction)
-│   ├── exeg-ai/            # IA de exegese (junction)
-│   ├── podcast/            # Conteúdo em áudio (futuro)
-│   └── comunidade/         # Espaço coletivo (futuro)
-├── content/
-│   └── livro/              # O Livrinho - A Culpa é das Ovelhas
+├── apps/                           # Aplicações principais
+│   ├── site/                       # Portal aculpaedasovelhas.org
+│   ├── Bíblia Belem AnC/           # API Tradução (Node.js + PostgreSQL)
+│   ├── exeg.ai/                    # IA de exegese (FastAPI + FAISS)
+│   ├── exeg.ai-site/               # Site institucional exeg.ai
+│   ├── livro/                      # O Livrinho - A Culpa é das Ovelhas
+│   ├── blog/                       # Sistema de artigos (estrutura)
+│   ├── podcast/                    # Conteúdo em áudio (futuro)
+│   └── comunidade/                 # Espaço coletivo (futuro)
 ├── docs/
-│   ├── vendas/             # Material comercial
-│   └── ecossistema/        # Documentação do ecossistema
-├── infra/
-│   └── capacidades/        # Integrações (Cloudflare, 1Password, etc.)
+│   └── RESUMO-ECOSSISTEMA.md       # Documentação técnica detalhada
+├── .AnC Docs/infra/                # Configurações e capacidades
+│   └── capacidades/                # Integrações (Cloudflare, 1Password, etc.)
+├── .claude/memory/                 # Memória estendida do agente
 └── README.md
 ```
 
-| Módulo     | Path                                 | Status |
-| ---------- | ------------------------------------ | ------ |
-| Site       | [apps/site/](apps/site/)             | Ativo  |
-| Blog       | [apps/blog/](apps/blog/)             | Ativo  |
-| Bíblia     | [apps/biblia/](apps/biblia/)         | Ativo  |
-| exeg.ai    | [apps/exeg-ai/](apps/exeg-ai/)       | Ativo  |
-| Livro      | [content/livro/](content/livro/)     | Ativo  |
-| Podcast    | [apps/podcast/](apps/podcast/)       | Futuro |
-| Comunidade | [apps/comunidade/](apps/comunidade/) | Futuro |
+| Módulo       | Path                                                 | Status    |
+| ------------ | ---------------------------------------------------- | --------- |
+| Site         | [apps/site/](apps/site/)                             | Ativo     |
+| Bíblia API   | [apps/Bíblia Belem AnC/](apps/Bíblia%20Belem%20AnC/) | Ativo     |
+| exeg.ai API  | [apps/exeg.ai/](apps/exeg.ai/)                       | Ativo     |
+| exeg.ai Site | [apps/exeg.ai-site/](apps/exeg.ai-site/)             | Ativo     |
+| Livro        | [apps/livro/](apps/livro/)                           | Ativo     |
+| Blog         | [apps/blog/](apps/blog/)                             | Estrutura |
+| Podcast      | [apps/podcast/](apps/podcast/)                       | Futuro    |
+| Comunidade   | [apps/comunidade/](apps/comunidade/)                 | Futuro    |
 
 ---
 
@@ -92,7 +93,8 @@ Tradução fiel, literal e rígida, direto do hebraico, aramaico e grego. Sem no
 No nível avançado, a máquina de exegese do ecossistema. IA especializada em análise bíblica profunda.
 
 - **Recursos:** Busca semântica, detecção de intertextualidade, integração com LLMs
-- **Tecnologias:** Python, FastAPI, FAISS, SentenceTransformers, Ollama (:8000)
+- **Tecnologias:** Python, FastAPI, FAISS, SentenceTransformers, Ollama
+- **Portas:** API :8002 (local) / :8000 (túnel), Site institucional: [exeg.ai](https://exeg.ai)
 - **Integra com:** Bíblia (consome API), Blog (gera análises), Site (expõe IA)
 
 ---
@@ -151,4 +153,8 @@ No nível avançado, a máquina de exegese do ecossistema. IA especializada em a
 
 ## Licença
 
-Todos os direitos reservados © 2025 Anderson Belem Costa
+Todos os direitos reservados © 2026 Anderson Belem Costa
+
+---
+
+_Última atualização: 2026-01-05_

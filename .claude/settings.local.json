@@ -106,7 +106,17 @@
       "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" add apps/exeg.ai/frontend/ apps/exeg.ai-site/)",
       "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" commit -m \"$\\(cat <<''EOF''\nrefactor: consolida exeg.ai-site em exeg.ai/frontend\n\nMove arquivos do site institucional para pasta frontend\ndentro do módulo principal, eliminando pasta duplicada.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" diff --stat)",
-      "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" add URLS-PROJETOS.md docs/RESUMO-ECOSSISTEMA.md apps/exeg.ai/README.md apps/exeg.ai/cloudflared.yml apps/exeg.ai/start-tunnel.ps1 .claude/settings.local.json)"
+      "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" add URLS-PROJETOS.md docs/RESUMO-ECOSSISTEMA.md apps/exeg.ai/README.md apps/exeg.ai/cloudflared.yml apps/exeg.ai/start-tunnel.ps1 .claude/settings.local.json)",
+      "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" commit -m \"$\\(cat <<''EOF''\ndocs: atualiza documentação e configurações do ecossistema\n\n- Corrige caminho da interface Bible Belem AnC \\(ler-biblia.html\\)\n- Atualiza estrutura do monorepo em RESUMO-ECOSSISTEMA.md\n- Atualiza configurações do cloudflared tunnel\n- Atualiza settings locais do Claude\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"c:/Projetos/Projeto - O Livrinho\" push)",
+      "Bash(ls -la \"c:\\\\Projetos\\\\Projeto - O Livrinho\\\\apps\\\\exeg.ai\\\\src\\\\routes\"\" | grep -v \"^d \")",
+      "Bash(ls -la \"c:\\\\Projetos\\\\Projeto - O Livrinho\\\\apps\\\\exeg.ai\\\\src\\\\billing\"\" | grep -v \"^d \")",
+      "Bash(gh -R AndersonOtimiza/aculpaedasovelhas dependabot alerts list:*)",
+      "Bash(gh api:*)",
+      "Bash(start http://localhost:5173)",
+      "Bash(start:*)",
+      "Bash(cmd //c \"taskkill /PID 60196 /F\")",
+      "Bash(.venv/Scripts/python:*)"
     ]
   }
 }
