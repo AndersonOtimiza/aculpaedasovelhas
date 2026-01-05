@@ -86,7 +86,10 @@
       "Bash(docker build:*)",
       "Bash(docker run:*)",
       "Bash(start \"\" \"https://exeg.ai/biblia\")",
-      "Bash(start \"\" \"https://exeg-ai.pages.dev/biblia\")"
+      "Bash(start \"\" \"https://exeg-ai.pages.dev/biblia\")",
+      "Bash(start \"\" \"https://aculpaedasovelhas.org\")",
+      "Bash(npx eslint:*)",
+      "Bash(npx prettier:*)"
     ]
   }
 }
