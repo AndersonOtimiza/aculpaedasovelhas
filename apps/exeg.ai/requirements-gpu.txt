@@ -14,10 +14,10 @@ httpx>=0.25.0
 sentence-transformers>=2.2.0
 numpy>=1.24.0
 
-# PyTorch with CUDA 12.4
+# PyTorch with CUDA 12.4 (CVE-2025-32434 fix)
 --extra-index-url https://download.pytorch.org/whl/cu124
-torch==2.5.1+cu124
-torchvision==0.20.1+cu124
+torch>=2.6.0+cu124
+torchvision>=0.21.0+cu124
 
 # FAISS GPU
 # NOTE: For FAISS GPU, use conda instead:
