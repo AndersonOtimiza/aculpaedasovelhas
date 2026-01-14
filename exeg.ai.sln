@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{1787FE1D-075E-9E68-7218-25F1BD1BBEAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exeg.ai", "exeg.ai", "{64001F3F-0FD8-B02A-BD0E-1DB475F21008}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chatbot", "chatbot", "{1EE946CC-BAE1-88DB-E206-437A5D24BC30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{12740284-48AD-158E-8528-EB881DD51F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiblicalEasterEggAgent", "apps\exeg.ai\chatbot\src\BiblicalEasterEggAgent\BiblicalEasterEggAgent.csproj", "{5D0F332D-32F0-71F6-E566-F6FC17D8C66A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D0F332D-32F0-71F6-E566-F6FC17D8C66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0F332D-32F0-71F6-E566-F6FC17D8C66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0F332D-32F0-71F6-E566-F6FC17D8C66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0F332D-32F0-71F6-E566-F6FC17D8C66A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64001F3F-0FD8-B02A-BD0E-1DB475F21008} = {1787FE1D-075E-9E68-7218-25F1BD1BBEAB}
+		{1EE946CC-BAE1-88DB-E206-437A5D24BC30} = {64001F3F-0FD8-B02A-BD0E-1DB475F21008}
+		{12740284-48AD-158E-8528-EB881DD51F15} = {1EE946CC-BAE1-88DB-E206-437A5D24BC30}
+		{5D0F332D-32F0-71F6-E566-F6FC17D8C66A} = {12740284-48AD-158E-8528-EB881DD51F15}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED8B2CFF-7273-4582-AA99-13751F71C3C5}
+	EndGlobalSection
+EndGlobal

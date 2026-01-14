@@ -15,7 +15,7 @@ O **exeg.ai** é o motor de inteligência artificial do ecossistema "A Culpa é 
 ### Capacidades
 
 - **Busca Semântica** - FAISS + SentenceTransformers para encontrar passagens similares
-- **Análise de Easter Eggs** - Gematria, acrósticos, quiasmos, padrões numéricos
+- **Análise de Easter Eggs** - Acrósticos, quiasmos, estruturas literárias, tipologia
 - **Intertextualidade** - Conexões entre passagens do AT e NT
 - **LLM Multi-Provider** - Ollama (local), OpenAI, Anthropic
 - **Sistema de Billing** - Assinaturas, créditos por tokens, Stripe
@@ -323,16 +323,17 @@ EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
 
 ---
 
-## Tipos de Easter Eggs Suportados
+## Métodos de Análise Exegética
 
-1. **Gematria** - Valores numéricos de palavras gregas/hebraicas
-2. **Acrósticos** - Primeiras letras formando mensagens
-3. **Quiasmos** - Estruturas literárias espelhadas (A-B-C-B-A)
-4. **Palavras-chave** - Padrões de repetição intencional
-5. **Intertextualidade** - Referências cruzadas ocultas
-6. **Jogos de palavras** - Trocadilhos nos idiomas originais
-7. **Estruturas numéricas** - Padrões de 7, 12, 40, etc.
-8. **Tipologia** - Prefigurações do AT no NT
+1. **Acrósticos** - Primeiras letras formando mensagens
+2. **Quiasmos** - Estruturas literárias espelhadas (A-B-C-B-A)
+3. **Palavras-chave** - Padrões de repetição intencional
+4. **Intertextualidade** - Referências cruzadas entre passagens
+5. **Jogos de palavras** - Trocadilhos nos idiomas originais
+6. **Estruturas literárias** - Padrões de composição textual
+7. **Tipologia** - Prefigurações do AT no NT
+8. **Contexto histórico-cultural** - Pano de fundo da época
+9. **Análise linguística** - Estudo dos termos originais
 
 ---
 

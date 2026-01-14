@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;500;600;700&display=swap");
 
 /*
  * A Culpa é das Ovelhas - Estilos
@@ -415,7 +415,7 @@ body {
 }
 
 body.home {
-  font-family: "Source Sans 3", "Segoe UI", Tahoma, sans-serif;
+  font-family: "Encode Sans Semi Expanded", "Segoe UI", Tahoma, sans-serif;
   background: var(--gray-950);
 }
 
@@ -439,7 +439,7 @@ body.home::before {
 .home .manifesto-text h3,
 .home .manifesto-text h4,
 .home .author-info h3 {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
   letter-spacing: 0.3px;
 }
 
@@ -1234,7 +1234,7 @@ body.light-mode .home .features .feature-card p {
 .cta-text h2 {
   font-size: 32px;
   margin-bottom: 12px;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
 }
 
 .cta-text p {
@@ -1851,7 +1851,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 16px;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
   line-height: 1.2;
 }
 
@@ -2437,7 +2437,7 @@ body {
   font-size: 48px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.08);
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
 }
 
 .discovery-icon {
@@ -2483,7 +2483,7 @@ body {
 
 .mega-quote p {
   font-size: 36px;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
   font-style: italic;
   color: var(--text-white);
   line-height: 1.4;
@@ -2528,7 +2528,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   color: var(--accent);
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
   line-height: 1;
 }
 
@@ -2874,7 +2874,7 @@ body.light-mode .access-step {
 
 .cta-panel-promo h2 {
   font-size: 42px;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
   color: var(--text-white);
   margin-bottom: 16px;
 }
@@ -2963,7 +2963,7 @@ body.light-mode .access-step {
 
 .final-cta h2 {
   font-size: 48px;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Encode Sans Semi Expanded", Georgia, serif;
   color: var(--text-white);
   margin-bottom: 16px;
 }
