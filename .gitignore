@@ -8,6 +8,7 @@ node_modules/
 # Arquivos de cache Python
 **/__pycache__/
 *.pyc
+**/.mypy_cache/
 
 # Logs
 *.log
