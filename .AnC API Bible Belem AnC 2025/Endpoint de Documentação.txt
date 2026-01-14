@@ -1,0 +1,44 @@
+Como os projetos acessam a documentação
+Endpoint de Documentação
+
+GET https://biblia-belem-api.anderson-282.workers.dev/docs
+Retorna OpenAPI 3.0 JSON completo com:
+
+Todos os endpoints
+Parâmetros
+Schemas de dados (Book, Verse, Token, Gloss)
+Exemplos
+Uso no exeg.ai (Python)
+
+import requests
+
+# Carregar spec da API dinamicamente
+docs = requests.get("https://biblia-belem-api.anderson-282.workers.dev/docs").json()
+
+# Ver todos os endpoints
+for path, methods in docs["paths"].items():
+    print(f"{path}: {list(methods.keys())}")
+
+# Ver schema de Book
+print(docs["components"]["schemas"]["Book"])
+Uso no Site (JavaScript)
+
+// Carregar documentação
+const docs = await fetch('https://biblia-belem-api.anderson-282.workers.dev/docs').then(r => r.json());
+
+// Descobrir endpoints disponíveis
+console.log(Object.keys(docs.paths));
+
+// Ver schema de Token
+console.log(docs.components.schemas.Token);
+Swagger UI (visualização interativa)
+Pode usar qualquer Swagger UI apontando para:
+
+
+https://biblia-belem-api.anderson-282.workers.dev/docs/openapi.json
+Resumo dos Recursos
+Recurso	URL
+API Root	https://biblia-belem-api.anderson-282.workers.dev/
+Health	https://biblia-belem-api.anderson-282.workers.dev/health
+Docs (OpenAPI)	https://biblia-belem-api.anderson-282.workers.dev/docs
+README	Arquivo local README.md no projeto

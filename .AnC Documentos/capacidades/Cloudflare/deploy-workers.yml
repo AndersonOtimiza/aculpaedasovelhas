@@ -1,0 +1,9 @@
+- name: Notificar sucesso no Teams
+  if: success()
+  run: |
+    node wp-intelligent-agent.js notify:teams "✅ Deploy concluído" "Worker **otimiza-agent** publicado com sucesso."
+
+- name: Notificar rollback no Teams
+  if: failure()
+  run: |
+    node wp-intelligent-agent.js notify:teams "⚠️ Rollback acionado" "O deploy falhou. Worker revertido automaticamente para versão anterior."
