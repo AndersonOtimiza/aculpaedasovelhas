@@ -26,3 +26,5 @@ nul
 .env
 .env.*
 !.env.example
+
+.fake
