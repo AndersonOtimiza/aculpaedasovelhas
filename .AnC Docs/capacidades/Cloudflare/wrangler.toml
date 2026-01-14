@@ -1,9 +1,0 @@
-# Arquivo de configuração para o Wrangler, a CLI do Cloudflare.
-# Este arquivo serve para ativar a extensão do Cloudflare Workers no VS Code.
-
-name = "an-agent-wordpress"
-main = "src/index.js" # Este é um placeholder e não precisa existir.
-compatibility_date = "2025-11-17"
-
-# O ID da sua conta Cloudflare, extraído das informações fornecidas.
-account_id = "28248f850aef40d0c91531280962a88a"
