@@ -136,7 +136,15 @@
       "Bash(cmd //c \"taskkill /PID 152392 /F\")",
       "Bash(npm install)",
       "Bash(npx prettier . --write)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: remove regras de formatação conflitantes do ESLint\n\nRemove regras indent, quotes e semi que conflitavam com Prettier.\nO eslint-config-prettier já gerencia essas regras automaticamente.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: remove regras de formatação conflitantes do ESLint\n\nRemove regras indent, quotes e semi que conflitavam com Prettier.\nO eslint-config-prettier já gerencia essas regras automaticamente.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(code \"v:/Projetos/Ecossistema aculpaedasovelhas/exeg.ai\")",
+      "Bash(start http://localhost:8081)",
+      "Bash(start https://plataforma.exeg.ai/docs)",
+      "Bash(ollama list:*)",
+      "Bash(pip show:*)",
+      "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Stop-Process -Force; Write-Host ''Processos Python encerrados''\")",
+      "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Select-Object Id, CPU, WorkingSet | Format-Table\")",
+      "Bash(xargs cat:*)"
     ]
   }
 }

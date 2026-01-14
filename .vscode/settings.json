@@ -8,5 +8,8 @@
   },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "files.eol": "\n"
+"files.eol": "\n",
+"python.analysis.extraPaths": [
+    "c:\\Users\\AndersonBelem\\.vscode-insiders\\extensions\\ms-security.ms-sentinel-1.1.5\\python"
+]
 }
