@@ -144,7 +144,11 @@
       "Bash(pip show:*)",
       "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Stop-Process -Force; Write-Host ''Processos Python encerrados''\")",
       "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Select-Object Id, CPU, WorkingSet | Format-Table\")",
-      "Bash(xargs cat:*)"
+      "Bash(xargs cat:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File setup-env-from-1password.ps1:*)",
+      "Bash(npm run format:*)",
+      "Bash(nvidia-smi:*)",
+      "Bash(pip uninstall:*)"
     ]
   }
 }

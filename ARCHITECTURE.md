@@ -509,9 +509,10 @@ Response:
 
 ## 14. Changelog
 
-| Versao | Data       | Autor          | Mudancas       |
-| ------ | ---------- | -------------- | -------------- |
-| 1.0.0  | 2026-01-11 | Anderson Belem | Versao inicial |
+| Versao | Data       | Autor          | Mudancas                                       |
+| ------ | ---------- | -------------- | ---------------------------------------------- |
+| 1.0.0  | 2026-01-11 | Anderson Belem | Versao inicial                                 |
+| 1.0.1  | 2026-01-16 | Anderson Belem | Atualizacao de linting (ESLint v9 flat config) |
 
 ---
 

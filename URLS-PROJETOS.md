@@ -1,5 +1,7 @@
 # URLs dos Projetos
 
+> Última atualização: 2026-01-16
+
 ## Site institucional aculpaedasovelhas
 
 - **Site em Prod:** https://aculpaedasovelhas.org
@@ -23,8 +25,8 @@
 
 - **API Prod:** https://plataforma.exeg.ai
 - **API Alias:** https://plataform.exeg.ai (redireciona para plataforma.exeg.ai)
-- **API Local:** http://localhost:8002
-- **Docs API:** https://plataforma.exeg.ai/docs (Prod) / http://localhost:8002/docs (Local)
+- **API Local:** http://localhost:8000
+- **Docs API:** https://plataforma.exeg.ai/docs (Prod) / http://localhost:8000/docs (Local)
 - **Código fonte:** `apps/exeg.ai/`
 
 ---
@@ -87,13 +89,15 @@ cloudflared tunnel route dns aculpaedasovelhas-api biblia.aculpaedasovelhas.org
 
 ## Mapeamento de Portas Locais
 
-| Serviço     | Porta Local | Endpoint Público             | Tecnologia                 |
-| ----------- | ----------- | ---------------------------- | -------------------------- |
-| Site Web    | 8080        | aculpaedasovelhas.org        | Nginx/HTML/CSS/JS          |
-| Bible API   | 3001        | biblia.aculpaedasovelhas.org | Node.js/TypeScript/Express |
-| exeg.ai API | 8000/8002   | plataforma.exeg.ai           | Python/FastAPI             |
-| PostgreSQL  | 5433        | localhost (interno)          | PostgreSQL 16              |
-| Ollama      | 11434       | localhost (interno)          | LLM Local                  |
+| Serviço              | Porta Local | Endpoint Público             | Tecnologia                 |
+| -------------------- | ----------- | ---------------------------- | -------------------------- |
+| Site Web             | 8080        | aculpaedasovelhas.org        | Nginx/HTML/CSS/JS          |
+| Bible API            | 3001        | biblia.aculpaedasovelhas.org | Node.js/TypeScript/Express |
+| exeg.ai API          | 8000        | plataforma.exeg.ai           | Python/FastAPI             |
+| Chatbot Frontend     | 8001        | (local apenas)               | Static HTML/JS             |
+| Landing Page exeg.ai | 5173        | chat.exeg.ai                 | Static HTML/CSS/JS         |
+| PostgreSQL           | 5433        | localhost (interno)          | PostgreSQL 16              |
+| Ollama               | 11434       | localhost (interno)          | LLM Local                  |
 
 ---
 
@@ -112,11 +116,13 @@ Cloudflare Tunnel
 
 ## Health Checks
 
-| Serviço   | Endpoint                           |
-| --------- | ---------------------------------- |
-| Bible API | `GET http://localhost:3001/health` |
-| exeg.ai   | `GET http://localhost:8002/health` |
-| Site      | `GET http://localhost:8080/`       |
+| Serviço          | Endpoint                           |
+| ---------------- | ---------------------------------- |
+| Bible API        | `GET http://localhost:3001/health` |
+| exeg.ai API      | `GET http://localhost:8000/health` |
+| Chatbot Frontend | `GET http://localhost:8001/`       |
+| Landing Page     | `GET http://localhost:5173/`       |
+| Site             | `GET http://localhost:8080/`       |
 
 ---
 
@@ -177,10 +183,10 @@ PORT=3001
 ### exeg.ai (`apps/exeg.ai/.env`)
 
 ```env
-API_PORT=8002
+API_PORT=8000
 BIBLIA_API_URL=http://localhost:3001
 OLLAMA_URL=http://localhost:11434
-OLLAMA_MODEL=qwen3:4b
+OLLAMA_MODEL=qwen2.5:3b
 DATABASE_URL=sqlite:///./database/exeg.db
 OTIMIZA_PIX_KEY=pix@otimizapagamentos.com.br
 ```

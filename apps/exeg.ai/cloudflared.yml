@@ -8,15 +8,15 @@
 # 4. cloudflared tunnel route dns exeg-ai biblia.aculpaedasovelhas.org
 # 5. cloudflared tunnel run exeg-ai
 
-tunnel: fab88c28-772c-4ceb-b5c3-71767406fb6b
-credentials-file: ~/.cloudflared/fab88c28-772c-4ceb-b5c3-71767406fb6b.json
+tunnel: b7363079-197b-4340-8e77-e902b8a412f7
+credentials-file: ~/.cloudflared/b7363079-197b-4340-8e77-e902b8a412f7.json
 
 ingress:
   # ===========================================
   # exeg.ai - Plataforma de Exegese com IA
   # ===========================================
   - hostname: plataforma.exeg.ai
-    service: http://localhost:8001
+    service: http://localhost:8000
     originRequest:
       noTLSVerify: true
       connectTimeout: 30s
