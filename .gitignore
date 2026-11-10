@@ -33,3 +33,5 @@ test-results/
 !.env.example
 
 .fake
+# Configuração local do Claude Code: guarda linhas de comando inteiras, às vezes com chaves
+**/.claude/settings.local.json
